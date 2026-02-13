@@ -1,0 +1,248 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F47Q10 ]
+[d frameptr 4065 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+"9 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+"9 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\atdiv.c
+[v ___atdiv __atdiv `(m  1 e 3 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\atmod.c
+[v ___atmod __atmod `(m  1 e 3 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"9 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lodiv.c
+[v ___lodiv __lodiv `(uo  1 e 8 0 ]
+"9 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lomod.c
+[v ___lomod __lomod `(uo  1 e 8 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\ltdiv.c
+[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\ltmod.c
+[v ___ltmod __ltmod `(um  1 e 3 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul24.c
+[v ___tmul __tmul `(um  1 e 3 0 ]
+"15 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"14 D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem04_Tmr0INT.X\maincode01.c
+[v _configuro configuro `(v  1 e 1 0 ]
+"42
+[v _main main `(v  1 e 1 0 ]
+"49
+[v _TMR0_ISR TMR0_ISR `IIH(v  1 e 1 0 ]
+"75
+[v _INT0_ISR INT0_ISR `IIL(v  1 e 1 0 ]
+"12014 C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f47q10.h
+[v _INT0PPS INT0PPS `VEuc  1 e 1 @3740 ]
+[s S206 . 1 `uc 1 INT0IP 1 0 :1:0 
+`uc 1 INT1IP 1 0 :1:1 
+`uc 1 INT2IP 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 IOCIP 1 0 :1:4 
+`uc 1 TMR0IP 1 0 :1:5 
+]
+"14811
+[u S213 . 1 `S206 1 . 1 0 ]
+[v _IPR0bits IPR0bits `VES213  1 e 1 @3765 ]
+[s S135 . 1 `uc 1 INT0IE 1 0 :1:0 
+`uc 1 INT1IE 1 0 :1:1 
+`uc 1 INT2IE 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 IOCIE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+"15228
+[u S142 . 1 `S135 1 . 1 0 ]
+[v _PIE0bits PIE0bits `VES142  1 e 1 @3773 ]
+[s S152 . 1 `uc 1 INT0IF 1 0 :1:0 
+`uc 1 INT1IF 1 0 :1:1 
+`uc 1 INT2IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 IOCIF 1 0 :1:4 
+`uc 1 TMR0IF 1 0 :1:5 
+]
+"15645
+[u S159 . 1 `S152 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES159  1 e 1 @3781 ]
+"16625
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @3795 ]
+"16917
+[v _OSCEN OSCEN `VEuc  1 e 1 @3799 ]
+"17026
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @3801 ]
+[s S48 . 1 `uc 1 ANSELA0 1 0 :1:0 
+`uc 1 ANSELA1 1 0 :1:1 
+`uc 1 ANSELA2 1 0 :1:2 
+`uc 1 ANSELA3 1 0 :1:3 
+`uc 1 ANSELA4 1 0 :1:4 
+`uc 1 ANSELA5 1 0 :1:5 
+`uc 1 ANSELA6 1 0 :1:6 
+`uc 1 ANSELA7 1 0 :1:7 
+]
+"19534
+[u S57 . 1 `S48 1 . 1 0 ]
+[v _ANSELAbits ANSELAbits `VES57  1 e 1 @3852 ]
+[s S111 . 1 `uc 1 WPUB0 1 0 :1:0 
+`uc 1 WPUB1 1 0 :1:1 
+`uc 1 WPUB2 1 0 :1:2 
+`uc 1 WPUB3 1 0 :1:3 
+`uc 1 WPUB4 1 0 :1:4 
+`uc 1 WPUB5 1 0 :1:5 
+`uc 1 WPUB6 1 0 :1:6 
+`uc 1 WPUB7 1 0 :1:7 
+]
+"19968
+[u S120 . 1 `S111 1 . 1 0 ]
+[v _WPUBbits WPUBbits `VES120  1 e 1 @3859 ]
+[s S90 . 1 `uc 1 ANSELB0 1 0 :1:0 
+`uc 1 ANSELB1 1 0 :1:1 
+`uc 1 ANSELB2 1 0 :1:2 
+`uc 1 ANSELB3 1 0 :1:3 
+`uc 1 ANSELB4 1 0 :1:4 
+`uc 1 ANSELB5 1 0 :1:5 
+`uc 1 ANSELB6 1 0 :1:6 
+`uc 1 ANSELB7 1 0 :1:7 
+]
+"20030
+[u S99 . 1 `S90 1 . 1 0 ]
+[v _ANSELBbits ANSELBbits `VES99  1 e 1 @3860 ]
+[s S244 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"27505
+[u S253 . 1 `S244 1 . 1 0 ]
+[v _LATAbits LATAbits `VES253  1 e 1 @3970 ]
+[s S27 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"27790
+[u S36 . 1 `S27 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES36  1 e 1 @3975 ]
+[s S69 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"27912
+[u S78 . 1 `S69 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES78  1 e 1 @3976 ]
+[s S223 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"28335
+[u S232 . 1 `S223 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES232  1 e 1 @3980 ]
+"36900
+[v _TMR0L TMR0L `VEuc  1 e 1 @4050 ]
+"37038
+[v _TMR0H TMR0H `VEuc  1 e 1 @4051 ]
+"37292
+[v _T0CON0 T0CON0 `VEuc  1 e 1 @4052 ]
+"37357
+[v _T0CON1 T0CON1 `VEuc  1 e 1 @4053 ]
+[s S169 . 1 `uc 1 INT0EDG 1 0 :1:0 
+`uc 1 INT1EDG 1 0 :1:1 
+`uc 1 INT2EDG 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 IPEN 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"38242
+[s S177 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"38242
+[s S181 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+"38242
+[u S185 . 1 `S169 1 . 1 0 `S177 1 . 1 0 `S181 1 . 1 0 ]
+"38242
+"38242
+[v _INTCONbits INTCONbits `VES185  1 e 1 @4082 ]
+"12 D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem04_Tmr0INT.X\maincode01.c
+[v _diuty diuty `uc  1 e 1 0 ]
+"42
+[v _main main `(v  1 e 1 0 ]
+{
+"47
+} 0
+"14
+[v _configuro configuro `(v  1 e 1 0 ]
+{
+"40
+} 0
+"75
+[v _INT0_ISR INT0_ISR `IIL(v  1 e 1 0 ]
+{
+"83
+} 0
+"49
+[v _TMR0_ISR TMR0_ISR `IIH(v  1 e 1 0 ]
+{
+"73
+} 0
