@@ -65,29 +65,33 @@
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "91 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
-"9 D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem04_LCD.X\LCD.c
+"5 D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem04_LCD.X\LCD.c
 [v _POS_CURSOR POS_CURSOR `(v  1 e 1 0 ]
-"34
+"37
 [v _CURSOR_HOME CURSOR_HOME `(v  1 e 1 0 ]
-"54
+"62
 [v _CURSOR_ONOFF CURSOR_ONOFF `(v  1 e 1 0 ]
-"66
+"77
 [v _ESCRIBE_MENSAJE2 ESCRIBE_MENSAJE2 `(v  1 e 1 0 ]
-"75
+"88
 [v _ENVIA_CHAR ENVIA_CHAR `(v  1 e 1 0 ]
-"90
+"104
 [v _BORRAR_LCD BORRAR_LCD `(v  1 e 1 0 ]
-"94
+"109
 [v _LCD_CONFIG LCD_CONFIG `(v  1 e 1 0 ]
-"110
+"126
 [v _ENVIA_NIBBLE ENVIA_NIBBLE `(v  1 e 1 0 ]
-"119
+"136
 [v _ENVIA_LCD_CMD ENVIA_LCD_CMD `(v  1 e 1 0 ]
-"171
+"152
+[v _LEER_LCD LEER_LCD `(v  1 e 1 0 ]
+"192
 [v _LCD_INIT LCD_INIT `(v  1 e 1 0 ]
-"12 D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem04_LCD.X\maincode00.c
+"224
+[v _LCD_ESCRIBE_VAR_INT LCD_ESCRIBE_VAR_INT `(v  1 e 1 0 ]
+"14 D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem04_LCD.X\maincode00.c
 [v _configuro configuro `(v  1 e 1 0 ]
-"24
+"26
 [v _main main `(v  1 e 1 0 ]
 "16625 C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f47q10.h
 [v _OSCCON1 OSCCON1 `VEuc  1 e 1 @3795 ]
@@ -99,7 +103,7 @@
 [v _ANSELD ANSELD `VEuc  1 e 1 @3873 ]
 "27674
 [v _LATD LATD `VEuc  1 e 1 @3973 ]
-[s S65 . 1 `uc 1 LATD0 1 0 :1:0 
+[s S84 . 1 `uc 1 LATD0 1 0 :1:0 
 `uc 1 LATD1 1 0 :1:1 
 `uc 1 LATD2 1 0 :1:2 
 `uc 1 LATD3 1 0 :1:3 
@@ -109,81 +113,121 @@
 `uc 1 LATD7 1 0 :1:7 
 ]
 "27691
-[u S74 . 1 `S65 1 . 1 0 ]
-[v _LATDbits LATDbits `VES74  1 e 1 @3973 ]
+[u S93 . 1 `S84 1 . 1 0 ]
+[v _LATDbits LATDbits `VES93  1 e 1 @3973 ]
 "28134
 [v _TRISD TRISD `VEuc  1 e 1 @3978 ]
 "28504
 [v _PORTD PORTD `VEuc  1 e 1 @3983 ]
-"24 D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem04_LCD.X\maincode00.c
+"12 D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem04_LCD.X\maincode00.c
+[v _cuenta cuenta `ui  1 e 2 0 ]
+"26
 [v _main main `(v  1 e 1 0 ]
 {
-"31
+"41
 } 0
-"12
+"14
 [v _configuro configuro `(v  1 e 1 0 ]
 {
-"22
+"24
 } 0
-"171 D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem04_LCD.X\LCD.c
+"192 D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem04_LCD.X\LCD.c
 [v _LCD_INIT LCD_INIT `(v  1 e 1 0 ]
 {
-"181
+"201
 } 0
-"94
+"109
 [v _LCD_CONFIG LCD_CONFIG `(v  1 e 1 0 ]
 {
-"108
+"124
 } 0
-"54
+"62
 [v _CURSOR_ONOFF CURSOR_ONOFF `(v  1 e 1 0 ]
 {
 [v CURSOR_ONOFF@estado estado `uc  1 p 1 wreg ]
 [v CURSOR_ONOFF@estado estado `uc  1 p 1 wreg ]
+"64
 [v CURSOR_ONOFF@estado estado `uc  1 p 1 3 ]
-"57
+"66
 } 1
-"34
+"37
 [v _CURSOR_HOME CURSOR_HOME `(v  1 e 1 0 ]
 {
-"36
+"40
 } 0
-"90
+"104
 [v _BORRAR_LCD BORRAR_LCD `(v  1 e 1 0 ]
 {
-"92
+"107
 } 0
-"9
+"5
 [v _POS_CURSOR POS_CURSOR `(v  1 e 1 0 ]
 {
 [v POS_CURSOR@fila fila `uc  1 p 1 wreg ]
 [v POS_CURSOR@fila fila `uc  1 p 1 wreg ]
 [v POS_CURSOR@columna columna `uc  1 p 1 3 ]
+"7
 [v POS_CURSOR@fila fila `uc  1 p 1 4 ]
-"22
+"23
 } 1
-"119
+"136
 [v _ENVIA_LCD_CMD ENVIA_LCD_CMD `(v  1 e 1 0 ]
 {
 [v ENVIA_LCD_CMD@dato dato `uc  1 p 1 wreg ]
-"120
+"138
 [v ENVIA_LCD_CMD@aux aux `uc  1 a 1 2 ]
-"119
+"136
 [v ENVIA_LCD_CMD@dato dato `uc  1 p 1 wreg ]
-"121
+"139
 [v ENVIA_LCD_CMD@dato dato `uc  1 p 1 1 ]
-"132
+"150
 } 1
-"66
+"224
+[v _LCD_ESCRIBE_VAR_INT LCD_ESCRIBE_VAR_INT `(v  1 e 1 0 ]
+{
+"225
+[v LCD_ESCRIBE_VAR_INT@unidad unidad `uc  1 a 1 19 ]
+[v LCD_ESCRIBE_VAR_INT@decena decena `uc  1 a 1 18 ]
+[v LCD_ESCRIBE_VAR_INT@centena centena `uc  1 a 1 17 ]
+[v LCD_ESCRIBE_VAR_INT@millar millar `uc  1 a 1 16 ]
+[v LCD_ESCRIBE_VAR_INT@d_millar d_millar `uc  1 a 1 15 ]
+"224
+[v LCD_ESCRIBE_VAR_INT@numero numero `ui  1 p 2 12 ]
+[v LCD_ESCRIBE_VAR_INT@n_digitos n_digitos `uc  1 p 1 14 ]
+"258
+} 0
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 4 ]
+"7
+[v ___lwmod@dividend dividend `ui  1 p 2 0 ]
+[v ___lwmod@divisor divisor `ui  1 p 2 2 ]
+"25
+} 0
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 9 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 11 ]
+"7
+[v ___lwdiv@dividend dividend `ui  1 p 2 5 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 7 ]
+"30
+} 0
+"77 D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem04_LCD.X\LCD.c
 [v _ESCRIBE_MENSAJE2 ESCRIBE_MENSAJE2 `(v  1 e 1 0 ]
 {
-"69
+"81
 [v ESCRIBE_MENSAJE2@i i `uc  1 a 1 6 ]
-"67
+"79
 [v ESCRIBE_MENSAJE2@tam tam `uc  1 a 1 5 ]
-"66
+"77
 [v ESCRIBE_MENSAJE2@cadena cadena `*.31Cuc  1 p 1 3 ]
-"73
+"86
 } 0
 "5 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
 [v _strlen strlen `(ui  1 e 2 0 ]
@@ -194,23 +238,31 @@
 [v strlen@s s `*.31Cuc  1 p 1 0 ]
 "12
 } 0
-"75 D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem04_LCD.X\LCD.c
+"88 D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem04_LCD.X\LCD.c
 [v _ENVIA_CHAR ENVIA_CHAR `(v  1 e 1 0 ]
 {
 [v ENVIA_CHAR@dato dato `uc  1 p 1 wreg ]
-"76
+"90
 [v ENVIA_CHAR@aux aux `uc  1 a 1 2 ]
-"75
-[v ENVIA_CHAR@dato dato `uc  1 p 1 wreg ]
-"77
-[v ENVIA_CHAR@dato dato `uc  1 p 1 1 ]
 "88
+[v ENVIA_CHAR@dato dato `uc  1 p 1 wreg ]
+"91
+[v ENVIA_CHAR@dato dato `uc  1 p 1 1 ]
+"102
 } 1
-"110
+"152
+[v _LEER_LCD LEER_LCD `(v  1 e 1 0 ]
+{
+"154
+[v LEER_LCD@aux aux `uc  1 a 1 0 ]
+"179
+} 0
+"126
 [v _ENVIA_NIBBLE ENVIA_NIBBLE `(v  1 e 1 0 ]
 {
 [v ENVIA_NIBBLE@dato dato `uc  1 p 1 wreg ]
 [v ENVIA_NIBBLE@dato dato `uc  1 p 1 wreg ]
+"128
 [v ENVIA_NIBBLE@dato dato `uc  1 p 1 0 ]
-"117
+"134
 } 1

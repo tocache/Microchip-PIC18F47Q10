@@ -18,6 +18,16 @@ Version 4.0 HI-TECH Software Intermediate Code
 "24
 [; ;./LCD.h: 24: void ESCRIBE_MENSAJE2(const char *cadena);
 [v _ESCRIBE_MENSAJE2 `(v ~T0 @X0 0 ef1`*Cuc ]
+[v F205 `(v ~T0 @X0 1 tf1`ul ]
+"20 C:\Program Files\Microchip\xc8\v3.10\pic\include/builtins.h
+[v __delay `JF205 ~T0 @X0 0 e ]
+[p i __delay ]
+"16 ./LCD.h
+[; ;./LCD.h: 16: void BORRAR_LCD(void);
+[v _BORRAR_LCD `(v ~T0 @X0 0 ef ]
+"31
+[; ;./LCD.h: 31: void LCD_ESCRIBE_VAR_INT(unsigned int numero, unsigned char n_digitos);
+[v _LCD_ESCRIBE_VAR_INT `(v ~T0 @X0 0 ef2`ui`uc ]
 "52 C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f47q10.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f47q10.h: 52: __asm("CLCIN0PPS equ 0E1Fh");
 [; <" CLCIN0PPS equ 0E1Fh ;# ">
@@ -1807,55 +1817,90 @@ Version 4.0 HI-TECH Software Intermediate Code
 "70
 [p x EBTRB  =  OFF       ]
 "12 maincode00.c
-[; ;maincode00.c: 12: void configuro(void){
+[; ;maincode00.c: 12: unsigned int cuenta = 0;
+[v _cuenta `ui ~T0 @X0 1 e ]
+[i _cuenta
+-> -> 0 `i `ui
+]
+"14
+[; ;maincode00.c: 14: void configuro(void){
 [v _configuro `(v ~T0 @X0 1 ef ]
 {
 [e :U _configuro ]
 [f ]
-"14
-[; ;maincode00.c: 14:     OSCCON1 = 0x60;
-[e = _OSCCON1 -> -> 96 `i `uc ]
-"15
-[; ;maincode00.c: 15:     OSCFRQ = 0x02;
-[e = _OSCFRQ -> -> 2 `i `uc ]
 "16
-[; ;maincode00.c: 16:     OSCEN = 0x40;
+[; ;maincode00.c: 16:     OSCCON1 = 0x60;
+[e = _OSCCON1 -> -> 96 `i `uc ]
+"17
+[; ;maincode00.c: 17:     OSCFRQ = 0x06;
+[e = _OSCFRQ -> -> 6 `i `uc ]
+"18
+[; ;maincode00.c: 18:     OSCEN = 0x40;
 [e = _OSCEN -> -> 64 `i `uc ]
-"21
-[; ;maincode00.c: 21:     LCD_INIT();
+"23
+[; ;maincode00.c: 23:     LCD_INIT();
 [e ( _LCD_INIT ..  ]
-"22
-[; ;maincode00.c: 22: }
+"24
+[; ;maincode00.c: 24: }
 [e :UE 1796 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"24
-[; ;maincode00.c: 24: void main(void) {
+"26
+[; ;maincode00.c: 26: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"25
-[; ;maincode00.c: 25:     configuro();
-[e ( _configuro ..  ]
-"26
-[; ;maincode00.c: 26:     POS_CURSOR(1,0);
-[e ( _POS_CURSOR (2 , -> -> 1 `i `uc -> -> 0 `i `uc ]
 "27
-[; ;maincode00.c: 27:     ESCRIBE_MENSAJE2("Hola verano");
-[e ( _ESCRIBE_MENSAJE2 (1 :s 1C ]
+[; ;maincode00.c: 27:     configuro();
+[e ( _configuro ..  ]
 "28
-[; ;maincode00.c: 28:     while(1){
+[; ;maincode00.c: 28:     POS_CURSOR(1,1);
+[e ( _POS_CURSOR (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
+"29
+[; ;maincode00.c: 29:     ESCRIBE_MENSAJE2("Hola veranon");
+[e ( _ESCRIBE_MENSAJE2 (1 :s 1C ]
+"30
+[; ;maincode00.c: 30:     POS_CURSOR(2,0);
+[e ( _POS_CURSOR (2 , -> -> 2 `i `uc -> -> 0 `i `uc ]
+"31
+[; ;maincode00.c: 31:     ESCRIBE_MENSAJE2("Microbios 2026");
+[e ( _ESCRIBE_MENSAJE2 (1 :s 2C ]
+"32
+[; ;maincode00.c: 32:     _delay((unsigned long)((3000)*(32000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 3000 `i `d / -> -> 32000000 `ul `d .4000.0 `ul ]
+"33
+[; ;maincode00.c: 33:     BORRAR_LCD();
+[e ( _BORRAR_LCD ..  ]
+"34
+[; ;maincode00.c: 34:     while(1){
 [e :U 1799 ]
 {
-"30
-[; ;maincode00.c: 30:     }
+"35
+[; ;maincode00.c: 35:         POS_CURSOR(2,0);
+[e ( _POS_CURSOR (2 , -> -> 2 `i `uc -> -> 0 `i `uc ]
+"36
+[; ;maincode00.c: 36:         ESCRIBE_MENSAJE2("Cuenta:");
+[e ( _ESCRIBE_MENSAJE2 (1 :s 3C ]
+"37
+[; ;maincode00.c: 37:         LCD_ESCRIBE_VAR_INT(cuenta, 5);
+[e ( _LCD_ESCRIBE_VAR_INT (2 , _cuenta -> -> 5 `i `uc ]
+"38
+[; ;maincode00.c: 38:         _delay((unsigned long)((50)*(32000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 32000000 `ul `d .4000.0 `ul ]
+"39
+[; ;maincode00.c: 39:         cuenta = cuenta + 1;
+[e = _cuenta + _cuenta -> -> 1 `i `ui ]
+"40
+[; ;maincode00.c: 40:     }
 }
 [e :U 1798 ]
 [e $U 1799  ]
 [e :U 1800 ]
-"31
-[; ;maincode00.c: 31: }
+"41
+[; ;maincode00.c: 41: }
 [e :UE 1797 ]
 }
-[a 1C 72 111 108 97 32 118 101 114 97 110 111 0 ]
+[a 1C 72 111 108 97 32 118 101 114 97 110 111 110 0 ]
+[a 3C 67 117 101 110 116 97 58 0 ]
+[a 2C 77 105 99 114 111 98 105 111 115 32 50 48 50 54 0 ]

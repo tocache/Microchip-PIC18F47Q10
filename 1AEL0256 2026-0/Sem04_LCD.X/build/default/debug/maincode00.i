@@ -22189,7 +22189,13 @@ unsigned char __t3rd16on(void);
 #pragma config EBTRB = OFF
 # 9 "maincode00.c" 2
 # 1 "./LCD.h" 1
-# 11 "./LCD.h"
+
+
+
+
+
+
+
 void POS_CURSOR(unsigned char fila,unsigned char columna);
 void DISPLAY_ONOFF(unsigned char estado);
 void CURSOR_HOME(void);
@@ -22203,16 +22209,6 @@ void LEER_LCD(void);
 void BLINK_CURSOR(unsigned char val);
 void GENERACARACTER(const unsigned char *vector,unsigned char pos);
 void ESCRIBE_MENSAJE(const char *cadena,unsigned char tam);
-void ESCRIBE_MENSAJE2(const char *cadena);
-void CURSOR_SHIFTLEFT(void);
-void CURSOR_SHIFTRIGHT(void);
-void DISPLAY_SHIFTLEFT(void);
-void DISPLAY_SHIFTRIGHT(void);
-void LCD_INIT(void);
-void LCD_ESCRIBE_VAR_CHAR(unsigned char numero, unsigned char n_digitos);
-void LCD_ESCRIBE_VAR_INT(unsigned int numero, unsigned char n_digitos);
-void LCD_CHAR_GRADO(void);
-void LCD_VARCHAR_BITS(unsigned char dato);
 # 10 "maincode00.c" 2
 
 
@@ -22233,16 +22229,11 @@ void configuro(void){
 void main(void) {
     configuro();
     POS_CURSOR(1,1);
-    ESCRIBE_MENSAJE2("Hola veranon");
+    ESCRIBE_MENSAJE("Hola verano", 16);
     POS_CURSOR(2,0);
-    ESCRIBE_MENSAJE2("Microbios 2026");
+    ESCRIBE_MENSAJE("Microbios 2026", 16);
     _delay((unsigned long)((3000)*(32000000UL/4000.0)));
     BORRAR_LCD();
     while(1){
-        POS_CURSOR(2,0);
-        ESCRIBE_MENSAJE2("Cuenta:");
-        LCD_ESCRIBE_VAR_INT(cuenta, 5);
-        _delay((unsigned long)((50)*(32000000UL/4000.0)));
-        cuenta = cuenta + 1;
     }
 }
