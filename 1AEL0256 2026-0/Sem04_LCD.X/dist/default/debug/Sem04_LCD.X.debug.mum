@@ -1,6 +1,6 @@
 
 18F47Q10 Memory Summary:
-    Program space        used   D34h (  3380) of 20000h bytes   (  2.6%)
+    Program space        used   CCAh (  3274) of 20000h bytes   (  2.5%)
     Data space           used    41h (    65) of   D1Fh bytes   (  1.9%)
     Configuration bits   used     6h (     6) of     6h words   (100.0%)
     EEPROM space         used     0h (     0) of   400h bytes   (  0.0%)

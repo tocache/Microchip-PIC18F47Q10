@@ -21,6 +21,8 @@
                    projectFiles="true">
       <itemPath>maincode00.c</itemPath>
       <itemPath>LCD.c</itemPath>
+      <itemPath>maincode01.c</itemPath>
+      <itemPath>maincode02.c</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
@@ -232,6 +234,10 @@
         <property key="user-pack-device-support" value=""/>
         <property key="wpo-lto" value="false"/>
       </XC8-config-global>
+      <item path="maincode00.c" ex="true" overriding="false">
+      </item>
+      <item path="maincode01.c" ex="true" overriding="false">
+      </item>
       <nEdbgTool>
         <property key="AutoSelectMemRanges" value="auto"/>
         <property key="Freeze Peripherals" value="true"/>
@@ -266,6 +272,8 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-1ffff"/>
         <property key="poweroptions.powerenable" value="true"/>
+        <property key="programmerToGoFilePath"
+                  value="D:/Microchip-PIC18F47Q10/1AEL0256 2026-01/Sem04_LCD.X/debug/default/Sem04_LCD_ptg"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
         <property key="programoptions.preservedataflash.ranges"

@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=maincode00.c LCD.c
+SOURCEFILES_QUOTED_IF_SPACED=LCD.c maincode02.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/maincode00.p1 ${OBJECTDIR}/LCD.p1
-POSSIBLE_DEPFILES=${OBJECTDIR}/maincode00.p1.d ${OBJECTDIR}/LCD.p1.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/LCD.p1 ${OBJECTDIR}/maincode02.p1
+POSSIBLE_DEPFILES=${OBJECTDIR}/LCD.p1.d ${OBJECTDIR}/maincode02.p1.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/maincode00.p1 ${OBJECTDIR}/LCD.p1
+OBJECTFILES=${OBJECTDIR}/LCD.p1 ${OBJECTDIR}/maincode02.p1
 
 # Source Files
-SOURCEFILES=maincode00.c LCD.c
+SOURCEFILES=LCD.c maincode02.c
 
 
 
@@ -88,14 +88,6 @@ MP_PROCESSOR_OPTION=18F47Q10
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/maincode00.p1: maincode00.c  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/maincode00.p1.d 
-	@${RM} ${OBJECTDIR}/maincode00.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -mdebugger=none   -mdfp="${DFP_DIR}/xc8"  -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/maincode00.p1 maincode00.c 
-	@-${MV} ${OBJECTDIR}/maincode00.d ${OBJECTDIR}/maincode00.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/maincode00.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
-	
 ${OBJECTDIR}/LCD.p1: LCD.c  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/LCD.p1.d 
@@ -104,15 +96,15 @@ ${OBJECTDIR}/LCD.p1: LCD.c  nbproject/Makefile-${CND_CONF}.mk
 	@-${MV} ${OBJECTDIR}/LCD.d ${OBJECTDIR}/LCD.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/LCD.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-else
-${OBJECTDIR}/maincode00.p1: maincode00.c  nbproject/Makefile-${CND_CONF}.mk 
+${OBJECTDIR}/maincode02.p1: maincode02.c  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/maincode00.p1.d 
-	@${RM} ${OBJECTDIR}/maincode00.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/maincode00.p1 maincode00.c 
-	@-${MV} ${OBJECTDIR}/maincode00.d ${OBJECTDIR}/maincode00.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/maincode00.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	@${RM} ${OBJECTDIR}/maincode02.p1.d 
+	@${RM} ${OBJECTDIR}/maincode02.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -mdebugger=none   -mdfp="${DFP_DIR}/xc8"  -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/maincode02.p1 maincode02.c 
+	@-${MV} ${OBJECTDIR}/maincode02.d ${OBJECTDIR}/maincode02.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/maincode02.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
+else
 ${OBJECTDIR}/LCD.p1: LCD.c  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/LCD.p1.d 
@@ -120,6 +112,14 @@ ${OBJECTDIR}/LCD.p1: LCD.c  nbproject/Makefile-${CND_CONF}.mk
 	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/LCD.p1 LCD.c 
 	@-${MV} ${OBJECTDIR}/LCD.d ${OBJECTDIR}/LCD.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/LCD.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/maincode02.p1: maincode02.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/maincode02.p1.d 
+	@${RM} ${OBJECTDIR}/maincode02.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/maincode02.p1 maincode02.c 
+	@-${MV} ${OBJECTDIR}/maincode02.d ${OBJECTDIR}/maincode02.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/maincode02.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
 endif
 
