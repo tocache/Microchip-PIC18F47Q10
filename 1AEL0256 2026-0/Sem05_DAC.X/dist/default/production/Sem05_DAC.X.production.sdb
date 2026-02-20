@@ -87,9 +87,11 @@
 [v _LEER_LCD LEER_LCD `(v  1 e 1 0 ]
 "192
 [v _LCD_INIT LCD_INIT `(v  1 e 1 0 ]
-"12 D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode02.c
+"12 D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode03.c
 [v _configuro configuro `(v  1 e 1 0 ]
-"29
+"32
+[v _tomamuestra_ADC tomamuestra_ADC `(ui  1 e 2 0 ]
+"38
 [v _main main `(v  1 e 1 0 ]
 "16625 C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f47q10.h
 [v _OSCCON1 OSCCON1 `VEuc  1 e 1 @3795 ]
@@ -97,12 +99,55 @@
 [v _OSCEN OSCEN `VEuc  1 e 1 @3799 ]
 "17026
 [v _OSCFRQ OSCFRQ `VEuc  1 e 1 @3801 ]
+[s S172 . 1 `uc 1 ANSELA0 1 0 :1:0 
+`uc 1 ANSELA1 1 0 :1:1 
+`uc 1 ANSELA2 1 0 :1:2 
+`uc 1 ANSELA3 1 0 :1:3 
+`uc 1 ANSELA4 1 0 :1:4 
+`uc 1 ANSELA5 1 0 :1:5 
+`uc 1 ANSELA6 1 0 :1:6 
+`uc 1 ANSELA7 1 0 :1:7 
+]
+"19534
+[u S181 . 1 `S172 1 . 1 0 ]
+[v _ANSELAbits ANSELAbits `VES181  1 e 1 @3852 ]
 "20819
 [v _ANSELD ANSELD `VEuc  1 e 1 @3873 ]
 "21437
 [v _DAC1CON0 DAC1CON0 `VEuc  1 e 1 @3886 ]
 "21538
 [v _DAC1CON1 DAC1CON1 `VEuc  1 e 1 @3887 ]
+"24860
+[v _ADPCH ADPCH `VEuc  1 e 1 @3930 ]
+[s S193 . 1 `uc 1 ADGO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ADCONT 1 0 :1:6 
+`uc 1 ADON 1 0 :1:7 
+]
+"24953
+[s S202 . 1 `uc 1 GO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM0 1 0 :1:2 
+]
+[s S206 . 1 `uc 1 DONE 1 0 :1:0 
+]
+[s S208 . 1 `uc 1 GO_NOT_DONE 1 0 :1:0 
+]
+[s S210 . 1 `uc 1 GO_nDONE 1 0 :1:0 
+]
+[s S212 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 ADCAL 1 0 :1:7 
+]
+[u S215 . 1 `S193 1 . 1 0 `S202 1 . 1 0 `S206 1 . 1 0 `S208 1 . 1 0 `S210 1 . 1 0 `S212 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES215  1 e 1 @3931 ]
+"25167
+[v _ADRESL ADRESL `VEuc  1 e 1 @3934 ]
+"25237
+[v _ADRESH ADRESH `VEuc  1 e 1 @3935 ]
 "27674
 [v _LATD LATD `VEuc  1 e 1 @3973 ]
 [s S39 . 1 `uc 1 LATD0 1 0 :1:0 
@@ -117,23 +162,36 @@
 "27691
 [u S48 . 1 `S39 1 . 1 0 ]
 [v _LATDbits LATDbits `VES48  1 e 1 @3973 ]
+[s S151 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"27790
+[u S160 . 1 `S151 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES160  1 e 1 @3975 ]
 "28134
 [v _TRISD TRISD `VEuc  1 e 1 @3978 ]
 "28504
 [v _PORTD PORTD `VEuc  1 e 1 @3983 ]
-"27 D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode02.c
-[v _seno seno `[34]uc  1 e 34 0 ]
-"29
+"38 D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode03.c
 [v _main main `(v  1 e 1 0 ]
 {
+"48
+} 0
+"32
+[v _tomamuestra_ADC tomamuestra_ADC `(ui  1 e 2 0 ]
+{
 "36
-[v main@x_var x_var `uc  1 a 1 9 ]
-"41
 } 0
 "12
 [v _configuro configuro `(v  1 e 1 0 ]
 {
-"25
+"30
 } 0
 "192 D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
 [v _LCD_INIT LCD_INIT `(v  1 e 1 0 ]

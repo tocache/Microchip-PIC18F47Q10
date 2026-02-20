@@ -23,6 +23,7 @@
       <itemPath>LCD.c</itemPath>
       <itemPath>maincode01.c</itemPath>
       <itemPath>maincode02.c</itemPath>
+      <itemPath>maincode03.c</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
@@ -190,6 +191,8 @@
       <item path="maincode00.c" ex="true" overriding="false">
       </item>
       <item path="maincode01.c" ex="true" overriding="false">
+      </item>
+      <item path="maincode02.c" ex="true" overriding="false">
       </item>
     </conf>
   </confs>
