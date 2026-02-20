@@ -1,0 +1,553 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\klnla\AppData\Local\Temp\xcAsch4.0\driver_tmp_9.o
+init CODE 0 1FFFC 1FFFC 4 1 2
+reset_vec CODE 0 0 0 4 1 2
+config CONFIG 4 300000 300000 C 1 1
+$dist/default/production\Sem05_Serial.X.production.o
+cinit CODE 0 131E 131E 6 1 2
+text0 CODE 0 127E 127E 30 1 2
+text1 CODE 0 12FA 12FA 14 1 2
+text2 CODE 0 115E 115E 42 1 2
+text3 CODE 0 110A 110A 54 1 2
+text4 CODE 0 12AE 12AE 30 1 2
+text5 CODE 0 130E 130E 8 1 2
+text6 CODE 0 1316 1316 8 1 2
+text7 CODE 0 1022 1022 76 1 2
+text8 CODE 0 121A 121A 32 1 2
+text9 CODE 0 11A0 11A0 42 1 2
+text10 CODE 0 11E2 11E2 38 1 2
+text11 CODE 0 124C 124C 32 1 2
+text12 CODE 0 1098 1098 72 1 2
+text13 CODE 0 12DE 12DE 1C 1 2
+cstackCOMRAM COMRAM 1 1 1 7 1 1
+smallconst SMALLCONST 0 1000 1000 22 1 2
+config CONFIG 4 300000 300000 C 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 60-CFF 1
+RAM E00-E1E 1
+SFR D00-DFF 1
+SFR E1F-FFF 1
+BANK0 60-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+BANK8 800-8FF 1
+BANK9 900-9FF 1
+CONST 4-FFF 1
+CONST 1324-1FFFB 1
+IDLOC 200000-2000FF 1
+SMALLCONST 1324-FFFF 1
+SMALLCONST 11000-1FFFB 1
+CODE 4-FFF 1
+CODE 1324-1FFFB 1
+BANK10 A00-AFF 1
+BANK11 B00-BFF 1
+BANK12 C00-CFF 1
+BANK14 E00-E1E 1
+BIGRAM 8-CFF 1
+BIGRAM E00-E1E 1
+BIGSFR D00-DFF 1
+BIGSFR E1F-FFF 1
+COMRAM 8-5F 1
+EEDATA 310000-3103FF 1
+MEDIUMCONST 1324-FFFF 1
+MEDIUMCONST 11000-1FFFB 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\Sem05_Serial.X.production.o
+12DE text13 CODE >126:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+12E0 text13 CODE >128:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+12E4 text13 CODE >129:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+12E8 text13 CODE >130:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+12EC text13 CODE >131:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+12EE text13 CODE >132:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+12F6 text13 CODE >133:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+12F8 text13 CODE >134:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1098 text12 CODE >152:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1098 text12 CODE >155:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+109C text12 CODE >156:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+109E text12 CODE >157:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+10A0 text12 CODE >158:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+10A2 text12 CODE >159:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+10AA text12 CODE >160:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+10AE text12 CODE >161:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+10B0 text12 CODE >162:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+10B8 text12 CODE >163:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+10BA text12 CODE >164:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+10C2 text12 CODE >165:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+10C4 text12 CODE >166:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+10CA text12 CODE >167:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+10CE text12 CODE >169:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+10D0 text12 CODE >170:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+10D8 text12 CODE >171:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+10DC text12 CODE >172:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+10DE text12 CODE >173:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+10E6 text12 CODE >174:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+10E8 text12 CODE >175:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+10F0 text12 CODE >176:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+10F6 text12 CODE >167:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1108 text12 CODE >179:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+124C text11 CODE >88:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+124E text11 CODE >91:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1250 text11 CODE >92:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1254 text11 CODE >93:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1256 text11 CODE >94:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+125E text11 CODE >95:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1260 text11 CODE >96:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1262 text11 CODE >97:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1264 text11 CODE >98:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+126A text11 CODE >99:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1270 text11 CODE >100:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1276 text11 CODE >101:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+127C text11 CODE >102:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+11E2 text10 CODE >5:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
+11E2 text10 CODE >7:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
+11E6 text10 CODE >8:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
+11EA text10 CODE >9:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
+11EC text10 CODE >8:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
+120C text10 CODE >11:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
+1218 text10 CODE >12:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
+11A0 text9 CODE >77:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+11A0 text9 CODE >80:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+11AC text9 CODE >81:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+11AC text9 CODE >82:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+11B2 text9 CODE >84:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+11CC text9 CODE >85:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+11E0 text9 CODE >86:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+121A text8 CODE >136:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+121C text8 CODE >139:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+121E text8 CODE >140:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1222 text8 CODE >141:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1224 text8 CODE >142:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+122C text8 CODE >143:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+122E text8 CODE >144:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1230 text8 CODE >145:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1232 text8 CODE >146:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1238 text8 CODE >147:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+123E text8 CODE >148:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1244 text8 CODE >149:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+124A text8 CODE >150:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1022 text7 CODE >5:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1024 text7 CODE >7:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1034 text7 CODE >9:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+103C text7 CODE >10:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1040 text7 CODE >11:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1052 text7 CODE >13:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+105A text7 CODE >14:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+105E text7 CODE >15:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1070 text7 CODE >17:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1078 text7 CODE >18:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+107C text7 CODE >19:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+108E text7 CODE >21:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1096 text7 CODE >23:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1316 text6 CODE >104:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1316 text6 CODE >106:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+131C text6 CODE >107:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+130E text5 CODE >37:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+130E text5 CODE >39:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1314 text5 CODE >40:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+12AE text4 CODE >62:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+12B0 text4 CODE >64:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+12C6 text4 CODE >65:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+12DC text4 CODE >66:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+110A text3 CODE >109:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+110A text3 CODE >111:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+110C text3 CODE >112:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+110E text3 CODE >113:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1114 text3 CODE >114:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1124 text3 CODE >115:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+112A text3 CODE >116:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1132 text3 CODE >117:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1138 text3 CODE >118:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+113E text3 CODE >119:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1144 text3 CODE >120:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+114A text3 CODE >121:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1150 text3 CODE >122:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1156 text3 CODE >123:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+115C text3 CODE >124:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+115E text2 CODE >192:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+115E text2 CODE >193:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1160 text2 CODE >194:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1164 text2 CODE >195:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1168 text2 CODE >196:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+116C text2 CODE >197:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+117C text2 CODE >198:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1180 text2 CODE >199:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1190 text2 CODE >200:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1194 text2 CODE >201:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+1198 text2 CODE >202:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+119E text2 CODE >203:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+12FA text1 CODE >13:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\maincode00.c
+12FA text1 CODE >15:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\maincode00.c
+1300 text1 CODE >16:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\maincode00.c
+1304 text1 CODE >17:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\maincode00.c
+1308 text1 CODE >19:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\maincode00.c
+130C text1 CODE >20:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\maincode00.c
+127E text0 CODE >22:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\maincode00.c
+127E text0 CODE >23:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\maincode00.c
+1282 text0 CODE >24:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\maincode00.c
+128C text0 CODE >25:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\maincode00.c
+1294 text0 CODE >26:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\maincode00.c
+129E text0 CODE >27:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\maincode00.c
+12A6 text0 CODE >28:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\maincode00.c
+12A6 text0 CODE >30:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\maincode00.c
+131E cinit CODE >2517:C:\Users\klnla\AppData\Local\Temp\xcAsch4.0\driver_tmp_1.s
+131E cinit CODE >2519:C:\Users\klnla\AppData\Local\Temp\xcAsch4.0\driver_tmp_1.s
+131E cinit CODE >2522:C:\Users\klnla\AppData\Local\Temp\xcAsch4.0\driver_tmp_1.s
+131E cinit CODE >2528:C:\Users\klnla\AppData\Local\Temp\xcAsch4.0\driver_tmp_1.s
+131E cinit CODE >2530:C:\Users\klnla\AppData\Local\Temp\xcAsch4.0\driver_tmp_1.s
+1320 cinit CODE >2531:C:\Users\klnla\AppData\Local\Temp\xcAsch4.0\driver_tmp_1.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\Sem05_Serial.X.production.o
+__Hspace_0 20000 0 ABS 0 - dist/default/production\Sem05_Serial.X.production.o
+__Hspace_1 8 0 ABS 0 - dist/default/production\Sem05_Serial.X.production.o
+__Hspace_2 0 0 ABS 0 - dist/default/production\Sem05_Serial.X.production.o
+__Hspace_4 60000C 0 ABS 0 - dist/default/production\Sem05_Serial.X.production.o
+ENVIA_CHAR@aux 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_Serial.X.production.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\Sem05_Serial.X.production.o
+__mediumconst 1000 0 SMALLCONST 0 smallconst dist/default/production\Sem05_Serial.X.production.o
+_ENVIA_LCD_CMD 121A 0 CODE 0 text8 dist/default/production\Sem05_Serial.X.production.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Sem05_Serial.X.production.o
+__L__absolute__ 0 0 ABS 0 __absolute__ dist/default/production\Sem05_Serial.X.production.o
+_LCD_CONFIG 110A 0 CODE 0 text3 dist/default/production\Sem05_Serial.X.production.o
+__Lsmallconst 1000 0 SMALLCONST 0 smallconst dist/default/production\Sem05_Serial.X.production.o
+_LATD F85 0 ABS 0 - dist/default/production\Sem05_Serial.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\klnla\AppData\Local\Temp\xcAsch4.0\driver_tmp_9.o
+_main 127E 0 CODE 0 text0 dist/default/production\Sem05_Serial.X.production.o
+ENVIA_NIBBLE@dato 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_Serial.X.production.o
+___stack_hi 0 0 STACK 2 stack C:\Users\klnla\AppData\Local\Temp\xcAsch4.0\driver_tmp_9.o
+___stack_lo 0 0 STACK 2 stack C:\Users\klnla\AppData\Local\Temp\xcAsch4.0\driver_tmp_9.o
+__end_of_ENVIA_CHAR 127E 0 CODE 0 text11 dist/default/production\Sem05_Serial.X.production.o
+start 1FFFC 0 CODE 0 init C:\Users\klnla\AppData\Local\Temp\xcAsch4.0\driver_tmp_9.o
+_LCD_INIT 115E 0 CODE 0 text2 dist/default/production\Sem05_Serial.X.production.o
+__Hpowerup 0 0 CODE 0 powerup dist/default/production\Sem05_Serial.X.production.o
+__accesstop 60 0 ABS 0 - C:\Users\klnla\AppData\Local\Temp\xcAsch4.0\driver_tmp_9.o
+__end_of_LCD_INIT 11A0 0 CODE 0 text2 dist/default/production\Sem05_Serial.X.production.o
+intlevel0 0 0 CODE 0 text C:\Users\klnla\AppData\Local\Temp\xcAsch4.0\driver_tmp_9.o
+intlevel1 0 0 CODE 0 text C:\Users\klnla\AppData\Local\Temp\xcAsch4.0\driver_tmp_9.o
+intlevel2 0 0 CODE 0 text C:\Users\klnla\AppData\Local\Temp\xcAsch4.0\driver_tmp_9.o
+intlevel3 0 0 CODE 0 text C:\Users\klnla\AppData\Local\Temp\xcAsch4.0\driver_tmp_9.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\Sem05_Serial.X.production.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\Sem05_Serial.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\Sem05_Serial.X.production.o
+__end_of_configuro 130E 0 CODE 0 text1 dist/default/production\Sem05_Serial.X.production.o
+__end_of_LCD_CONFIG 115E 0 CODE 0 text3 dist/default/production\Sem05_Serial.X.production.o
+_ANSELC F1C 0 ABS 0 - dist/default/production\Sem05_Serial.X.production.o
+_ANSELD F21 0 ABS 0 - dist/default/production\Sem05_Serial.X.production.o
+_CURSOR_HOME 130E 0 CODE 0 text5 dist/default/production\Sem05_Serial.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\klnla\AppData\Local\Temp\xcAsch4.0\driver_tmp_9.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\klnla\AppData\Local\Temp\xcAsch4.0\driver_tmp_9.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\Sem05_Serial.X.production.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\Sem05_Serial.X.production.o
+_configuro 12FA 0 CODE 0 text1 dist/default/production\Sem05_Serial.X.production.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\Sem05_Serial.X.production.o
+__Hintcodelo 18 0 CODE 0 intcodelo dist/default/production\Sem05_Serial.X.production.o
+?_strlen 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_Serial.X.production.o
+__end_of_ENVIA_LCD_CMD 124C 0 CODE 0 text8 dist/default/production\Sem05_Serial.X.production.o
+__Lintcodelo 18 0 CODE 0 intcodelo dist/default/production\Sem05_Serial.X.production.o
+start_initialization 131E 0 CODE 0 cinit dist/default/production\Sem05_Serial.X.production.o
+_ESCRIBE_MENSAJE2 11A0 0 CODE 0 text9 dist/default/production\Sem05_Serial.X.production.o
+_OSCFRQ ED9 0 ABS 0 - dist/default/production\Sem05_Serial.X.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\Sem05_Serial.X.production.o
+___rparam_used 1 0 ABS 0 - dist/default/production\Sem05_Serial.X.production.o
+_BORRAR_LCD 1316 0 CODE 0 text6 dist/default/production\Sem05_Serial.X.production.o
+LEER_LCD@aux 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_Serial.X.production.o
+isa$xinst 0 0 ABS 0 - C:\Users\klnla\AppData\Local\Temp\xcAsch4.0\driver_tmp_9.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\Sem05_Serial.X.production.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\Sem05_Serial.X.production.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\Sem05_Serial.X.production.o
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\Sem05_Serial.X.production.o
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\Sem05_Serial.X.production.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\Sem05_Serial.X.production.o
+__Hbank6 0 0 ABS 0 bank6 dist/default/production\Sem05_Serial.X.production.o
+__Hbank7 0 0 ABS 0 bank7 dist/default/production\Sem05_Serial.X.production.o
+__Hbank8 0 0 ABS 0 bank8 dist/default/production\Sem05_Serial.X.production.o
+__Hbank9 0 0 ABS 0 bank9 dist/default/production\Sem05_Serial.X.production.o
+__Hcinit 0 0 ABS 0 cinit dist/default/production\Sem05_Serial.X.production.o
+__Hconst 0 0 CONST 0 const dist/default/production\Sem05_Serial.X.production.o
+__end_of_strlen 121A 0 CODE 0 text10 dist/default/production\Sem05_Serial.X.production.o
+__Hidata 0 0 CODE 0 idata dist/default/production\Sem05_Serial.X.production.o
+__Hidloc 0 0 ABS 0 idloc dist/default/production\Sem05_Serial.X.production.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\Sem05_Serial.X.production.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\Sem05_Serial.X.production.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\Sem05_Serial.X.production.o
+__Hstack 0 0 STACK 2 stack dist/default/production\Sem05_Serial.X.production.o
+__Htext0 0 0 ABS 0 text0 dist/default/production\Sem05_Serial.X.production.o
+__Htext1 0 0 ABS 0 text1 dist/default/production\Sem05_Serial.X.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production\Sem05_Serial.X.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production\Sem05_Serial.X.production.o
+__Htext4 0 0 ABS 0 text4 dist/default/production\Sem05_Serial.X.production.o
+__Htext5 0 0 ABS 0 text5 dist/default/production\Sem05_Serial.X.production.o
+__Htext6 0 0 ABS 0 text6 dist/default/production\Sem05_Serial.X.production.o
+__Htext7 0 0 ABS 0 text7 dist/default/production\Sem05_Serial.X.production.o
+__Htext8 0 0 ABS 0 text8 dist/default/production\Sem05_Serial.X.production.o
+__Htext9 0 0 ABS 0 text9 dist/default/production\Sem05_Serial.X.production.o
+__Hbank10 0 0 ABS 0 bank10 dist/default/production\Sem05_Serial.X.production.o
+__Hbank11 0 0 ABS 0 bank11 dist/default/production\Sem05_Serial.X.production.o
+__Hbank12 0 0 ABS 0 bank12 dist/default/production\Sem05_Serial.X.production.o
+__Hbank14 0 0 ABS 0 bank14 dist/default/production\Sem05_Serial.X.production.o
+_POS_CURSOR 1022 0 CODE 0 text7 dist/default/production\Sem05_Serial.X.production.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Sem05_Serial.X.production.o
+__Hbigram 0 0 ABS 0 bigram dist/default/production\Sem05_Serial.X.production.o
+__Hbigsfr 0 0 ABS 0 bigsfr dist/default/production\Sem05_Serial.X.production.o
+__smallconst 1000 0 SMALLCONST 0 smallconst dist/default/production\Sem05_Serial.X.production.o
+__Hcomram 0 0 ABS 0 comram dist/default/production\Sem05_Serial.X.production.o
+__Hconfig 30000C 0 CONFIG 4 config dist/default/production\Sem05_Serial.X.production.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\Sem05_Serial.X.production.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\Sem05_Serial.X.production.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\Sem05_Serial.X.production.o
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\Sem05_Serial.X.production.o
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\Sem05_Serial.X.production.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\Sem05_Serial.X.production.o
+__Lbank6 0 0 ABS 0 bank6 dist/default/production\Sem05_Serial.X.production.o
+__Lbank7 0 0 ABS 0 bank7 dist/default/production\Sem05_Serial.X.production.o
+__Lbank8 0 0 ABS 0 bank8 dist/default/production\Sem05_Serial.X.production.o
+__Lbank9 0 0 ABS 0 bank9 dist/default/production\Sem05_Serial.X.production.o
+__Lcinit 0 0 ABS 0 cinit dist/default/production\Sem05_Serial.X.production.o
+__Lconst 0 0 CONST 0 const dist/default/production\Sem05_Serial.X.production.o
+__Lidata 0 0 CODE 0 idata dist/default/production\Sem05_Serial.X.production.o
+__Lidloc 0 0 ABS 0 idloc dist/default/production\Sem05_Serial.X.production.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\Sem05_Serial.X.production.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\Sem05_Serial.X.production.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\Sem05_Serial.X.production.o
+__Lstack 0 0 STACK 2 stack dist/default/production\Sem05_Serial.X.production.o
+__Ltext0 0 0 ABS 0 text0 dist/default/production\Sem05_Serial.X.production.o
+__Ltext1 0 0 ABS 0 text1 dist/default/production\Sem05_Serial.X.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production\Sem05_Serial.X.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production\Sem05_Serial.X.production.o
+__Ltext4 0 0 ABS 0 text4 dist/default/production\Sem05_Serial.X.production.o
+__Ltext5 0 0 ABS 0 text5 dist/default/production\Sem05_Serial.X.production.o
+__Ltext6 0 0 ABS 0 text6 dist/default/production\Sem05_Serial.X.production.o
+__Ltext7 0 0 ABS 0 text7 dist/default/production\Sem05_Serial.X.production.o
+__Ltext8 0 0 ABS 0 text8 dist/default/production\Sem05_Serial.X.production.o
+__Ltext9 0 0 ABS 0 text9 dist/default/production\Sem05_Serial.X.production.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\Sem05_Serial.X.production.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\Sem05_Serial.X.production.o
+__Habs1 0 0 ABS 0 abs1 dist/default/production\Sem05_Serial.X.production.o
+__Hdata 0 0 ABS 0 data dist/default/production\Sem05_Serial.X.production.o
+__Hheap 0 0 HEAP 7 heap dist/default/production\Sem05_Serial.X.production.o
+__Hinit 20000 0 CODE 0 init dist/default/production\Sem05_Serial.X.production.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\Sem05_Serial.X.production.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\Sem05_Serial.X.production.o
+__Htemp 0 0 COMRAM 1 temp dist/default/production\Sem05_Serial.X.production.o
+__Htext 0 0 ABS 0 text dist/default/production\Sem05_Serial.X.production.o
+__Labs1 0 0 ABS 0 abs1 dist/default/production\Sem05_Serial.X.production.o
+__Ldata 0 0 ABS 0 data dist/default/production\Sem05_Serial.X.production.o
+__Lheap 0 0 HEAP 7 heap dist/default/production\Sem05_Serial.X.production.o
+__Linit 1FFFC 0 CODE 0 init dist/default/production\Sem05_Serial.X.production.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\Sem05_Serial.X.production.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\Sem05_Serial.X.production.o
+__Ltemp 0 0 COMRAM 1 temp dist/default/production\Sem05_Serial.X.production.o
+__Ltext 0 0 ABS 0 text dist/default/production\Sem05_Serial.X.production.o
+__end_of_BORRAR_LCD 131E 0 CODE 0 text6 dist/default/production\Sem05_Serial.X.production.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\Sem05_Serial.X.production.o
+POS_CURSOR@fila 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_Serial.X.production.o
+__Hintret 0 0 ABS 0 intret dist/default/production\Sem05_Serial.X.production.o
+_CURSOR_ONOFF 12AE 0 CODE 0 text4 dist/default/production\Sem05_Serial.X.production.o
+__Hirdata 0 0 CODE 0 irdata dist/default/production\Sem05_Serial.X.production.o
+__S0 20000 0 ABS 0 - dist/default/production\Sem05_Serial.X.production.o
+__S1 8 0 ABS 0 - dist/default/production\Sem05_Serial.X.production.o
+__S4 0 0 ABS 0 - dist/default/production\Sem05_Serial.X.production.o
+__S5 0 0 ABS 0 - dist/default/production\Sem05_Serial.X.production.o
+__end_of_ESCRIBE_MENSAJE2 11E2 0 CODE 0 text9 dist/default/production\Sem05_Serial.X.production.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\Sem05_Serial.X.production.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\Sem05_Serial.X.production.o
+__end_of_POS_CURSOR 1098 0 CODE 0 text7 dist/default/production\Sem05_Serial.X.production.o
+__Lintentry 0 0 ABS 0 intentry dist/default/production\Sem05_Serial.X.production.o
+__Hramtop 1000 0 RAM 0 ramtop dist/default/production\Sem05_Serial.X.production.o
+strlen@a 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_Serial.X.production.o
+strlen@s 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_Serial.X.production.o
+_ENVIA_NIBBLE 12DE 0 CODE 0 text13 dist/default/production\Sem05_Serial.X.production.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\Sem05_Serial.X.production.o
+__activetblptr 3 0 ABS 0 - dist/default/production\Sem05_Serial.X.production.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\Sem05_Serial.X.production.o
+__Htext10 0 0 ABS 0 text10 dist/default/production\Sem05_Serial.X.production.o
+__Htext11 0 0 ABS 0 text11 dist/default/production\Sem05_Serial.X.production.o
+__Htext12 0 0 ABS 0 text12 dist/default/production\Sem05_Serial.X.production.o
+__Htext13 0 0 ABS 0 text13 dist/default/production\Sem05_Serial.X.production.o
+__end_of_CURSOR_HOME 1316 0 CODE 0 text5 dist/default/production\Sem05_Serial.X.production.o
+__ptext10 11E2 0 CODE 0 text10 dist/default/production\Sem05_Serial.X.production.o
+__ptext11 124C 0 CODE 0 text11 dist/default/production\Sem05_Serial.X.production.o
+__ptext12 1098 0 CODE 0 text12 dist/default/production\Sem05_Serial.X.production.o
+__ptext13 12DE 0 CODE 0 text13 dist/default/production\Sem05_Serial.X.production.o
+__Lbank10 0 0 ABS 0 bank10 dist/default/production\Sem05_Serial.X.production.o
+__Lbank11 0 0 ABS 0 bank11 dist/default/production\Sem05_Serial.X.production.o
+__Lbank12 0 0 ABS 0 bank12 dist/default/production\Sem05_Serial.X.production.o
+__Lbank14 0 0 ABS 0 bank14 dist/default/production\Sem05_Serial.X.production.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Sem05_Serial.X.production.o
+__Lbigram 0 0 ABS 0 bigram dist/default/production\Sem05_Serial.X.production.o
+__Lbigsfr 0 0 ABS 0 bigsfr dist/default/production\Sem05_Serial.X.production.o
+__Lcomram 0 0 ABS 0 comram dist/default/production\Sem05_Serial.X.production.o
+__Lconfig 0 0 CONFIG 4 config dist/default/production\Sem05_Serial.X.production.o
+_LATCbits F84 0 ABS 0 - dist/default/production\Sem05_Serial.X.production.o
+__end_of_CURSOR_ONOFF 12DE 0 CODE 0 text4 dist/default/production\Sem05_Serial.X.production.o
+__Lsivt_hi 0 0 CODE 0 sivt_hi dist/default/production\Sem05_Serial.X.production.o
+__Lsivt_lo 18 0 CODE 0 sivt_lo dist/default/production\Sem05_Serial.X.production.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\Sem05_Serial.X.production.o
+___inthi_stack_hi 0 0 STACK 2 stack C:\Users\klnla\AppData\Local\Temp\xcAsch4.0\driver_tmp_9.o
+___inthi_stack_lo 0 0 STACK 2 stack C:\Users\klnla\AppData\Local\Temp\xcAsch4.0\driver_tmp_9.o
+_strlen 11E2 0 CODE 0 text10 dist/default/production\Sem05_Serial.X.production.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\Sem05_Serial.X.production.o
+isa$std 1 0 ABS 0 - C:\Users\klnla\AppData\Local\Temp\xcAsch4.0\driver_tmp_9.o
+stackhi 0 0 ABS 0 - C:\Users\klnla\AppData\Local\Temp\xcAsch4.0\driver_tmp_9.o
+stacklo 0 0 ABS 0 - C:\Users\klnla\AppData\Local\Temp\xcAsch4.0\driver_tmp_9.o
+__Lintcode 8 0 CODE 0 intcode dist/default/production\Sem05_Serial.X.production.o
+_OSCCON1 ED3 0 ABS 0 - dist/default/production\Sem05_Serial.X.production.o
+__Lintret 0 0 ABS 0 intret dist/default/production\Sem05_Serial.X.production.o
+__Lirdata 0 0 CODE 0 irdata dist/default/production\Sem05_Serial.X.production.o
+__Lspace_0 0 0 ABS 0 - dist/default/production\Sem05_Serial.X.production.o
+__Lspace_1 0 0 ABS 0 - dist/default/production\Sem05_Serial.X.production.o
+__Lspace_2 0 0 ABS 0 - dist/default/production\Sem05_Serial.X.production.o
+__Lspace_4 0 0 ABS 0 - dist/default/production\Sem05_Serial.X.production.o
+_LEER_LCD 1098 0 CODE 0 text12 dist/default/production\Sem05_Serial.X.production.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\Sem05_Serial.X.production.o
+__end_of_ENVIA_NIBBLE 12FA 0 CODE 0 text13 dist/default/production\Sem05_Serial.X.production.o
+end_of_initialization 131E 0 CODE 0 cinit dist/default/production\Sem05_Serial.X.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\Sem05_Serial.X.production.o
+__Hintentry 0 0 ABS 0 intentry dist/default/production\Sem05_Serial.X.production.o
+__end_of_LEER_LCD 110A 0 CODE 0 text12 dist/default/production\Sem05_Serial.X.production.o
+ESCRIBE_MENSAJE2@cadena 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_Serial.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\Sem05_Serial.X.production.o
+__Lramtop 1000 0 RAM 0 ramtop dist/default/production\Sem05_Serial.X.production.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\Sem05_Serial.X.production.o
+__pcinit 131E 0 CODE 0 cinit dist/default/production\Sem05_Serial.X.production.o
+__ptext0 127E 0 CODE 0 text0 dist/default/production\Sem05_Serial.X.production.o
+__ptext1 12FA 0 CODE 0 text1 dist/default/production\Sem05_Serial.X.production.o
+__ptext2 115E 0 CODE 0 text2 dist/default/production\Sem05_Serial.X.production.o
+__ptext3 110A 0 CODE 0 text3 dist/default/production\Sem05_Serial.X.production.o
+__ptext4 12AE 0 CODE 0 text4 dist/default/production\Sem05_Serial.X.production.o
+__ptext5 130E 0 CODE 0 text5 dist/default/production\Sem05_Serial.X.production.o
+__ptext6 1316 0 CODE 0 text6 dist/default/production\Sem05_Serial.X.production.o
+__ptext7 1022 0 CODE 0 text7 dist/default/production\Sem05_Serial.X.production.o
+__ptext8 121A 0 CODE 0 text8 dist/default/production\Sem05_Serial.X.production.o
+__ptext9 11A0 0 CODE 0 text9 dist/default/production\Sem05_Serial.X.production.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\Sem05_Serial.X.production.o
+__Ltext10 0 0 ABS 0 text10 dist/default/production\Sem05_Serial.X.production.o
+__Ltext11 0 0 ABS 0 text11 dist/default/production\Sem05_Serial.X.production.o
+__Ltext12 0 0 ABS 0 text12 dist/default/production\Sem05_Serial.X.production.o
+__Ltext13 0 0 ABS 0 text13 dist/default/production\Sem05_Serial.X.production.o
+__ramtop 1000 0 RAM 0 ramtop C:\Users\klnla\AppData\Local\Temp\xcAsch4.0\driver_tmp_9.o
+__Lpowerup 0 0 CODE 0 powerup dist/default/production\Sem05_Serial.X.production.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Sem05_Serial.X.production.o
+__H__absolute__ 0 0 ABS 0 __absolute__ dist/default/production\Sem05_Serial.X.production.o
+ENVIA_LCD_CMD@dato 2 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_Serial.X.production.o
+__psmallconst 1000 0 SMALLCONST 0 smallconst dist/default/production\Sem05_Serial.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\Sem05_Serial.X.production.o
+___heap_hi 0 0 ABS 0 - C:\Users\klnla\AppData\Local\Temp\xcAsch4.0\driver_tmp_9.o
+___heap_lo 0 0 ABS 0 - C:\Users\klnla\AppData\Local\Temp\xcAsch4.0\driver_tmp_9.o
+___param_bank 0 0 ABS 0 - dist/default/production\Sem05_Serial.X.production.o
+___intlo_stack_hi 0 0 STACK 2 stack C:\Users\klnla\AppData\Local\Temp\xcAsch4.0\driver_tmp_9.o
+___intlo_stack_lo 0 0 STACK 2 stack C:\Users\klnla\AppData\Local\Temp\xcAsch4.0\driver_tmp_9.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\Sem05_Serial.X.production.o
+__end_of__initialization 131E 0 CODE 0 cinit dist/default/production\Sem05_Serial.X.production.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\Sem05_Serial.X.production.o
+POS_CURSOR@columna 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_Serial.X.production.o
+ESCRIBE_MENSAJE2@i 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_Serial.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\Sem05_Serial.X.production.o
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_Serial.X.production.o
+ENVIA_CHAR@dato 2 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_Serial.X.production.o
+__end_of_main 12AE 0 CODE 0 text0 dist/default/production\Sem05_Serial.X.production.o
+ESCRIBE_MENSAJE2@tam 6 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_Serial.X.production.o
+_OSCEN ED7 0 ABS 0 - dist/default/production\Sem05_Serial.X.production.o
+_PORTD F8F 0 ABS 0 - dist/default/production\Sem05_Serial.X.production.o
+_TRISC F89 0 ABS 0 - dist/default/production\Sem05_Serial.X.production.o
+_TRISD F8A 0 ABS 0 - dist/default/production\Sem05_Serial.X.production.o
+__HRAM 0 0 ABS 0 - dist/default/production\Sem05_Serial.X.production.o
+__Hbss 0 0 RAM 1 bss dist/default/production\Sem05_Serial.X.production.o
+__Hram 0 0 ABS 0 ram dist/default/production\Sem05_Serial.X.production.o
+__Hsfr 0 0 ABS 0 sfr dist/default/production\Sem05_Serial.X.production.o
+__LRAM 1 0 ABS 0 - dist/default/production\Sem05_Serial.X.production.o
+__Lbss 0 0 RAM 1 bss dist/default/production\Sem05_Serial.X.production.o
+__Lram 0 0 ABS 0 ram dist/default/production\Sem05_Serial.X.production.o
+__Lsfr 0 0 ABS 0 sfr dist/default/production\Sem05_Serial.X.production.o
+_ENVIA_CHAR 124C 0 CODE 0 text11 dist/default/production\Sem05_Serial.X.production.o
+__Hsivt_hi 0 0 CODE 0 sivt_hi dist/default/production\Sem05_Serial.X.production.o
+__Hsivt_lo 18 0 CODE 0 sivt_lo dist/default/production\Sem05_Serial.X.production.o
+__initialization 131E 0 CODE 0 cinit dist/default/production\Sem05_Serial.X.production.o
+ENVIA_LCD_CMD@aux 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_Serial.X.production.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\Sem05_Serial.X.production.o
+__Hsmallconst 1022 0 SMALLCONST 0 smallconst dist/default/production\Sem05_Serial.X.production.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\Sem05_Serial.X.production.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\Sem05_Serial.X.production.o
+__Hintcode 8 0 CODE 0 intcode dist/default/production\Sem05_Serial.X.production.o
+CURSOR_ONOFF@estado 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_Serial.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text7 0 1022 1022 302 1
+cstackCOMRAM 1 1 1 7 1
+init 0 1FFFC 1FFFC 4 1
+reset_vec 0 0 0 4 1
+smallconst 0 1000 1000 22 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
