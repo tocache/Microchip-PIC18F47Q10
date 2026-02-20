@@ -87,9 +87,9 @@
 [v _LEER_LCD LEER_LCD `(v  1 e 1 0 ]
 "192
 [v _LCD_INIT LCD_INIT `(v  1 e 1 0 ]
-"12 D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode02.c
+"12 D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode01.c
 [v _configuro configuro `(v  1 e 1 0 ]
-"29
+"26
 [v _main main `(v  1 e 1 0 ]
 "16625 C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f47q10.h
 [v _OSCCON1 OSCCON1 `VEuc  1 e 1 @3795 ]
@@ -121,14 +121,12 @@
 [v _TRISD TRISD `VEuc  1 e 1 @3978 ]
 "28504
 [v _PORTD PORTD `VEuc  1 e 1 @3983 ]
-"27 D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode02.c
-[v _seno seno `[34]uc  1 e 34 0 ]
-"29
+"26 D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode01.c
 [v _main main `(v  1 e 1 0 ]
 {
-"36
-[v main@x_var x_var `uc  1 a 1 9 ]
-"41
+"33
+[v main@x_var x_var `uc  1 a 1 8 ]
+"38
 } 0
 "12
 [v _configuro configuro `(v  1 e 1 0 ]

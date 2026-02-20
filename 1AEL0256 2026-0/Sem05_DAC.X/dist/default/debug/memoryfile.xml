@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <executable name="dist/default/production\Sem05_DAC.X.production.hex">
+  <executable name="dist/default/debug\Sem05_DAC.X.debug.hex">
     <memory name="program">
       <units>bytes</units>
       <length>131072</length>
-      <used>932</used>
-      <free>130140</free>
+      <used>848</used>
+      <free>130224</free>
     </memory>
     <memory name="data">
       <units>bytes</units>
       <length>3359</length>
-      <used>44</used>
-      <free>3315</free>
+      <used>9</used>
+      <free>3350</free>
     </memory>
   </executable>
 </project>
