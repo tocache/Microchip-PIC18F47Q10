@@ -11,29 +11,34 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\klnla\AppData\Local\Temp\xcAse54.0\driver_tmp_9.o
-init CODE 0 1FFFC 1FFFC 4 1 2
-reset_vec CODE 0 0 0 4 1 2
-config CONFIG 4 300000 300000 C 1 1
 $dist/default/production\Sem05_DAC.X.production.o
-cinit CODE 0 137C 137C 6 1 2
-text0 CODE 0 1102 1102 62 1 2
-text1 CODE 0 132A 132A 26 1 2
-text2 CODE 0 1300 1300 2A 1 2
-text3 CODE 0 11FA 11FA 3A 1 2
-text4 CODE 0 1164 1164 54 1 2
-text5 CODE 0 12D0 12D0 30 1 2
-text6 CODE 0 136C 136C 8 1 2
-text7 CODE 0 1374 1374 8 1 2
-text8 CODE 0 101A 101A 76 1 2
-text9 CODE 0 126C 126C 32 1 2
-text10 CODE 0 11B8 11B8 42 1 2
-text11 CODE 0 1234 1234 38 1 2
-text12 CODE 0 129E 129E 32 1 2
-text13 CODE 0 1090 1090 72 1 2
-text14 CODE 0 1350 1350 1C 1 2
-cstackCOMRAM COMRAM 1 1 1 9 1 1
-smallconst SMALLCONST 0 1000 1000 1A 1 2
+cinit CODE 0 14E4 14E4 26 1 2
+text0 CODE 0 1526 1526 10 1 2
+text1 CODE 0 1010 1010 F4 1 2
+text2 CODE 0 11C4 11C4 AE 1 2
+text3 CODE 0 1104 1104 C0 1 2
+text4 CODE 0 1272 1272 76 1 2
+text5 CODE 0 13E8 13E8 38 1 2
+text6 CODE 0 1420 1420 32 1 2
+text7 CODE 0 1484 1484 30 1 2
+text8 CODE 0 13AE 13AE 3A 1 2
+text9 CODE 0 135A 135A 54 1 2
+text10 CODE 0 14B4 14B4 30 1 2
+text11 CODE 0 1536 1536 8 1 2
+text12 CODE 0 153E 153E 8 1 2
+text13 CODE 0 1452 1452 32 1 2
+text14 CODE 0 12E8 12E8 72 1 2
+text15 CODE 0 150A 150A 1C 1 2
+idataCOMRAM CODE 0 1546 1546 2 1 1
+cstackCOMRAM COMRAM 1 2 2 E 1 1
+intcode CODE 0 8 8 72 1 2
+smallconst SMALLCONST 0 1000 1000 10 1 2
+dataCOMRAM COMRAM 1 12 12 2 1 1
+bssCOMRAM COMRAM 1 10 10 2 1 1
+config CONFIG 4 300000 300000 C 1 1
+$C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_9.o
+init CODE 0 7A 7A 4 1 2
+reset_vec CODE 0 0 0 4 1 2
 config CONFIG 4 300000 300000 C 1 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -55,25 +60,27 @@ BANK6 600-6FF 1
 BANK7 700-7FF 1
 BANK8 800-8FF 1
 BANK9 900-9FF 1
-CONST 4-FFF 1
-CONST 1382-1FFFB 1
+CONST 4-7 1
+CONST 7E-FFF 1
+CONST 1548-1FFFF 1
 IDLOC 200000-2000FF 1
-SMALLCONST 1382-FFFF 1
-SMALLCONST 11000-1FFFB 1
-CODE 4-FFF 1
-CODE 1382-1FFFB 1
+SMALLCONST 1548-FFFF 1
+SMALLCONST 11000-1FFFF 1
+CODE 4-7 1
+CODE 7E-FFF 1
+CODE 1548-1FFFF 1
 BANK10 A00-AFF 1
 BANK11 B00-BFF 1
 BANK12 C00-CFF 1
 BANK14 E00-E1E 1
-BIGRAM A-CFF 1
+BIGRAM 14-CFF 1
 BIGRAM E00-E1E 1
 BIGSFR D00-DFF 1
 BIGSFR E1F-FFF 1
-COMRAM A-5F 1
+COMRAM 14-5F 1
 EEDATA 310000-3103FF 1
-MEDIUMCONST 1382-FFFF 1
-MEDIUMCONST 11000-1FFFB 1
+MEDIUMCONST 1548-FFFF 1
+MEDIUMCONST 11000-1FFFF 1
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -88,159 +95,235 @@ MEDIUMCONST 11000-1FFFB 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Sem05_DAC.X.production.o
-1350 text14 CODE >126:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1352 text14 CODE >128:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1356 text14 CODE >129:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-135A text14 CODE >130:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-135E text14 CODE >131:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1360 text14 CODE >132:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1368 text14 CODE >133:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-136A text14 CODE >134:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1090 text13 CODE >152:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1090 text13 CODE >155:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1094 text13 CODE >156:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1096 text13 CODE >157:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1098 text13 CODE >158:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-109A text13 CODE >159:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-10A2 text13 CODE >160:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-10A6 text13 CODE >161:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-10A8 text13 CODE >162:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-10B0 text13 CODE >163:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-10B2 text13 CODE >164:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-10BA text13 CODE >165:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-10BC text13 CODE >166:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-10C2 text13 CODE >167:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-10C6 text13 CODE >169:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-10C8 text13 CODE >170:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-10D0 text13 CODE >171:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-10D4 text13 CODE >172:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-10D6 text13 CODE >173:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-10DE text13 CODE >174:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-10E0 text13 CODE >175:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-10E8 text13 CODE >176:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-10EE text13 CODE >167:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1100 text13 CODE >179:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-129E text12 CODE >88:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-12A0 text12 CODE >91:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-12A2 text12 CODE >92:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-12A6 text12 CODE >93:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-12A8 text12 CODE >94:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-12B0 text12 CODE >95:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-12B2 text12 CODE >96:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-12B4 text12 CODE >97:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-12B6 text12 CODE >98:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-12BC text12 CODE >99:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-12C2 text12 CODE >100:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-12C8 text12 CODE >101:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-12CE text12 CODE >102:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1234 text11 CODE >5:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
-1234 text11 CODE >7:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
-1238 text11 CODE >8:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
-123C text11 CODE >9:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
-123E text11 CODE >8:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
-125E text11 CODE >11:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
-126A text11 CODE >12:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
-11B8 text10 CODE >77:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-11B8 text10 CODE >80:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-11C4 text10 CODE >81:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-11C4 text10 CODE >82:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-11CA text10 CODE >84:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-11E4 text10 CODE >85:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-11F8 text10 CODE >86:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-126C text9 CODE >136:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-126E text9 CODE >139:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1270 text9 CODE >140:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1274 text9 CODE >141:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1276 text9 CODE >142:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-127E text9 CODE >143:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1280 text9 CODE >144:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1282 text9 CODE >145:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1284 text9 CODE >146:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-128A text9 CODE >147:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1290 text9 CODE >148:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1296 text9 CODE >149:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-129C text9 CODE >150:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-101A text8 CODE >5:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-101C text8 CODE >7:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-102C text8 CODE >9:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1034 text8 CODE >10:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1038 text8 CODE >11:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-104A text8 CODE >13:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1052 text8 CODE >14:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1056 text8 CODE >15:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1068 text8 CODE >17:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1070 text8 CODE >18:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1074 text8 CODE >19:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1086 text8 CODE >21:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-108E text8 CODE >23:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1374 text7 CODE >104:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1374 text7 CODE >106:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-137A text7 CODE >107:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-136C text6 CODE >37:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-136C text6 CODE >39:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1372 text6 CODE >40:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-12D0 text5 CODE >62:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-12D2 text5 CODE >64:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-12E8 text5 CODE >65:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-12FE text5 CODE >66:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1164 text4 CODE >109:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1164 text4 CODE >111:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1166 text4 CODE >112:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1168 text4 CODE >113:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-116E text4 CODE >114:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-117E text4 CODE >115:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1184 text4 CODE >116:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-118C text4 CODE >117:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1192 text4 CODE >118:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1198 text4 CODE >119:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-119E text4 CODE >120:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-11A4 text4 CODE >121:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-11AA text4 CODE >122:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-11B0 text4 CODE >123:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-11B6 text4 CODE >124:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-11FA text3 CODE >192:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-11FA text3 CODE >193:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-11FC text3 CODE >194:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1200 text3 CODE >195:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1210 text3 CODE >196:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1214 text3 CODE >197:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1224 text3 CODE >198:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1228 text3 CODE >199:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-122C text3 CODE >200:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1232 text3 CODE >201:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
-1300 text2 CODE >12:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode03.c
-1300 text2 CODE >14:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode03.c
-1306 text2 CODE >15:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode03.c
-130A text2 CODE >16:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode03.c
-130E text2 CODE >18:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode03.c
-1310 text2 CODE >19:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode03.c
-1314 text2 CODE >21:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode03.c
-1316 text2 CODE >22:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode03.c
-1318 text2 CODE >23:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode03.c
-131A text2 CODE >24:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode03.c
-131C text2 CODE >26:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode03.c
-1320 text2 CODE >27:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode03.c
-1324 text2 CODE >29:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode03.c
-1328 text2 CODE >30:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode03.c
-132A text1 CODE >32:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode03.c
-132A text1 CODE >33:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode03.c
-132E text1 CODE >34:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode03.c
-133C text1 CODE >35:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode03.c
-134E text1 CODE >36:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode03.c
-1102 text0 CODE >38:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode03.c
-1102 text0 CODE >39:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode03.c
-1106 text0 CODE >40:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode03.c
-1110 text0 CODE >41:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode03.c
-1118 text0 CODE >42:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode03.c
-1122 text0 CODE >43:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode03.c
-112A text0 CODE >45:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode03.c
-1144 text0 CODE >46:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode03.c
-137C cinit CODE >2522:C:\Users\klnla\AppData\Local\Temp\xcAse54.0\driver_tmp_1.s
-137C cinit CODE >2524:C:\Users\klnla\AppData\Local\Temp\xcAse54.0\driver_tmp_1.s
-137C cinit CODE >2527:C:\Users\klnla\AppData\Local\Temp\xcAse54.0\driver_tmp_1.s
-137C cinit CODE >2533:C:\Users\klnla\AppData\Local\Temp\xcAse54.0\driver_tmp_1.s
-137C cinit CODE >2535:C:\Users\klnla\AppData\Local\Temp\xcAse54.0\driver_tmp_1.s
-137E cinit CODE >2536:C:\Users\klnla\AppData\Local\Temp\xcAse54.0\driver_tmp_1.s
+8 intcode CODE >5124:C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_1.s
+8 intcode CODE >56:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+A intcode CODE >57:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+E intcode CODE >58:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+20 intcode CODE >59:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+22 intcode CODE >60:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+34 intcode CODE >61:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+36 intcode CODE >62:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+48 intcode CODE >63:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+4A intcode CODE >64:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+5C intcode CODE >65:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+5E intcode CODE >66:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+62 intcode CODE >68:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+68 intcode CODE >72:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+6E intcode CODE >76:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+74 intcode CODE >80:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+76 intcode CODE >82:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+150A text15 CODE >126:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+150C text15 CODE >128:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1510 text15 CODE >129:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1514 text15 CODE >130:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1518 text15 CODE >131:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+151A text15 CODE >132:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1522 text15 CODE >133:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1524 text15 CODE >134:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+12E8 text14 CODE >152:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+12E8 text14 CODE >155:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+12EC text14 CODE >156:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+12EE text14 CODE >157:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+12F0 text14 CODE >158:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+12F2 text14 CODE >159:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+12FA text14 CODE >160:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+12FE text14 CODE >161:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1300 text14 CODE >162:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1308 text14 CODE >163:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+130A text14 CODE >164:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1312 text14 CODE >165:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1314 text14 CODE >166:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+131A text14 CODE >167:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+131E text14 CODE >169:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1320 text14 CODE >170:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1328 text14 CODE >171:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+132C text14 CODE >172:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+132E text14 CODE >173:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1336 text14 CODE >174:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1338 text14 CODE >175:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1340 text14 CODE >176:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1346 text14 CODE >167:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1358 text14 CODE >179:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1452 text13 CODE >136:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1454 text13 CODE >139:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1456 text13 CODE >140:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+145A text13 CODE >141:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+145C text13 CODE >142:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1464 text13 CODE >143:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1466 text13 CODE >144:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1468 text13 CODE >145:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+146A text13 CODE >146:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1470 text13 CODE >147:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1476 text13 CODE >148:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+147C text13 CODE >149:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1482 text13 CODE >150:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+153E text12 CODE >104:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+153E text12 CODE >106:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1544 text12 CODE >107:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1536 text11 CODE >37:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1536 text11 CODE >39:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+153C text11 CODE >40:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+14B4 text10 CODE >62:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+14B6 text10 CODE >64:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+14CC text10 CODE >65:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+14E2 text10 CODE >66:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+135A text9 CODE >109:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+135A text9 CODE >111:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+135C text9 CODE >112:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+135E text9 CODE >113:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1364 text9 CODE >114:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1374 text9 CODE >115:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+137A text9 CODE >116:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1382 text9 CODE >117:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1388 text9 CODE >118:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+138E text9 CODE >119:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1394 text9 CODE >120:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+139A text9 CODE >121:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+13A0 text9 CODE >122:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+13A6 text9 CODE >123:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+13AC text9 CODE >124:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+13AE text8 CODE >192:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+13AE text8 CODE >193:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+13B0 text8 CODE >194:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+13B4 text8 CODE >195:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+13C4 text8 CODE >196:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+13C8 text8 CODE >197:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+13D8 text8 CODE >198:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+13DC text8 CODE >199:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+13E0 text8 CODE >200:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+13E6 text8 CODE >201:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1484 text7 CODE >10:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+1484 text7 CODE >12:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+148A text7 CODE >13:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+148E text7 CODE >14:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+1492 text7 CODE >17:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+1496 text7 CODE >18:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+149A text7 CODE >20:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+149E text7 CODE >21:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+14A2 text7 CODE >22:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+14A6 text7 CODE >24:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+14A8 text7 CODE >25:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+14AA text7 CODE >26:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+14AC text7 CODE >27:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+14AE text7 CODE >29:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+14B2 text7 CODE >30:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+1420 text6 CODE >88:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1422 text6 CODE >91:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1424 text6 CODE >92:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1428 text6 CODE >93:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+142A text6 CODE >94:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1432 text6 CODE >95:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1434 text6 CODE >96:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1436 text6 CODE >97:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1438 text6 CODE >98:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+143E text6 CODE >99:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1444 text6 CODE >100:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+144A text6 CODE >101:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1450 text6 CODE >102:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+13E8 text5 CODE >68:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+13E8 text5 CODE >70:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+13EA text5 CODE >71:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+13F0 text5 CODE >73:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+140A text5 CODE >74:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+141E text5 CODE >75:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1272 text4 CODE >5:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1274 text4 CODE >7:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1284 text4 CODE >9:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+128C text4 CODE >10:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1290 text4 CODE >11:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+12A2 text4 CODE >13:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+12AA text4 CODE >14:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+12AE text4 CODE >15:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+12C0 text4 CODE >17:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+12C8 text4 CODE >18:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+12CC text4 CODE >19:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+12DE text4 CODE >21:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+12E6 text4 CODE >23:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\LCD.c
+1104 text3 CODE >7:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+1104 text3 CODE >13:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+1106 text3 CODE >14:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+1114 text3 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+111C text3 CODE >16:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+1120 text3 CODE >18:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+112E text3 CODE >19:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+1136 text3 CODE >20:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+113A text3 CODE >22:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+1140 text3 CODE >23:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+1152 text3 CODE >24:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+1156 text3 CODE >25:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+115A text3 CODE >26:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+1160 text3 CODE >27:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+1162 text3 CODE >25:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+1170 text3 CODE >30:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+1176 text3 CODE >31:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+118C text3 CODE >32:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+1194 text3 CODE >33:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+1196 text3 CODE >35:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+119C text3 CODE >36:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+11A2 text3 CODE >38:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+11B2 text3 CODE >39:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+11BA text3 CODE >40:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+11C2 text3 CODE >41:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+11C4 text2 CODE >7:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+11C4 text2 CODE >12:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+11C6 text2 CODE >13:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+11D4 text2 CODE >14:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+11DC text2 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+11E0 text2 CODE >17:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+11EE text2 CODE >18:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+11F6 text2 CODE >19:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+1208 text2 CODE >20:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+120C text2 CODE >21:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+1210 text2 CODE >22:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+1216 text2 CODE >23:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+1218 text2 CODE >21:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+1226 text2 CODE >26:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+123C text2 CODE >27:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+1244 text2 CODE >28:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+124A text2 CODE >29:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+1250 text2 CODE >31:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+1260 text2 CODE >32:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+1268 text2 CODE >33:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+1270 text2 CODE >34:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+1010 text1 CODE >32:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+1010 text1 CODE >33:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+101A text1 CODE >34:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+1026 text1 CODE >35:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+1030 text1 CODE >36:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+1048 text1 CODE >37:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+1060 text1 CODE >38:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+1066 text1 CODE >39:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+107E text1 CODE >40:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+1096 text1 CODE >41:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+109C text1 CODE >42:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+10B4 text1 CODE >43:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+10CC text1 CODE >44:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+10D2 text1 CODE >45:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+10EA text1 CODE >46:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+1102 text1 CODE >47:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+1526 text0 CODE >49:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+1526 text0 CODE >50:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+152A text0 CODE >52:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_DAC.X\maincode05.c
+14E4 cinit CODE >2530:C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_1.s
+14E4 cinit CODE >2532:C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_1.s
+14E4 cinit CODE >2535:C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_1.s
+14E4 cinit CODE >2565:C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_1.s
+14E6 cinit CODE >2566:C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_1.s
+14E8 cinit CODE >2567:C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_1.s
+14EA cinit CODE >2568:C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_1.s
+14EC cinit CODE >2569:C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_1.s
+14EE cinit CODE >2570:C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_1.s
+14F0 cinit CODE >2571:C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_1.s
+14F2 cinit CODE >2572:C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_1.s
+14F6 cinit CODE >2573:C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_1.s
+14F8 cinit CODE >2574:C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_1.s
+14FC cinit CODE >2578:C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_1.s
+14FE cinit CODE >2579:C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_1.s
+1500 cinit CODE >2585:C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_1.s
+1500 cinit CODE >2587:C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_1.s
+1502 cinit CODE >2588:C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_1.s
+1504 cinit CODE >2589:C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_1.s
+1506 cinit CODE >2590:C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_1.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -253,65 +336,81 @@ $dist/default/production\Sem05_DAC.X.production.o
 # was defined in a psect then <psect> will be "-". File-name
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
+___awdiv@counter 6 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
 __Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\Sem05_DAC.X.production.o
-__Hspace_0 20000 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
-__Hspace_1 A 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
+__Hspace_0 1548 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
+__Hspace_1 14 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
 __Hspace_2 0 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
 __Hspace_4 60000C 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
-ENVIA_CHAR@aux 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
+ENVIA_CHAR@aux B 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\Sem05_DAC.X.production.o
 __mediumconst 1000 0 SMALLCONST 0 smallconst dist/default/production\Sem05_DAC.X.production.o
-_ENVIA_LCD_CMD 126C 0 CODE 0 text9 dist/default/production\Sem05_DAC.X.production.o
+_ENVIA_LCD_CMD 1452 0 CODE 0 text13 dist/default/production\Sem05_DAC.X.production.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Sem05_DAC.X.production.o
 __L__absolute__ 0 0 ABS 0 __absolute__ dist/default/production\Sem05_DAC.X.production.o
-_LCD_CONFIG 1164 0 CODE 0 text4 dist/default/production\Sem05_DAC.X.production.o
+_LCD_CONFIG 135A 0 CODE 0 text9 dist/default/production\Sem05_DAC.X.production.o
 __Lsmallconst 1000 0 SMALLCONST 0 smallconst dist/default/production\Sem05_DAC.X.production.o
 _LATD F85 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\klnla\AppData\Local\Temp\xcAse54.0\driver_tmp_9.o
-_main 1102 0 CODE 0 text0 dist/default/production\Sem05_DAC.X.production.o
-ENVIA_NIBBLE@dato 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
-___stack_hi 0 0 STACK 2 stack C:\Users\klnla\AppData\Local\Temp\xcAse54.0\driver_tmp_9.o
-___stack_lo 0 0 STACK 2 stack C:\Users\klnla\AppData\Local\Temp\xcAse54.0\driver_tmp_9.o
-__end_of_ENVIA_CHAR 12D0 0 CODE 0 text12 dist/default/production\Sem05_DAC.X.production.o
-start 1FFFC 0 CODE 0 init C:\Users\klnla\AppData\Local\Temp\xcAse54.0\driver_tmp_9.o
-_DAC1CON0 F2E 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
-_DAC1CON1 F2F 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
-_LCD_INIT 11FA 0 CODE 0 text3 dist/default/production\Sem05_DAC.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_9.o
+_main 1526 0 CODE 0 text0 dist/default/production\Sem05_DAC.X.production.o
+btemp 1 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
+ENVIA_NIBBLE@dato 2 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
+___stack_hi 0 0 STACK 2 stack C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_9.o
+___stack_lo 0 0 STACK 2 stack C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_9.o
+__end_of_ENVIA_CHAR 1452 0 CODE 0 text6 dist/default/production\Sem05_DAC.X.production.o
+start 7A 0 CODE 0 init C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_9.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\Sem05_DAC.X.production.o
+_LCD_INIT 13AE 0 CODE 0 text8 dist/default/production\Sem05_DAC.X.production.o
 __Hpowerup 0 0 CODE 0 powerup dist/default/production\Sem05_DAC.X.production.o
-__accesstop 60 0 ABS 0 - C:\Users\klnla\AppData\Local\Temp\xcAse54.0\driver_tmp_9.o
-__end_of_LCD_INIT 1234 0 CODE 0 text3 dist/default/production\Sem05_DAC.X.production.o
-intlevel0 0 0 CODE 0 text C:\Users\klnla\AppData\Local\Temp\xcAse54.0\driver_tmp_9.o
-intlevel1 0 0 CODE 0 text C:\Users\klnla\AppData\Local\Temp\xcAse54.0\driver_tmp_9.o
-intlevel2 0 0 CODE 0 text C:\Users\klnla\AppData\Local\Temp\xcAse54.0\driver_tmp_9.o
-intlevel3 0 0 CODE 0 text C:\Users\klnla\AppData\Local\Temp\xcAse54.0\driver_tmp_9.o
+___awmod@sign 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\Sem05_DAC.X.production.o
+ESCRIBE_MENSAJE@cadena C 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
+__accesstop 60 0 ABS 0 - C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_9.o
+__end_of_LCD_INIT 13E8 0 CODE 0 text8 dist/default/production\Sem05_DAC.X.production.o
+intlevel0 0 0 CODE 0 text C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_9.o
+intlevel1 0 0 CODE 0 text C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_9.o
+intlevel2 0 0 CODE 0 text C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_9.o
+intlevel3 0 0 CODE 0 text C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_9.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\Sem05_DAC.X.production.o
+_TMR1CLK FD1 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\Sem05_DAC.X.production.o
 __Hifardata 0 0 CODE 0 ifardata dist/default/production\Sem05_DAC.X.production.o
+___awdiv@sign 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext dist/default/production\Sem05_DAC.X.production.o
-__end_of_configuro 132A 0 CODE 0 text2 dist/default/production\Sem05_DAC.X.production.o
-__end_of_LCD_CONFIG 11B8 0 CODE 0 text4 dist/default/production\Sem05_DAC.X.production.o
-_ADRESH F5F 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
-_ADRESL F5E 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
+__end_of_configuro 14B4 0 CODE 0 text7 dist/default/production\Sem05_DAC.X.production.o
+__pidataCOMRAM 1546 0 CODE 0 idataCOMRAM dist/default/production\Sem05_DAC.X.production.o
+__end_of_LCD_CONFIG 13AE 0 CODE 0 text9 dist/default/production\Sem05_DAC.X.production.o
 _ANSELD F21 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
-_CURSOR_HOME 136C 0 CODE 0 text6 dist/default/production\Sem05_DAC.X.production.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\klnla\AppData\Local\Temp\xcAse54.0\driver_tmp_9.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\klnla\AppData\Local\Temp\xcAse54.0\driver_tmp_9.o
+_CURSOR_HOME 1536 0 CODE 0 text11 dist/default/production\Sem05_DAC.X.production.o
+___awdiv@dividend 2 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_9.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_9.o
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\Sem05_DAC.X.production.o
+_CCPR1H FAA 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
+_CCPR1L FA9 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
 __Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\Sem05_DAC.X.production.o
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\Sem05_DAC.X.production.o
-_configuro 1300 0 CODE 0 text2 dist/default/production\Sem05_DAC.X.production.o
+_configuro 1484 0 CODE 0 text7 dist/default/production\Sem05_DAC.X.production.o
 __Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\Sem05_DAC.X.production.o
 __Hintcodelo 18 0 CODE 0 intcodelo dist/default/production\Sem05_DAC.X.production.o
-?_strlen 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
-__end_of_ENVIA_LCD_CMD 129E 0 CODE 0 text9 dist/default/production\Sem05_DAC.X.production.o
+___awdiv@divisor 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
+__end_of___awdiv 11C4 0 CODE 0 text3 dist/default/production\Sem05_DAC.X.production.o
+__end_of___awmod 1272 0 CODE 0 text2 dist/default/production\Sem05_DAC.X.production.o
+_centesimas 10 0 COMRAM 1 bssCOMRAM dist/default/production\Sem05_DAC.X.production.o
+__end_of_visualizacion_hora 1104 0 CODE 0 text1 dist/default/production\Sem05_DAC.X.production.o
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\Sem05_DAC.X.production.o
+__end_of_ENVIA_LCD_CMD 1484 0 CODE 0 text13 dist/default/production\Sem05_DAC.X.production.o
 __Lintcodelo 18 0 CODE 0 intcodelo dist/default/production\Sem05_DAC.X.production.o
-start_initialization 137C 0 CODE 0 cinit dist/default/production\Sem05_DAC.X.production.o
-_ESCRIBE_MENSAJE2 11B8 0 CODE 0 text10 dist/default/production\Sem05_DAC.X.production.o
+start_initialization 14E4 0 CODE 0 cinit dist/default/production\Sem05_DAC.X.production.o
 _OSCFRQ ED9 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
 __HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\Sem05_DAC.X.production.o
-_TRISAbits F87 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
+ESCRIBE_MENSAJE@tam D 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
 ___rparam_used 1 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
-_BORRAR_LCD 1374 0 CODE 0 text7 dist/default/production\Sem05_DAC.X.production.o
-LEER_LCD@aux 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
-isa$xinst 0 0 ABS 0 - C:\Users\klnla\AppData\Local\Temp\xcAse54.0\driver_tmp_9.o
+_BORRAR_LCD 153E 0 CODE 0 text12 dist/default/production\Sem05_DAC.X.production.o
+ESCRIBE_MENSAJE@i F 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
+_visualizacion_hora 1010 0 CODE 0 text1 dist/default/production\Sem05_DAC.X.production.o
+LEER_LCD@aux 2 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
+isa$xinst 0 0 ABS 0 - C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_9.o
 __Hbank0 0 0 ABS 0 bank0 dist/default/production\Sem05_DAC.X.production.o
 __Hbank1 0 0 ABS 0 bank1 dist/default/production\Sem05_DAC.X.production.o
 __Hbank2 0 0 ABS 0 bank2 dist/default/production\Sem05_DAC.X.production.o
@@ -324,7 +423,6 @@ __Hbank8 0 0 ABS 0 bank8 dist/default/production\Sem05_DAC.X.production.o
 __Hbank9 0 0 ABS 0 bank9 dist/default/production\Sem05_DAC.X.production.o
 __Hcinit 0 0 ABS 0 cinit dist/default/production\Sem05_DAC.X.production.o
 __Hconst 0 0 CONST 0 const dist/default/production\Sem05_DAC.X.production.o
-__end_of_strlen 126C 0 CODE 0 text11 dist/default/production\Sem05_DAC.X.production.o
 __Hidata 0 0 CODE 0 idata dist/default/production\Sem05_DAC.X.production.o
 __Hidloc 0 0 ABS 0 idloc dist/default/production\Sem05_DAC.X.production.o
 __Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\Sem05_DAC.X.production.o
@@ -345,7 +443,7 @@ __Hbank10 0 0 ABS 0 bank10 dist/default/production\Sem05_DAC.X.production.o
 __Hbank11 0 0 ABS 0 bank11 dist/default/production\Sem05_DAC.X.production.o
 __Hbank12 0 0 ABS 0 bank12 dist/default/production\Sem05_DAC.X.production.o
 __Hbank14 0 0 ABS 0 bank14 dist/default/production\Sem05_DAC.X.production.o
-_POS_CURSOR 101A 0 CODE 0 text8 dist/default/production\Sem05_DAC.X.production.o
+_POS_CURSOR 1272 0 CODE 0 text4 dist/default/production\Sem05_DAC.X.production.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Sem05_DAC.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production\Sem05_DAC.X.production.o
 __Hbigsfr 0 0 ABS 0 bigsfr dist/default/production\Sem05_DAC.X.production.o
@@ -382,10 +480,11 @@ __Ltext8 0 0 ABS 0 text8 dist/default/production\Sem05_DAC.X.production.o
 __Ltext9 0 0 ABS 0 text9 dist/default/production\Sem05_DAC.X.production.o
 __Hfarbss 0 0 FARRAM 0 farbss dist/default/production\Sem05_DAC.X.production.o
 __Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\Sem05_DAC.X.production.o
+_INTCONbits FF2 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
 __Habs1 0 0 ABS 0 abs1 dist/default/production\Sem05_DAC.X.production.o
 __Hdata 0 0 ABS 0 data dist/default/production\Sem05_DAC.X.production.o
 __Hheap 0 0 HEAP 7 heap dist/default/production\Sem05_DAC.X.production.o
-__Hinit 20000 0 CODE 0 init dist/default/production\Sem05_DAC.X.production.o
+__Hinit 7E 0 CODE 0 init dist/default/production\Sem05_DAC.X.production.o
 __Hrbit 0 0 COMRAM 1 rbit dist/default/production\Sem05_DAC.X.production.o
 __Hrbss 0 0 COMRAM 1 rbss dist/default/production\Sem05_DAC.X.production.o
 __Htemp 0 0 COMRAM 1 temp dist/default/production\Sem05_DAC.X.production.o
@@ -393,30 +492,29 @@ __Htext 0 0 ABS 0 text dist/default/production\Sem05_DAC.X.production.o
 __Labs1 0 0 ABS 0 abs1 dist/default/production\Sem05_DAC.X.production.o
 __Ldata 0 0 ABS 0 data dist/default/production\Sem05_DAC.X.production.o
 __Lheap 0 0 HEAP 7 heap dist/default/production\Sem05_DAC.X.production.o
-__Linit 1FFFC 0 CODE 0 init dist/default/production\Sem05_DAC.X.production.o
+__Linit 7A 0 CODE 0 init dist/default/production\Sem05_DAC.X.production.o
 __Lrbit 0 0 COMRAM 1 rbit dist/default/production\Sem05_DAC.X.production.o
 __Lrbss 0 0 COMRAM 1 rbss dist/default/production\Sem05_DAC.X.production.o
 __Ltemp 0 0 COMRAM 1 temp dist/default/production\Sem05_DAC.X.production.o
 __Ltext 0 0 ABS 0 text dist/default/production\Sem05_DAC.X.production.o
-__end_of_BORRAR_LCD 137C 0 CODE 0 text7 dist/default/production\Sem05_DAC.X.production.o
+int$flags 1 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
+__end_of_BORRAR_LCD 1546 0 CODE 0 text12 dist/default/production\Sem05_DAC.X.production.o
 __HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
-POS_CURSOR@fila 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
+POS_CURSOR@fila 6 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
 __Hintret 0 0 ABS 0 intret dist/default/production\Sem05_DAC.X.production.o
-_CURSOR_ONOFF 12D0 0 CODE 0 text5 dist/default/production\Sem05_DAC.X.production.o
+_CURSOR_ONOFF 14B4 0 CODE 0 text10 dist/default/production\Sem05_DAC.X.production.o
 __Hirdata 0 0 CODE 0 irdata dist/default/production\Sem05_DAC.X.production.o
-__S0 20000 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
-__S1 A 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
+__S0 1548 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
+__S1 14 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
 __S4 0 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
 __S5 0 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
-__end_of_ESCRIBE_MENSAJE2 11FA 0 CODE 0 text10 dist/default/production\Sem05_DAC.X.production.o
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\Sem05_DAC.X.production.o
 __Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\Sem05_DAC.X.production.o
 __Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\Sem05_DAC.X.production.o
-__end_of_POS_CURSOR 1090 0 CODE 0 text8 dist/default/production\Sem05_DAC.X.production.o
+__end_of_POS_CURSOR 12E8 0 CODE 0 text4 dist/default/production\Sem05_DAC.X.production.o
 __Lintentry 0 0 ABS 0 intentry dist/default/production\Sem05_DAC.X.production.o
 __Hramtop 1000 0 RAM 0 ramtop dist/default/production\Sem05_DAC.X.production.o
-strlen@a 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
-strlen@s 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
-_ENVIA_NIBBLE 1350 0 CODE 0 text14 dist/default/production\Sem05_DAC.X.production.o
+_ENVIA_NIBBLE 150A 0 CODE 0 text15 dist/default/production\Sem05_DAC.X.production.o
 __Hrparam 0 0 COMRAM 1 rparam dist/default/production\Sem05_DAC.X.production.o
 __activetblptr 3 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
 __Hstruct 0 0 COMRAM 1 struct dist/default/production\Sem05_DAC.X.production.o
@@ -425,12 +523,18 @@ __Htext11 0 0 ABS 0 text11 dist/default/production\Sem05_DAC.X.production.o
 __Htext12 0 0 ABS 0 text12 dist/default/production\Sem05_DAC.X.production.o
 __Htext13 0 0 ABS 0 text13 dist/default/production\Sem05_DAC.X.production.o
 __Htext14 0 0 ABS 0 text14 dist/default/production\Sem05_DAC.X.production.o
-__end_of_CURSOR_HOME 1374 0 CODE 0 text6 dist/default/production\Sem05_DAC.X.production.o
-__ptext10 11B8 0 CODE 0 text10 dist/default/production\Sem05_DAC.X.production.o
-__ptext11 1234 0 CODE 0 text11 dist/default/production\Sem05_DAC.X.production.o
-__ptext12 129E 0 CODE 0 text12 dist/default/production\Sem05_DAC.X.production.o
-__ptext13 1090 0 CODE 0 text13 dist/default/production\Sem05_DAC.X.production.o
-__ptext14 1350 0 CODE 0 text14 dist/default/production\Sem05_DAC.X.production.o
+__Htext15 0 0 ABS 0 text15 dist/default/production\Sem05_DAC.X.production.o
+___awmod@counter 6 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
+__end_of_CURSOR_HOME 153E 0 CODE 0 text11 dist/default/production\Sem05_DAC.X.production.o
+_PIE6bits EC3 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
+__ptext10 14B4 0 CODE 0 text10 dist/default/production\Sem05_DAC.X.production.o
+__ptext11 1536 0 CODE 0 text11 dist/default/production\Sem05_DAC.X.production.o
+__ptext12 153E 0 CODE 0 text12 dist/default/production\Sem05_DAC.X.production.o
+__ptext13 1452 0 CODE 0 text13 dist/default/production\Sem05_DAC.X.production.o
+__ptext14 12E8 0 CODE 0 text14 dist/default/production\Sem05_DAC.X.production.o
+__ptext15 150A 0 CODE 0 text15 dist/default/production\Sem05_DAC.X.production.o
+___awdiv 1104 0 CODE 0 text3 dist/default/production\Sem05_DAC.X.production.o
+___awmod 11C4 0 CODE 0 text2 dist/default/production\Sem05_DAC.X.production.o
 __Lbank10 0 0 ABS 0 bank10 dist/default/production\Sem05_DAC.X.production.o
 __Lbank11 0 0 ABS 0 bank11 dist/default/production\Sem05_DAC.X.production.o
 __Lbank12 0 0 ABS 0 bank12 dist/default/production\Sem05_DAC.X.production.o
@@ -441,82 +545,89 @@ __Lbigsfr 0 0 ABS 0 bigsfr dist/default/production\Sem05_DAC.X.production.o
 __Lcomram 0 0 ABS 0 comram dist/default/production\Sem05_DAC.X.production.o
 __Lconfig 0 0 CONFIG 4 config dist/default/production\Sem05_DAC.X.production.o
 _LATDbits F85 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
-__end_of_CURSOR_ONOFF 1300 0 CODE 0 text5 dist/default/production\Sem05_DAC.X.production.o
+__end_of_CURSOR_ONOFF 14E4 0 CODE 0 text10 dist/default/production\Sem05_DAC.X.production.o
 __Lsivt_hi 0 0 CODE 0 sivt_hi dist/default/production\Sem05_DAC.X.production.o
 __Lsivt_lo 18 0 CODE 0 sivt_lo dist/default/production\Sem05_DAC.X.production.o
+_segundos 11 0 COMRAM 1 bssCOMRAM dist/default/production\Sem05_DAC.X.production.o
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\Sem05_DAC.X.production.o
-___inthi_stack_hi 0 0 STACK 2 stack C:\Users\klnla\AppData\Local\Temp\xcAse54.0\driver_tmp_9.o
-___inthi_stack_lo 0 0 STACK 2 stack C:\Users\klnla\AppData\Local\Temp\xcAse54.0\driver_tmp_9.o
-_strlen 1234 0 CODE 0 text11 dist/default/production\Sem05_DAC.X.production.o
+___inthi_stack_hi 0 0 STACK 2 stack C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_9.o
+___inthi_stack_lo 0 0 STACK 2 stack C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_9.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\Sem05_DAC.X.production.o
-isa$std 1 0 ABS 0 - C:\Users\klnla\AppData\Local\Temp\xcAse54.0\driver_tmp_9.o
-stackhi 0 0 ABS 0 - C:\Users\klnla\AppData\Local\Temp\xcAse54.0\driver_tmp_9.o
-stacklo 0 0 ABS 0 - C:\Users\klnla\AppData\Local\Temp\xcAse54.0\driver_tmp_9.o
+isa$std 1 0 ABS 0 - C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_9.o
+stackhi 0 0 ABS 0 - C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_9.o
+stacklo 0 0 ABS 0 - C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_9.o
 __Lintcode 8 0 CODE 0 intcode dist/default/production\Sem05_DAC.X.production.o
 _OSCCON1 ED3 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
 __Lintret 0 0 ABS 0 intret dist/default/production\Sem05_DAC.X.production.o
 __Lirdata 0 0 CODE 0 irdata dist/default/production\Sem05_DAC.X.production.o
-_ADCON0bits F5B 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
 __Lspace_0 0 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
 __Lspace_1 0 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
 __Lspace_2 0 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
 __Lspace_4 0 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
-_LEER_LCD 1090 0 CODE 0 text13 dist/default/production\Sem05_DAC.X.production.o
+__pbssCOMRAM 10 0 COMRAM 1 bssCOMRAM dist/default/production\Sem05_DAC.X.production.o
+_LEER_LCD 12E8 0 CODE 0 text14 dist/default/production\Sem05_DAC.X.production.o
+_PIR6bits ECB 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
 __LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
-__end_of_ENVIA_NIBBLE 136C 0 CODE 0 text14 dist/default/production\Sem05_DAC.X.production.o
-end_of_initialization 137C 0 CODE 0 cinit dist/default/production\Sem05_DAC.X.production.o
+__end_of_ENVIA_NIBBLE 1526 0 CODE 0 text15 dist/default/production\Sem05_DAC.X.production.o
+end_of_initialization 1500 0 CODE 0 cinit dist/default/production\Sem05_DAC.X.production.o
 __Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\Sem05_DAC.X.production.o
 __Hintentry 0 0 ABS 0 intentry dist/default/production\Sem05_DAC.X.production.o
-__end_of_LEER_LCD 1102 0 CODE 0 text13 dist/default/production\Sem05_DAC.X.production.o
-ESCRIBE_MENSAJE2@cadena 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
+__end_of_LEER_LCD 135A 0 CODE 0 text14 dist/default/production\Sem05_DAC.X.production.o
+___awdiv@quotient 8 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
+?___awdiv 2 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
+?___awmod 2 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
 __Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\Sem05_DAC.X.production.o
+___awmod@dividend 2 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
 __Lramtop 1000 0 RAM 0 ramtop dist/default/production\Sem05_DAC.X.production.o
 __Lrparam 0 0 COMRAM 1 rparam dist/default/production\Sem05_DAC.X.production.o
-__pcinit 137C 0 CODE 0 cinit dist/default/production\Sem05_DAC.X.production.o
-__ptext0 1102 0 CODE 0 text0 dist/default/production\Sem05_DAC.X.production.o
-__ptext1 132A 0 CODE 0 text1 dist/default/production\Sem05_DAC.X.production.o
-__ptext2 1300 0 CODE 0 text2 dist/default/production\Sem05_DAC.X.production.o
-__ptext3 11FA 0 CODE 0 text3 dist/default/production\Sem05_DAC.X.production.o
-__ptext4 1164 0 CODE 0 text4 dist/default/production\Sem05_DAC.X.production.o
-__ptext5 12D0 0 CODE 0 text5 dist/default/production\Sem05_DAC.X.production.o
-__ptext6 136C 0 CODE 0 text6 dist/default/production\Sem05_DAC.X.production.o
-__ptext7 1374 0 CODE 0 text7 dist/default/production\Sem05_DAC.X.production.o
-__ptext8 101A 0 CODE 0 text8 dist/default/production\Sem05_DAC.X.production.o
-__ptext9 126C 0 CODE 0 text9 dist/default/production\Sem05_DAC.X.production.o
+__pcinit 14E4 0 CODE 0 cinit dist/default/production\Sem05_DAC.X.production.o
+__end_of_ESCRIBE_MENSAJE 1420 0 CODE 0 text5 dist/default/production\Sem05_DAC.X.production.o
+__ptext0 1526 0 CODE 0 text0 dist/default/production\Sem05_DAC.X.production.o
+__ptext1 1010 0 CODE 0 text1 dist/default/production\Sem05_DAC.X.production.o
+__ptext2 11C4 0 CODE 0 text2 dist/default/production\Sem05_DAC.X.production.o
+__ptext3 1104 0 CODE 0 text3 dist/default/production\Sem05_DAC.X.production.o
+__ptext4 1272 0 CODE 0 text4 dist/default/production\Sem05_DAC.X.production.o
+__ptext5 13E8 0 CODE 0 text5 dist/default/production\Sem05_DAC.X.production.o
+__ptext6 1420 0 CODE 0 text6 dist/default/production\Sem05_DAC.X.production.o
+__ptext7 1484 0 CODE 0 text7 dist/default/production\Sem05_DAC.X.production.o
+__ptext8 13AE 0 CODE 0 text8 dist/default/production\Sem05_DAC.X.production.o
+__ptext9 135A 0 CODE 0 text9 dist/default/production\Sem05_DAC.X.production.o
 __Lstruct 0 0 COMRAM 1 struct dist/default/production\Sem05_DAC.X.production.o
 __Ltext10 0 0 ABS 0 text10 dist/default/production\Sem05_DAC.X.production.o
 __Ltext11 0 0 ABS 0 text11 dist/default/production\Sem05_DAC.X.production.o
 __Ltext12 0 0 ABS 0 text12 dist/default/production\Sem05_DAC.X.production.o
 __Ltext13 0 0 ABS 0 text13 dist/default/production\Sem05_DAC.X.production.o
 __Ltext14 0 0 ABS 0 text14 dist/default/production\Sem05_DAC.X.production.o
-__ramtop 1000 0 RAM 0 ramtop C:\Users\klnla\AppData\Local\Temp\xcAse54.0\driver_tmp_9.o
+__Ltext15 0 0 ABS 0 text15 dist/default/production\Sem05_DAC.X.production.o
+__ramtop 1000 0 RAM 0 ramtop C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_9.o
 __Lpowerup 0 0 CODE 0 powerup dist/default/production\Sem05_DAC.X.production.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Sem05_DAC.X.production.o
 __H__absolute__ 0 0 ABS 0 __absolute__ dist/default/production\Sem05_DAC.X.production.o
-ENVIA_LCD_CMD@dato 2 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
+ENVIA_LCD_CMD@dato 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
 __psmallconst 1000 0 SMALLCONST 0 smallconst dist/default/production\Sem05_DAC.X.production.o
 __Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\Sem05_DAC.X.production.o
-?_tomamuestra_ADC 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
-___heap_hi 0 0 ABS 0 - C:\Users\klnla\AppData\Local\Temp\xcAse54.0\driver_tmp_9.o
-___heap_lo 0 0 ABS 0 - C:\Users\klnla\AppData\Local\Temp\xcAse54.0\driver_tmp_9.o
+___heap_hi 0 0 ABS 0 - C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_9.o
+___heap_lo 0 0 ABS 0 - C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_9.o
 ___param_bank 0 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
-___intlo_stack_hi 0 0 STACK 2 stack C:\Users\klnla\AppData\Local\Temp\xcAse54.0\driver_tmp_9.o
-___intlo_stack_lo 0 0 STACK 2 stack C:\Users\klnla\AppData\Local\Temp\xcAse54.0\driver_tmp_9.o
+___intlo_stack_hi 0 0 STACK 2 stack C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_9.o
+___intlo_stack_lo 0 0 STACK 2 stack C:\Users\klnla\AppData\Local\Temp\xcBsf2k.1\driver_tmp_9.o
 __Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\Sem05_DAC.X.production.o
-__end_of__initialization 137C 0 CODE 0 cinit dist/default/production\Sem05_DAC.X.production.o
-__end_of_tomamuestra_ADC 1350 0 CODE 0 text1 dist/default/production\Sem05_DAC.X.production.o
+__end_of__initialization 1500 0 CODE 0 cinit dist/default/production\Sem05_DAC.X.production.o
+___awmod@divisor 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
 __Libigdata 0 0 CODE 0 ibigdata dist/default/production\Sem05_DAC.X.production.o
-POS_CURSOR@columna 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
-ESCRIBE_MENSAJE2@i 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
+POS_CURSOR@columna 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
 __Lclrtext 0 0 ABS 0 clrtext dist/default/production\Sem05_DAC.X.production.o
-__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
-ENVIA_CHAR@dato 2 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
-__end_of_main 1164 0 CODE 0 text0 dist/default/production\Sem05_DAC.X.production.o
-ESCRIBE_MENSAJE2@tam 6 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
-_ADPCH F5A 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
+__pcstackCOMRAM 2 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
+ENVIA_CHAR@dato A 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
+_ESCRIBE_MENSAJE 13E8 0 CODE 0 text5 dist/default/production\Sem05_DAC.X.production.o
+_CCP1_ISR 8 0 CODE 0 intcode dist/default/production\Sem05_DAC.X.production.o
+__end_of_main 1536 0 CODE 0 text0 dist/default/production\Sem05_DAC.X.production.o
+__pintcode 8 0 CODE 0 intcode dist/default/production\Sem05_DAC.X.production.o
 _OSCEN ED7 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
 _PORTD F8F 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
+_T1CON FCE 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
 _TRISD F8A 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
+_minutos 12 0 COMRAM 1 dataCOMRAM dist/default/production\Sem05_DAC.X.production.o
 __HRAM 0 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
 __Hbss 0 0 RAM 1 bss dist/default/production\Sem05_DAC.X.production.o
 __Hram 0 0 ABS 0 ram dist/default/production\Sem05_DAC.X.production.o
@@ -525,19 +636,23 @@ __LRAM 1 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
 __Lbss 0 0 RAM 1 bss dist/default/production\Sem05_DAC.X.production.o
 __Lram 0 0 ABS 0 ram dist/default/production\Sem05_DAC.X.production.o
 __Lsfr 0 0 ABS 0 sfr dist/default/production\Sem05_DAC.X.production.o
-_ENVIA_CHAR 129E 0 CODE 0 text12 dist/default/production\Sem05_DAC.X.production.o
+__end_of_CCP1_ISR 7A 0 CODE 0 intcode dist/default/production\Sem05_DAC.X.production.o
+_horas 13 0 COMRAM 1 dataCOMRAM dist/default/production\Sem05_DAC.X.production.o
+_ENVIA_CHAR 1420 0 CODE 0 text6 dist/default/production\Sem05_DAC.X.production.o
+_CCP1CON FAB 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
 __Hsivt_hi 0 0 CODE 0 sivt_hi dist/default/production\Sem05_DAC.X.production.o
 __Hsivt_lo 18 0 CODE 0 sivt_lo dist/default/production\Sem05_DAC.X.production.o
-__initialization 137C 0 CODE 0 cinit dist/default/production\Sem05_DAC.X.production.o
-_tomamuestra_ADC 132A 0 CODE 0 text1 dist/default/production\Sem05_DAC.X.production.o
-ENVIA_LCD_CMD@aux 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
+__initialization 14E4 0 CODE 0 cinit dist/default/production\Sem05_DAC.X.production.o
+btemp0 1 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
+btemp1 2 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
+__pdataCOMRAM 12 0 COMRAM 1 dataCOMRAM dist/default/production\Sem05_DAC.X.production.o
+ENVIA_LCD_CMD@aux 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
 __Hfardata 0 0 FARRAM 0 fardata dist/default/production\Sem05_DAC.X.production.o
-__Hsmallconst 101A 0 SMALLCONST 0 smallconst dist/default/production\Sem05_DAC.X.production.o
+__Hsmallconst 1010 0 SMALLCONST 0 smallconst dist/default/production\Sem05_DAC.X.production.o
 __Lifardata 0 0 CODE 0 ifardata dist/default/production\Sem05_DAC.X.production.o
-_ANSELAbits F0C 0 ABS 0 - dist/default/production\Sem05_DAC.X.production.o
 __Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\Sem05_DAC.X.production.o
-__Hintcode 8 0 CODE 0 intcode dist/default/production\Sem05_DAC.X.production.o
-CURSOR_ONOFF@estado 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
+__Hintcode 7A 0 CODE 0 intcode dist/default/production\Sem05_DAC.X.production.o
+CURSOR_ONOFF@estado 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.X.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -554,6 +669,7 @@ CURSOR_ONOFF@estado 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.
 # otherwise name will be "-".  The <space> number is in decimal.
 # <address> and <size> are in byte units as unqaulified hexadecimal
 %DABS
+- 1 1 1
 # %SEGMENTS Section
 # This sections enumerates the segments of the program.  Each segment
 # is described on a single line as follows:
@@ -562,11 +678,11 @@ CURSOR_ONOFF@estado 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Sem05_DAC.
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-text8 0 101A 101A 368 1
-cstackCOMRAM 1 1 1 9 1
-init 0 1FFFC 1FFFC 4 1
+text1 0 1010 1010 538 1
+cstackCOMRAM 1 2 2 12 1
 reset_vec 0 0 0 4 1
-smallconst 0 1000 1000 1A 1
+intcode 0 8 8 76 1
+smallconst 0 1000 1000 10 1
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section
 # is indicated by %NOTES. The first line indicates the name and decimal
