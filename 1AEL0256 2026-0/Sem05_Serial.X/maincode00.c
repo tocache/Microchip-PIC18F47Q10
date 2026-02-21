@@ -8,6 +8,7 @@
 #include <xc.h>
 #include "cabecera.h"
 #include "LCD.h"
+#include "LIB_UART.h"
 #define _XTAL_FREQ 32000000UL
 
 void configuro(void){
@@ -17,6 +18,8 @@ void configuro(void){
     OSCEN = 0x40;
     //inicializacion del LCD
     LCD_INIT();
+    //inicializar el UART2
+    U1_INIT(BAUD_9600);
 }
 
 void main(void) {
@@ -26,6 +29,8 @@ void main(void) {
     POS_CURSOR(2,0);
     ESCRIBE_MENSAJE2("Hot Summer UPC");
     while(1){
-        
+        U1_STRING_SEND("HOLA UPCINO");
+        U1_NEWLINE();
+        __delay_ms(1000);
     }
 }

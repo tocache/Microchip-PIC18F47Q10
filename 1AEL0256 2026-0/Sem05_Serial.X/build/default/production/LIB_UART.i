@@ -1,4 +1,4 @@
-# 1 "maincode00.c"
+# 1 "LIB_UART.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 295 "<built-in>" 3
@@ -6,14 +6,8 @@
 # 1 "<built-in>" 2
 # 1 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include/language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "maincode00.c" 2
-
-
-
-
-
-
-
+# 1 "LIB_UART.c" 2
+# 19 "LIB_UART.c"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include/xc.h" 1 3
 # 18 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include/xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -22116,105 +22110,65 @@ __attribute__((__unsupported__("The READTIMER" "0" "() macro is not available wi
 unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 34 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include/xc.h" 2 3
-# 9 "maincode00.c" 2
-# 1 "./cabecera.h" 1
+# 20 "LIB_UART.c" 2
+# 1 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include\\c99/string.h" 1 3
+# 25 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include\\c99/string.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include\\c99/bits/alltypes.h" 1 3
+# 421 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include\\c99/bits/alltypes.h" 3
+typedef struct __locale_struct * locale_t;
+# 26 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include\\c99/string.h" 2 3
+
+void *memcpy (void *restrict, const void *restrict, size_t);
+void *memmove (void *, const void *, size_t);
+void *memset (void *, int, size_t);
+int memcmp (const void *, const void *, size_t);
+void *memchr (const void *, int, size_t);
+
+char *strcpy (char *restrict, const char *restrict);
+char *strncpy (char *restrict, const char *restrict, size_t);
+
+char *strcat (char *restrict, const char *restrict);
+char *strncat (char *restrict, const char *restrict, size_t);
+
+int strcmp (const char *, const char *);
+int strncmp (const char *, const char *, size_t);
+
+int strcoll (const char *, const char *);
+size_t strxfrm (char *restrict, const char *restrict, size_t);
+
+char *strchr (const char *, int);
+char *strrchr (const char *, int);
+
+size_t strcspn (const char *, const char *);
+size_t strspn (const char *, const char *);
+char *strpbrk (const char *, const char *);
+char *strstr (const char *, const char *);
+char *strtok (char *restrict, const char *restrict);
+
+size_t strlen (const char *);
+
+char *strerror (int);
 
 
 
 
-
-
-#pragma config FEXTOSC = OFF
-#pragma config RSTOSC = HFINTOSC_1MHZ
-
-
-#pragma config CLKOUTEN = OFF
-#pragma config CSWEN = ON
-#pragma config FCMEN = ON
-
-
-#pragma config MCLRE = EXTMCLR
-#pragma config PWRTE = ON
-#pragma config LPBOREN = OFF
-#pragma config BOREN = OFF
-
-
-#pragma config BORV = VBOR_190
-#pragma config ZCD = OFF
-#pragma config PPS1WAY = ON
-#pragma config STVREN = ON
-#pragma config XINST = OFF
-
-
-#pragma config WDTCPS = WDTCPS_31
-#pragma config WDTE = OFF
-
-
-#pragma config WDTCWS = WDTCWS_7
-#pragma config WDTCCS = SC
-
-
-#pragma config WRT0 = OFF
-#pragma config WRT1 = OFF
-#pragma config WRT2 = OFF
-#pragma config WRT3 = OFF
-#pragma config WRT4 = OFF
-#pragma config WRT5 = OFF
-#pragma config WRT6 = OFF
-#pragma config WRT7 = OFF
-
-
-#pragma config WRTC = OFF
-#pragma config WRTB = OFF
-#pragma config WRTD = OFF
-#pragma config SCANE = ON
-#pragma config LVP = OFF
-
-
-#pragma config CP = OFF
-#pragma config CPD = OFF
+char *strtok_r (char *restrict, const char *restrict, char **restrict);
+int strerror_r (int, char *, size_t);
+char *stpcpy(char *restrict, const char *restrict);
+char *stpncpy(char *restrict, const char *restrict, size_t);
+size_t strnlen (const char *, size_t);
+char *strdup (const char *);
+char *strndup (const char *, size_t);
+char *strsignal(int);
+char *strerror_l (int, locale_t);
+int strcoll_l (const char *, const char *, locale_t);
+size_t strxfrm_l (char *restrict, const char *restrict, size_t, locale_t);
 
 
 
 
-#pragma config EBTR0 = OFF
-#pragma config EBTR1 = OFF
-#pragma config EBTR2 = OFF
-#pragma config EBTR3 = OFF
-#pragma config EBTR4 = OFF
-#pragma config EBTR5 = OFF
-#pragma config EBTR6 = OFF
-#pragma config EBTR7 = OFF
-
-
-#pragma config EBTRB = OFF
-# 10 "maincode00.c" 2
-# 1 "./LCD.h" 1
-# 11 "./LCD.h"
-void POS_CURSOR(unsigned char fila,unsigned char columna);
-void DISPLAY_ONOFF(unsigned char estado);
-void CURSOR_HOME(void);
-void CURSOR_ONOFF(unsigned char estado);
-void ENVIA_CHAR(unsigned char dato);
-void BORRAR_LCD(void);
-void LCD_CONFIG(void);
-void ENVIA_NIBBLE(unsigned char dato);
-void ENVIA_LCD_CMD(unsigned char dato);
-void LEER_LCD(void);
-void BLINK_CURSOR(unsigned char val);
-void GENERACARACTER(const unsigned char *vector,unsigned char pos);
-void ESCRIBE_MENSAJE(const char *cadena,unsigned char tam);
-void ESCRIBE_MENSAJE2(const char *cadena);
-void CURSOR_SHIFTLEFT(void);
-void CURSOR_SHIFTRIGHT(void);
-void DISPLAY_SHIFTLEFT(void);
-void DISPLAY_SHIFTRIGHT(void);
-void LCD_INIT(void);
-void LCD_ESCRIBE_VAR_CHAR(unsigned char numero, unsigned char n_digitos);
-void LCD_ESCRIBE_VAR_INT(unsigned int numero, unsigned char n_digitos);
-void LCD_CHAR_GRADO(void);
-void LCD_VARCHAR_BITS(unsigned char dato);
-# 11 "maincode00.c" 2
+void *memccpy (void *restrict, const void *restrict, int, size_t);
+# 21 "LIB_UART.c" 2
 # 1 "./LIB_UART.h" 1
 # 35 "./LIB_UART.h"
 void U1_INIT(unsigned int velocidad);
@@ -22233,29 +22187,187 @@ void U1_VAR_INT(unsigned int numero, unsigned char n_digitos, unsigned char punt
 
 
 void U1_NEWLINE(void);
-# 12 "maincode00.c" 2
+# 22 "LIB_UART.c" 2
+
+void U1_INIT(unsigned int velocidad){
 
 
-void configuro(void){
 
-    OSCCON1 = 0x60;
-    OSCFRQ = 0x06;
-    OSCEN = 0x40;
-
-    LCD_INIT();
-
-    U1_INIT(207);
+    BAUD2CONbits.BRG16 = 0;
+    SP2BRGH = 0;
+    SP2BRGL = 51;
+    TRISDbits.TRISD0 = 0;
+    ANSELDbits.ANSELD0 = 0;
+    RD0PPS = 0x0B;
+    TX2STAbits.SYNC = 0;
+    RC2STAbits.SPEN = 1;
+    TX2STAbits.TXEN = 1;
+    PIR3bits.TX2IF = 0;
+# 48 "LIB_UART.c"
 }
 
-void main(void) {
-    configuro();
-    POS_CURSOR(1,0);
-    ESCRIBE_MENSAJE2("Semana 5-2 20260");
-    POS_CURSOR(2,0);
-    ESCRIBE_MENSAJE2("Hot Summer UPC");
-    while(1){
-        U1_STRING_SEND("HOLA UPCINO");
-        U1_NEWLINE();
-        _delay((unsigned long)((1000)*(32000000UL/4000.0)));
+
+void U1_BYTE_SEND(unsigned char dato){
+    TX2REG = dato;
+    while(TX2STAbits.TRMT == 0);
+}
+
+
+void U1_STRING_SEND(const char *cadena)
+{
+    unsigned char tam;
+    tam = strlen(cadena);
+ unsigned char i = 0;
+ for(i = 0; i<tam; i++)
+ {
+  U1_BYTE_SEND(cadena[i]);
+ }
+}
+
+
+void U1_VAR_CHAR(unsigned char numero, unsigned char n_digitos){
+    unsigned char centena, decena, unidad;
+    centena = (numero % 1000) / 100;
+    decena = (numero % 100) / 10;
+    unidad = numero % 10;
+    switch(n_digitos){
+        case 1:
+            U1_BYTE_SEND(unidad+0x30);
+            break;
+        case 2:
+            U1_BYTE_SEND(decena+0x30);
+            U1_BYTE_SEND(unidad+0x30);
+            break;
+        case 3:
+            U1_BYTE_SEND(centena+0x30);
+            U1_BYTE_SEND(decena+0x30);
+            U1_BYTE_SEND(unidad+0x30);
+            break;
     }
+}
+
+
+void U1_VAR_INT(unsigned int numero, unsigned char n_digitos, unsigned char punto){
+    unsigned char d_millar, millar, centena, decena, unidad;
+    d_millar = numero / 10000;
+    millar = (numero % 10000) / 1000;
+    centena = (numero % 1000) / 100;
+    decena = (numero % 100) / 10;
+    unidad = numero % 10;
+    switch(n_digitos){
+        case 1:
+            U1_BYTE_SEND(unidad+0x30);
+            break;
+        case 2:
+            if(punto == 0){
+                U1_BYTE_SEND(decena+0x30);
+                U1_BYTE_SEND(unidad+0x30);
+            }
+            else if(punto == 1){
+                U1_BYTE_SEND(decena+0x30);
+                U1_BYTE_SEND('.');
+                U1_BYTE_SEND(unidad+0x30);
+            }
+            break;
+        case 3:
+            switch(punto){
+                case 0:
+                    U1_BYTE_SEND(centena+0x30);
+                    U1_BYTE_SEND(decena+0x30);
+                    U1_BYTE_SEND(unidad+0x30);
+                    break;
+                case 1:
+                    U1_BYTE_SEND(centena+0x30);
+                    U1_BYTE_SEND(decena+0x30);
+                    U1_BYTE_SEND('.');
+                    U1_BYTE_SEND(unidad+0x30);
+                    break;
+                case 2:
+                    U1_BYTE_SEND(centena+0x30);
+                    U1_BYTE_SEND('.');
+                    U1_BYTE_SEND(decena+0x30);
+                    U1_BYTE_SEND(unidad+0x30);
+                    break;
+            }
+            break;
+        case 4:
+            switch(punto){
+                case 0:
+                    U1_BYTE_SEND(millar+0x30);
+                    U1_BYTE_SEND(centena+0x30);
+                    U1_BYTE_SEND(decena+0x30);
+                    U1_BYTE_SEND(unidad+0x30);
+                    break;
+                case 1:
+                    U1_BYTE_SEND(millar+0x30);
+                    U1_BYTE_SEND(centena+0x30);
+                    U1_BYTE_SEND(decena+0x30);
+                    U1_BYTE_SEND('.');
+                    U1_BYTE_SEND(unidad+0x30);
+                    break;
+                case 2:
+                    U1_BYTE_SEND(millar+0x30);
+                    U1_BYTE_SEND(centena+0x30);
+                    U1_BYTE_SEND('.');
+                    U1_BYTE_SEND(decena+0x30);
+                    U1_BYTE_SEND(unidad+0x30);
+                    break;
+                case 3:
+                    U1_BYTE_SEND(millar+0x30);
+                    U1_BYTE_SEND('.');
+                    U1_BYTE_SEND(centena+0x30);
+                    U1_BYTE_SEND(decena+0x30);
+                    U1_BYTE_SEND(unidad+0x30);
+                    break;
+            }
+            break;
+        case 5:
+            switch(punto){
+                case 0:
+                    U1_BYTE_SEND(d_millar+0x30);
+                    U1_BYTE_SEND(millar+0x30);
+                    U1_BYTE_SEND(centena+0x30);
+                    U1_BYTE_SEND(decena+0x30);
+                    U1_BYTE_SEND(unidad+0x30);
+                    break;
+                case 1:
+                    U1_BYTE_SEND(d_millar+0x30);
+                    U1_BYTE_SEND(millar+0x30);
+                    U1_BYTE_SEND(centena+0x30);
+                    U1_BYTE_SEND(decena+0x30);
+                    U1_BYTE_SEND('.');
+                    U1_BYTE_SEND(unidad+0x30);
+                    break;
+                case 2:
+                    U1_BYTE_SEND(d_millar+0x30);
+                    U1_BYTE_SEND(millar+0x30);
+                    U1_BYTE_SEND(centena+0x30);
+                    U1_BYTE_SEND('.');
+                    U1_BYTE_SEND(decena+0x30);
+                    U1_BYTE_SEND(unidad+0x30);
+                    break;
+                case 3:
+                    U1_BYTE_SEND(d_millar+0x30);
+                    U1_BYTE_SEND(millar+0x30);
+                    U1_BYTE_SEND('.');
+                    U1_BYTE_SEND(centena+0x30);
+                    U1_BYTE_SEND(decena+0x30);
+                    U1_BYTE_SEND(unidad+0x30);
+                    break;
+                case 4:
+                    U1_BYTE_SEND(d_millar+0x30);
+                    U1_BYTE_SEND('.');
+                    U1_BYTE_SEND(millar+0x30);
+                    U1_BYTE_SEND(centena+0x30);
+                    U1_BYTE_SEND(decena+0x30);
+                    U1_BYTE_SEND(unidad+0x30);
+                    break;
+            }
+            break;
+    }
+}
+
+void U1_NEWLINE(void){
+    U1_BYTE_SEND(0x0A);
+    U1_BYTE_SEND(0x0D);
 }
