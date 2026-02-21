@@ -1,4 +1,4 @@
-# 1 "LCD.c"
+# 1 "maincode01.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 295 "<built-in>" 3
@@ -6,7 +6,14 @@
 # 1 "<built-in>" 2
 # 1 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include/language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "LCD.c" 2
+# 1 "maincode01.c" 2
+
+
+
+
+
+
+
 # 1 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include/xc.h" 1 3
 # 18 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include/xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -22109,7 +22116,79 @@ __attribute__((__unsupported__("The READTIMER" "0" "() macro is not available wi
 unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 34 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include/xc.h" 2 3
-# 2 "LCD.c" 2
+# 9 "maincode01.c" 2
+# 1 "./cabecera.h" 1
+
+
+
+
+
+
+#pragma config FEXTOSC = OFF
+#pragma config RSTOSC = HFINTOSC_1MHZ
+
+
+#pragma config CLKOUTEN = OFF
+#pragma config CSWEN = ON
+#pragma config FCMEN = ON
+
+
+#pragma config MCLRE = EXTMCLR
+#pragma config PWRTE = ON
+#pragma config LPBOREN = OFF
+#pragma config BOREN = OFF
+
+
+#pragma config BORV = VBOR_190
+#pragma config ZCD = OFF
+#pragma config PPS1WAY = ON
+#pragma config STVREN = ON
+#pragma config XINST = OFF
+
+
+#pragma config WDTCPS = WDTCPS_31
+#pragma config WDTE = OFF
+
+
+#pragma config WDTCWS = WDTCWS_7
+#pragma config WDTCCS = SC
+
+
+#pragma config WRT0 = OFF
+#pragma config WRT1 = OFF
+#pragma config WRT2 = OFF
+#pragma config WRT3 = OFF
+#pragma config WRT4 = OFF
+#pragma config WRT5 = OFF
+#pragma config WRT6 = OFF
+#pragma config WRT7 = OFF
+
+
+#pragma config WRTC = OFF
+#pragma config WRTB = OFF
+#pragma config WRTD = OFF
+#pragma config SCANE = ON
+#pragma config LVP = OFF
+
+
+#pragma config CP = OFF
+#pragma config CPD = OFF
+
+
+
+
+#pragma config EBTR0 = OFF
+#pragma config EBTR1 = OFF
+#pragma config EBTR2 = OFF
+#pragma config EBTR3 = OFF
+#pragma config EBTR4 = OFF
+#pragma config EBTR5 = OFF
+#pragma config EBTR6 = OFF
+#pragma config EBTR7 = OFF
+
+
+#pragma config EBTRB = OFF
+# 10 "maincode01.c" 2
 # 1 "./LCD.h" 1
 # 11 "./LCD.h"
 void POS_CURSOR(unsigned char fila,unsigned char columna);
@@ -22135,419 +22214,90 @@ void LCD_ESCRIBE_VAR_CHAR(unsigned char numero, unsigned char n_digitos);
 void LCD_ESCRIBE_VAR_INT(unsigned int numero, unsigned char n_digitos, unsigned char punto);
 void LCD_CHAR_GRADO(void);
 void LCD_VARCHAR_BITS(unsigned char dato);
-# 3 "LCD.c" 2
-# 1 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include\\c99/string.h" 1 3
-# 25 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include\\c99/string.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include\\c99/bits/alltypes.h" 1 3
-# 421 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include\\c99/bits/alltypes.h" 3
-typedef struct __locale_struct * locale_t;
-# 26 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include\\c99/string.h" 2 3
+# 11 "maincode01.c" 2
+# 1 "./LIB_UART.h" 1
+# 35 "./LIB_UART.h"
+void U1_INIT(unsigned int velocidad);
 
-void *memcpy (void *restrict, const void *restrict, size_t);
-void *memmove (void *, const void *, size_t);
-void *memset (void *, int, size_t);
-int memcmp (const void *, const void *, size_t);
-void *memchr (const void *, int, size_t);
 
-char *strcpy (char *restrict, const char *restrict);
-char *strncpy (char *restrict, const char *restrict, size_t);
+void U1_BYTE_SEND(unsigned char dato);
 
-char *strcat (char *restrict, const char *restrict);
-char *strncat (char *restrict, const char *restrict, size_t);
 
-int strcmp (const char *, const char *);
-int strncmp (const char *, const char *, size_t);
+void U1_STRING_SEND(const char *cadena);
 
-int strcoll (const char *, const char *);
-size_t strxfrm (char *restrict, const char *restrict, size_t);
 
-char *strchr (const char *, int);
-char *strrchr (const char *, int);
+void U1_VAR_CHAR(unsigned char numero, unsigned char n_digitos);
 
-size_t strcspn (const char *, const char *);
-size_t strspn (const char *, const char *);
-char *strpbrk (const char *, const char *);
-char *strstr (const char *, const char *);
-char *strtok (char *restrict, const char *restrict);
 
-size_t strlen (const char *);
+void U1_VAR_INT(unsigned int numero, unsigned char n_digitos, unsigned char punto);
 
-char *strerror (int);
+
+void U1_NEWLINE(void);
+# 12 "maincode01.c" 2
+# 1 "./LIB_DHT.h" 1
+# 19 "./LIB_DHT.h"
+void DHT_Start(unsigned char modelo);
+
+
+void DHT_Check(unsigned char modelo);
+
+
+unsigned char DHT_Read(unsigned char modelo);
 
 
 
 
-char *strtok_r (char *restrict, const char *restrict, char **restrict);
-int strerror_r (int, char *, size_t);
-char *stpcpy(char *restrict, const char *restrict);
-char *stpncpy(char *restrict, const char *restrict, size_t);
-size_t strnlen (const char *, size_t);
-char *strdup (const char *);
-char *strndup (const char *, size_t);
-char *strsignal(int);
-char *strerror_l (int, locale_t);
-int strcoll_l (const char *, const char *, locale_t);
-size_t strxfrm_l (char *restrict, const char *restrict, size_t, locale_t);
+unsigned int DHT_GetTemp(unsigned char modelo);
 
 
 
 
-void *memccpy (void *restrict, const void *restrict, int, size_t);
-# 4 "LCD.c" 2
+unsigned int DHT_GetHumid(unsigned char modelo);
 
-void POS_CURSOR(unsigned char fila,unsigned char columna)
-{
- if(fila == 1)
- {
-  ENVIA_LCD_CMD(0x80+columna);
- }
- else if(fila == 2)
- {
-  ENVIA_LCD_CMD(0xC0+columna);
- }
- else if(fila == 3)
- {
-  ENVIA_LCD_CMD(0x94+columna);
- }
- else if(fila == 4)
- {
-  ENVIA_LCD_CMD(0xD4+columna);
- }
+struct DHT_Values{
+    unsigned int DHT_Temp;
+    unsigned int DHT_Humid;
+};
+
+struct DHT_Values DHT_GetBoth(unsigned char modelo);
+# 13 "maincode01.c" 2
+
+
+unsigned int Temperatura, Humedad;
+
+
+void configuro(void){
+
+    OSCCON1 = 0x60;
+    OSCFRQ = 0x06;
+    OSCEN = 0x40;
+
+    LCD_INIT();
+
+    U1_INIT(207);
 }
 
-void BLINK_CURSOR(unsigned char val)
-{
- if(val == 1) ENVIA_LCD_CMD(0x0E);
- if(val == 0 ) ENVIA_LCD_CMD(0x0F);
-}
-
-void DISPLAY_ONOFF(unsigned char estado)
-{
- if(estado == 0) ENVIA_LCD_CMD(0x0F);
- if(estado == 1) ENVIA_LCD_CMD(0x08);
-}
-
-void CURSOR_HOME(void)
-{
- ENVIA_LCD_CMD(0x02);
-}
-
-void CURSOR_SHIFTLEFT(void)
-{
- ENVIA_LCD_CMD(0x10);
-}
-
-void CURSOR_SHIFTRIGHT(void)
-{
- ENVIA_LCD_CMD(0x14);
-}
-
-void DISPLAY_SHIFTLEFT(void)
-{
- ENVIA_LCD_CMD(0x18);
-}
-
-void DISPLAY_SHIFTRIGHT(void)
-{
- ENVIA_LCD_CMD(0x1C);
-}
-
-void CURSOR_ONOFF(unsigned char estado)
-{
- if(estado == 0) ENVIA_LCD_CMD(0x0E);
- if(estado == 1) ENVIA_LCD_CMD(0x0C);
-}
-
-void ESCRIBE_MENSAJE(const char *cadena,unsigned char tam)
-{
- unsigned char i = 0;
- for(i = 0; i<tam; i++)
- {
-  ENVIA_CHAR(cadena[i]);
- }
-}
-
-void ESCRIBE_MENSAJE2(const char *cadena)
-{
-    unsigned char tam;
-    tam = strlen(cadena);
- unsigned char i = 0;
- for(i = 0; i<tam; i++)
- {
-  ENVIA_CHAR(cadena[i]);
- }
-}
-
-void ENVIA_CHAR(unsigned char dato)
-{
- unsigned char aux;
- LATCbits.LATC0 = 1;
- LEER_LCD();
- TRISD = 0x00;
-    _delay((unsigned long)((100)*(32000000UL/4000000.0)));
- LATCbits.LATC1 = 0;
- LATCbits.LATC2 = 0;
- LATCbits.LATC0 = 1;
- aux = dato & 0xF0;
- ENVIA_NIBBLE(aux);
- aux = dato << 4;
- ENVIA_NIBBLE(aux);
-}
-
-void BORRAR_LCD(void)
-{
- ENVIA_LCD_CMD(0x01);
-}
-
-void LCD_CONFIG(void)
-{
- LATCbits.LATC0 = 0;
- LATCbits.LATC1 = 0;
- ENVIA_NIBBLE(0x30);
-    _delay((unsigned long)((2)*(32000000UL/4000.0)));
- ENVIA_NIBBLE(0x30);
-    _delay((unsigned long)((100)*(32000000UL/4000000.0)));
-    ENVIA_NIBBLE(0x30);
- ENVIA_NIBBLE(0x20);
- ENVIA_LCD_CMD(0x01);
- ENVIA_LCD_CMD(0x28);
- ENVIA_LCD_CMD(0x0F);
- ENVIA_LCD_CMD(0x06);
- ENVIA_LCD_CMD(0x01);
-}
-
-void ENVIA_NIBBLE(unsigned char dato)
-{
- LATD &= 0x0F;
- dato &= 0xF0;
- LATD|= dato;
- LATCbits.LATC2 = 1;
-    _delay((unsigned long)((100)*(32000000UL/4000000.0)));
- LATCbits.LATC2 = 0;
-}
-
-void ENVIA_LCD_CMD(unsigned char dato)
-{
- unsigned char aux;
- LATCbits.LATC0 = 0;
- LEER_LCD();
- TRISD = 0b00000000;
-    _delay((unsigned long)((100)*(32000000UL/4000000.0)));
-    LATCbits.LATC1 = 0;
- LATCbits.LATC2 = 0;
- LATCbits.LATC0 = 0;
- aux = dato & 0xF0;
- ENVIA_NIBBLE(aux);
- aux = dato<<4;
- ENVIA_NIBBLE(aux);
-}
-
-void LEER_LCD(void)
-{
- unsigned char aux;
- TRISD = 0xF8;
- LATCbits.LATC0 = 0;
- LATCbits.LATC1 = 1;
- LATCbits.LATC2 = 1;
-    _delay((unsigned long)((100)*(32000000UL/4000000.0)));
- aux = PORTD;
- LATCbits.LATC2 = 0;
-    _delay((unsigned long)((100)*(32000000UL/4000000.0)));
- LATCbits.LATC2 = 1;
-    _delay((unsigned long)((100)*(32000000UL/4000000.0)));
- LATCbits.LATC2 = 0;
- aux = aux & 0x80;
- while(aux == 0x80)
-        {
-            LATCbits.LATC2 = 1;
-            _delay((unsigned long)((100)*(32000000UL/4000000.0)));
-            aux = PORTD;
-            LATCbits.LATC2 = 0;
-            _delay((unsigned long)((100)*(32000000UL/4000000.0)));
-            LATCbits.LATC2 = 1;
-            _delay((unsigned long)((100)*(32000000UL/4000000.0)));
-            LATCbits.LATC2 = 0;
-            aux = aux & 0x80;
- }
-}
-
-void GENERACARACTER(const unsigned char *vector,unsigned char pos)
-{
- unsigned char i;
- ENVIA_LCD_CMD(0x40+8*pos);
- for(i=0;i<8;i++)
- {
-  ENVIA_CHAR(vector[i]);
- }
- ENVIA_LCD_CMD(0x80);
-}
-
-void LCD_INIT(void){
-    TRISD = 0x00;
-    ANSELD = 0x00;
-    TRISC = 0xF8;
-    ANSELC = 0xF8;
-    _delay((unsigned long)((15)*(32000000UL/4000.0)));
-    LCD_CONFIG();
-    _delay((unsigned long)((15)*(32000000UL/4000.0)));
+void main(void) {
+    configuro();
+    POS_CURSOR(1,0);
+    ESCRIBE_MENSAJE2("Semana 5-2 20260");
+    POS_CURSOR(2,0);
+    ESCRIBE_MENSAJE2("Hot Summer UPC");
+    _delay((unsigned long)((3000)*(32000000UL/4000.0)));
     BORRAR_LCD();
-    CURSOR_HOME();
-    CURSOR_ONOFF(1);
-}
-
-void LCD_ESCRIBE_VAR_CHAR(unsigned char numero, unsigned char n_digitos){
-    unsigned char centena, decena, unidad;
-    centena = (numero % 1000) / 100;
-    decena = (numero % 100) / 10;
-    unidad = numero % 10;
-    switch(n_digitos){
-        case 1:
-            ENVIA_CHAR(unidad+0x30);
-            break;
-        case 2:
-            ENVIA_CHAR(decena+0x30);
-            ENVIA_CHAR(unidad+0x30);
-            break;
-        case 3:
-            ENVIA_CHAR(centena+0x30);
-            ENVIA_CHAR(decena+0x30);
-            ENVIA_CHAR(unidad+0x30);
-            break;
-    }
-}
-
-void LCD_ESCRIBE_VAR_INT(unsigned int numero, unsigned char n_digitos, unsigned char punto){
-    unsigned char d_millar, millar, centena, decena, unidad;
-    d_millar = numero / 10000;
-    millar = (numero % 10000) / 1000;
-    centena = (numero % 1000) / 100;
-    decena = (numero % 100) / 10;
-    unidad = numero % 10;
-    switch(n_digitos){
-        case 1:
-            ENVIA_CHAR(unidad+0x30);
-            break;
-        case 2:
-            if(punto == 0){
-                ENVIA_CHAR(decena+0x30);
-                ENVIA_CHAR(unidad+0x30);
-            }
-            else if(punto == 1){
-                ENVIA_CHAR(decena+0x30);
-                ENVIA_CHAR('.');
-                ENVIA_CHAR(unidad+0x30);
-            }
-            break;
-        case 3:
-            switch(punto){
-                case 0:
-                    ENVIA_CHAR(centena+0x30);
-                    ENVIA_CHAR(decena+0x30);
-                    ENVIA_CHAR(unidad+0x30);
-                    break;
-                case 1:
-                    ENVIA_CHAR(centena+0x30);
-                    ENVIA_CHAR(decena+0x30);
-                    ENVIA_CHAR('.');
-                    ENVIA_CHAR(unidad+0x30);
-                    break;
-                case 2:
-                    ENVIA_CHAR(centena+0x30);
-                    ENVIA_CHAR('.');
-                    ENVIA_CHAR(decena+0x30);
-                    ENVIA_CHAR(unidad+0x30);
-                    break;
-            }
-            break;
-        case 4:
-            switch(punto){
-                case 0:
-                    ENVIA_CHAR(millar+0x30);
-                    ENVIA_CHAR(centena+0x30);
-                    ENVIA_CHAR(decena+0x30);
-                    ENVIA_CHAR(unidad+0x30);
-                    break;
-                case 1:
-                    ENVIA_CHAR(millar+0x30);
-                    ENVIA_CHAR(centena+0x30);
-                    ENVIA_CHAR(decena+0x30);
-                    ENVIA_CHAR('.');
-                    ENVIA_CHAR(unidad+0x30);
-                    break;
-                case 2:
-                    ENVIA_CHAR(millar+0x30);
-                    ENVIA_CHAR(centena+0x30);
-                    ENVIA_CHAR('.');
-                    ENVIA_CHAR(decena+0x30);
-                    ENVIA_CHAR(unidad+0x30);
-                    break;
-                case 3:
-                    ENVIA_CHAR(millar+0x30);
-                    ENVIA_CHAR('.');
-                    ENVIA_CHAR(centena+0x30);
-                    ENVIA_CHAR(decena+0x30);
-                    ENVIA_CHAR(unidad+0x30);
-                    break;
-            }
-            break;
-        case 5:
-            switch(punto){
-                case 0:
-                    ENVIA_CHAR(d_millar+0x30);
-                    ENVIA_CHAR(millar+0x30);
-                    ENVIA_CHAR(centena+0x30);
-                    ENVIA_CHAR(decena+0x30);
-                    ENVIA_CHAR(unidad+0x30);
-                    break;
-                case 1:
-                    ENVIA_CHAR(d_millar+0x30);
-                    ENVIA_CHAR(millar+0x30);
-                    ENVIA_CHAR(centena+0x30);
-                    ENVIA_CHAR(decena+0x30);
-                    ENVIA_CHAR('.');
-                    ENVIA_CHAR(unidad+0x30);
-                    break;
-                case 2:
-                    ENVIA_CHAR(d_millar+0x30);
-                    ENVIA_CHAR(millar+0x30);
-                    ENVIA_CHAR(centena+0x30);
-                    ENVIA_CHAR('.');
-                    ENVIA_CHAR(decena+0x30);
-                    ENVIA_CHAR(unidad+0x30);
-                    break;
-                case 3:
-                    ENVIA_CHAR(d_millar+0x30);
-                    ENVIA_CHAR(millar+0x30);
-                    ENVIA_CHAR('.');
-                    ENVIA_CHAR(centena+0x30);
-                    ENVIA_CHAR(decena+0x30);
-                    ENVIA_CHAR(unidad+0x30);
-                    break;
-                case 4:
-                    ENVIA_CHAR(d_millar+0x30);
-                    ENVIA_CHAR('.');
-                    ENVIA_CHAR(millar+0x30);
-                    ENVIA_CHAR(centena+0x30);
-                    ENVIA_CHAR(decena+0x30);
-                    ENVIA_CHAR(unidad+0x30);
-                    break;
-            }
-            break;
-    }
-}
-
-void LCD_CHAR_GRADO(void){
-    ENVIA_CHAR(0xDF);
-}
-
-void LCD_VARCHAR_BITS(unsigned char dato){
-    unsigned char x_var;
-    for(x_var=0;x_var<8;x_var++){
-        if (((dato >> (7 - x_var)) & 0x01) == 1){
-            ENVIA_CHAR('1');
-        }
-        else{
-            ENVIA_CHAR('0');
-        }
+    while(1){
+        struct DHT_Values actuales = DHT_GetBoth(1);
+        POS_CURSOR(1,0);
+        ESCRIBE_MENSAJE2("Temp:");
+        LCD_ESCRIBE_VAR_INT(actuales.DHT_Temp, 3, 1);
+        LCD_CHAR_GRADO();
+        ESCRIBE_MENSAJE2("C");
+        POS_CURSOR(2,0);
+        ESCRIBE_MENSAJE2("Humed:");
+        LCD_ESCRIBE_VAR_INT(actuales.DHT_Humid, 3, 1);
+        ESCRIBE_MENSAJE2("%RH");
+        U1_STRING_SEND("HOLA UPCINO");
+        U1_NEWLINE();
+        _delay((unsigned long)((1000)*(32000000UL/4000.0)));
     }
 }

@@ -1,4 +1,4 @@
-# 1 "LCD.c"
+# 1 "LIB_DHT.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 295 "<built-in>" 3
@@ -6,7 +6,9 @@
 # 1 "<built-in>" 2
 # 1 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include/language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "LCD.c" 2
+# 1 "LIB_DHT.c" 2
+# 1 "./LIB_DHT.h" 1
+# 12 "./LIB_DHT.h"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include/xc.h" 1 3
 # 18 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include/xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -22109,445 +22111,195 @@ __attribute__((__unsupported__("The READTIMER" "0" "() macro is not available wi
 unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 34 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include/xc.h" 2 3
-# 2 "LCD.c" 2
-# 1 "./LCD.h" 1
-# 11 "./LCD.h"
-void POS_CURSOR(unsigned char fila,unsigned char columna);
-void DISPLAY_ONOFF(unsigned char estado);
-void CURSOR_HOME(void);
-void CURSOR_ONOFF(unsigned char estado);
-void ENVIA_CHAR(unsigned char dato);
-void BORRAR_LCD(void);
-void LCD_CONFIG(void);
-void ENVIA_NIBBLE(unsigned char dato);
-void ENVIA_LCD_CMD(unsigned char dato);
-void LEER_LCD(void);
-void BLINK_CURSOR(unsigned char val);
-void GENERACARACTER(const unsigned char *vector,unsigned char pos);
-void ESCRIBE_MENSAJE(const char *cadena,unsigned char tam);
-void ESCRIBE_MENSAJE2(const char *cadena);
-void CURSOR_SHIFTLEFT(void);
-void CURSOR_SHIFTRIGHT(void);
-void DISPLAY_SHIFTLEFT(void);
-void DISPLAY_SHIFTRIGHT(void);
-void LCD_INIT(void);
-void LCD_ESCRIBE_VAR_CHAR(unsigned char numero, unsigned char n_digitos);
-void LCD_ESCRIBE_VAR_INT(unsigned int numero, unsigned char n_digitos, unsigned char punto);
-void LCD_CHAR_GRADO(void);
-void LCD_VARCHAR_BITS(unsigned char dato);
-# 3 "LCD.c" 2
-# 1 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include\\c99/string.h" 1 3
-# 25 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include\\c99/string.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include\\c99/bits/alltypes.h" 1 3
-# 421 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include\\c99/bits/alltypes.h" 3
-typedef struct __locale_struct * locale_t;
-# 26 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include\\c99/string.h" 2 3
-
-void *memcpy (void *restrict, const void *restrict, size_t);
-void *memmove (void *, const void *, size_t);
-void *memset (void *, int, size_t);
-int memcmp (const void *, const void *, size_t);
-void *memchr (const void *, int, size_t);
-
-char *strcpy (char *restrict, const char *restrict);
-char *strncpy (char *restrict, const char *restrict, size_t);
-
-char *strcat (char *restrict, const char *restrict);
-char *strncat (char *restrict, const char *restrict, size_t);
-
-int strcmp (const char *, const char *);
-int strncmp (const char *, const char *, size_t);
-
-int strcoll (const char *, const char *);
-size_t strxfrm (char *restrict, const char *restrict, size_t);
-
-char *strchr (const char *, int);
-char *strrchr (const char *, int);
-
-size_t strcspn (const char *, const char *);
-size_t strspn (const char *, const char *);
-char *strpbrk (const char *, const char *);
-char *strstr (const char *, const char *);
-char *strtok (char *restrict, const char *restrict);
-
-size_t strlen (const char *);
-
-char *strerror (int);
+# 13 "./LIB_DHT.h" 2
 
 
 
 
-char *strtok_r (char *restrict, const char *restrict, char **restrict);
-int strerror_r (int, char *, size_t);
-char *stpcpy(char *restrict, const char *restrict);
-char *stpncpy(char *restrict, const char *restrict, size_t);
-size_t strnlen (const char *, size_t);
-char *strdup (const char *);
-char *strndup (const char *, size_t);
-char *strsignal(int);
-char *strerror_l (int, locale_t);
-int strcoll_l (const char *, const char *, locale_t);
-size_t strxfrm_l (char *restrict, const char *restrict, size_t, locale_t);
+
+
+void DHT_Start(unsigned char modelo);
+
+
+void DHT_Check(unsigned char modelo);
+
+
+unsigned char DHT_Read(unsigned char modelo);
 
 
 
 
-void *memccpy (void *restrict, const void *restrict, int, size_t);
-# 4 "LCD.c" 2
+unsigned int DHT_GetTemp(unsigned char modelo);
 
-void POS_CURSOR(unsigned char fila,unsigned char columna)
-{
- if(fila == 1)
- {
-  ENVIA_LCD_CMD(0x80+columna);
- }
- else if(fila == 2)
- {
-  ENVIA_LCD_CMD(0xC0+columna);
- }
- else if(fila == 3)
- {
-  ENVIA_LCD_CMD(0x94+columna);
- }
- else if(fila == 4)
- {
-  ENVIA_LCD_CMD(0xD4+columna);
- }
-}
 
-void BLINK_CURSOR(unsigned char val)
-{
- if(val == 1) ENVIA_LCD_CMD(0x0E);
- if(val == 0 ) ENVIA_LCD_CMD(0x0F);
-}
 
-void DISPLAY_ONOFF(unsigned char estado)
-{
- if(estado == 0) ENVIA_LCD_CMD(0x0F);
- if(estado == 1) ENVIA_LCD_CMD(0x08);
-}
 
-void CURSOR_HOME(void)
-{
- ENVIA_LCD_CMD(0x02);
-}
+unsigned int DHT_GetHumid(unsigned char modelo);
 
-void CURSOR_SHIFTLEFT(void)
-{
- ENVIA_LCD_CMD(0x10);
-}
+struct DHT_Values{
+    unsigned int DHT_Temp;
+    unsigned int DHT_Humid;
+};
 
-void CURSOR_SHIFTRIGHT(void)
-{
- ENVIA_LCD_CMD(0x14);
-}
+struct DHT_Values DHT_GetBoth(unsigned char modelo);
+# 2 "LIB_DHT.c" 2
 
-void DISPLAY_SHIFTLEFT(void)
-{
- ENVIA_LCD_CMD(0x18);
-}
-
-void DISPLAY_SHIFTRIGHT(void)
-{
- ENVIA_LCD_CMD(0x1C);
-}
-
-void CURSOR_ONOFF(unsigned char estado)
-{
- if(estado == 0) ENVIA_LCD_CMD(0x0E);
- if(estado == 1) ENVIA_LCD_CMD(0x0C);
-}
-
-void ESCRIBE_MENSAJE(const char *cadena,unsigned char tam)
-{
- unsigned char i = 0;
- for(i = 0; i<tam; i++)
- {
-  ENVIA_CHAR(cadena[i]);
- }
-}
-
-void ESCRIBE_MENSAJE2(const char *cadena)
-{
-    unsigned char tam;
-    tam = strlen(cadena);
- unsigned char i = 0;
- for(i = 0; i<tam; i++)
- {
-  ENVIA_CHAR(cadena[i]);
- }
-}
-
-void ENVIA_CHAR(unsigned char dato)
-{
- unsigned char aux;
- LATCbits.LATC0 = 1;
- LEER_LCD();
- TRISD = 0x00;
-    _delay((unsigned long)((100)*(32000000UL/4000000.0)));
- LATCbits.LATC1 = 0;
- LATCbits.LATC2 = 0;
- LATCbits.LATC0 = 1;
- aux = dato & 0xF0;
- ENVIA_NIBBLE(aux);
- aux = dato << 4;
- ENVIA_NIBBLE(aux);
-}
-
-void BORRAR_LCD(void)
-{
- ENVIA_LCD_CMD(0x01);
-}
-
-void LCD_CONFIG(void)
-{
- LATCbits.LATC0 = 0;
- LATCbits.LATC1 = 0;
- ENVIA_NIBBLE(0x30);
-    _delay((unsigned long)((2)*(32000000UL/4000.0)));
- ENVIA_NIBBLE(0x30);
-    _delay((unsigned long)((100)*(32000000UL/4000000.0)));
-    ENVIA_NIBBLE(0x30);
- ENVIA_NIBBLE(0x20);
- ENVIA_LCD_CMD(0x01);
- ENVIA_LCD_CMD(0x28);
- ENVIA_LCD_CMD(0x0F);
- ENVIA_LCD_CMD(0x06);
- ENVIA_LCD_CMD(0x01);
-}
-
-void ENVIA_NIBBLE(unsigned char dato)
-{
- LATD &= 0x0F;
- dato &= 0xF0;
- LATD|= dato;
- LATCbits.LATC2 = 1;
-    _delay((unsigned long)((100)*(32000000UL/4000000.0)));
- LATCbits.LATC2 = 0;
-}
-
-void ENVIA_LCD_CMD(unsigned char dato)
-{
- unsigned char aux;
- LATCbits.LATC0 = 0;
- LEER_LCD();
- TRISD = 0b00000000;
-    _delay((unsigned long)((100)*(32000000UL/4000000.0)));
-    LATCbits.LATC1 = 0;
- LATCbits.LATC2 = 0;
- LATCbits.LATC0 = 0;
- aux = dato & 0xF0;
- ENVIA_NIBBLE(aux);
- aux = dato<<4;
- ENVIA_NIBBLE(aux);
-}
-
-void LEER_LCD(void)
-{
- unsigned char aux;
- TRISD = 0xF8;
- LATCbits.LATC0 = 0;
- LATCbits.LATC1 = 1;
- LATCbits.LATC2 = 1;
-    _delay((unsigned long)((100)*(32000000UL/4000000.0)));
- aux = PORTD;
- LATCbits.LATC2 = 0;
-    _delay((unsigned long)((100)*(32000000UL/4000000.0)));
- LATCbits.LATC2 = 1;
-    _delay((unsigned long)((100)*(32000000UL/4000000.0)));
- LATCbits.LATC2 = 0;
- aux = aux & 0x80;
- while(aux == 0x80)
-        {
-            LATCbits.LATC2 = 1;
-            _delay((unsigned long)((100)*(32000000UL/4000000.0)));
-            aux = PORTD;
-            LATCbits.LATC2 = 0;
-            _delay((unsigned long)((100)*(32000000UL/4000000.0)));
-            LATCbits.LATC2 = 1;
-            _delay((unsigned long)((100)*(32000000UL/4000000.0)));
-            LATCbits.LATC2 = 0;
-            aux = aux & 0x80;
- }
-}
-
-void GENERACARACTER(const unsigned char *vector,unsigned char pos)
-{
- unsigned char i;
- ENVIA_LCD_CMD(0x40+8*pos);
- for(i=0;i<8;i++)
- {
-  ENVIA_CHAR(vector[i]);
- }
- ENVIA_LCD_CMD(0x80);
-}
-
-void LCD_INIT(void){
-    TRISD = 0x00;
-    ANSELD = 0x00;
-    TRISC = 0xF8;
-    ANSELC = 0xF8;
-    _delay((unsigned long)((15)*(32000000UL/4000.0)));
-    LCD_CONFIG();
-    _delay((unsigned long)((15)*(32000000UL/4000.0)));
-    BORRAR_LCD();
-    CURSOR_HOME();
-    CURSOR_ONOFF(1);
-}
-
-void LCD_ESCRIBE_VAR_CHAR(unsigned char numero, unsigned char n_digitos){
-    unsigned char centena, decena, unidad;
-    centena = (numero % 1000) / 100;
-    decena = (numero % 100) / 10;
-    unidad = numero % 10;
-    switch(n_digitos){
-        case 1:
-            ENVIA_CHAR(unidad+0x30);
-            break;
-        case 2:
-            ENVIA_CHAR(decena+0x30);
-            ENVIA_CHAR(unidad+0x30);
-            break;
-        case 3:
-            ENVIA_CHAR(centena+0x30);
-            ENVIA_CHAR(decena+0x30);
-            ENVIA_CHAR(unidad+0x30);
-            break;
+void DHT_Start(unsigned char modelo){
+    if(modelo == 0){
+        TRISAbits.TRISA0 = 0;
+        ANSELAbits.ANSELA0 = 0;
+        LATAbits.LATA0 = 0;
+        _delay((unsigned long)((18)*(32000000UL/4000.0)));
+        LATAbits.LATA0 = 1;
+        _delay((unsigned long)((40)*(32000000UL/4000000.0)));
+        TRISAbits.TRISA0 = 1;
+    }
+    else if(modelo == 1){
+        TRISAbits.TRISA0 = 0;
+        ANSELAbits.ANSELA0 = 0;
+        LATAbits.LATA0 = 0;
+        _delay((unsigned long)((1)*(32000000UL/4000.0)));
+        LATAbits.LATA0 = 1;
+        _delay((unsigned long)((40)*(32000000UL/4000000.0)));
+        TRISAbits.TRISA0 = 1;
     }
 }
 
-void LCD_ESCRIBE_VAR_INT(unsigned int numero, unsigned char n_digitos, unsigned char punto){
-    unsigned char d_millar, millar, centena, decena, unidad;
-    d_millar = numero / 10000;
-    millar = (numero % 10000) / 1000;
-    centena = (numero % 1000) / 100;
-    decena = (numero % 100) / 10;
-    unidad = numero % 10;
-    switch(n_digitos){
-        case 1:
-            ENVIA_CHAR(unidad+0x30);
-            break;
-        case 2:
-            if(punto == 0){
-                ENVIA_CHAR(decena+0x30);
-                ENVIA_CHAR(unidad+0x30);
-            }
-            else if(punto == 1){
-                ENVIA_CHAR(decena+0x30);
-                ENVIA_CHAR('.');
-                ENVIA_CHAR(unidad+0x30);
-            }
-            break;
-        case 3:
-            switch(punto){
-                case 0:
-                    ENVIA_CHAR(centena+0x30);
-                    ENVIA_CHAR(decena+0x30);
-                    ENVIA_CHAR(unidad+0x30);
-                    break;
-                case 1:
-                    ENVIA_CHAR(centena+0x30);
-                    ENVIA_CHAR(decena+0x30);
-                    ENVIA_CHAR('.');
-                    ENVIA_CHAR(unidad+0x30);
-                    break;
-                case 2:
-                    ENVIA_CHAR(centena+0x30);
-                    ENVIA_CHAR('.');
-                    ENVIA_CHAR(decena+0x30);
-                    ENVIA_CHAR(unidad+0x30);
-                    break;
-            }
-            break;
-        case 4:
-            switch(punto){
-                case 0:
-                    ENVIA_CHAR(millar+0x30);
-                    ENVIA_CHAR(centena+0x30);
-                    ENVIA_CHAR(decena+0x30);
-                    ENVIA_CHAR(unidad+0x30);
-                    break;
-                case 1:
-                    ENVIA_CHAR(millar+0x30);
-                    ENVIA_CHAR(centena+0x30);
-                    ENVIA_CHAR(decena+0x30);
-                    ENVIA_CHAR('.');
-                    ENVIA_CHAR(unidad+0x30);
-                    break;
-                case 2:
-                    ENVIA_CHAR(millar+0x30);
-                    ENVIA_CHAR(centena+0x30);
-                    ENVIA_CHAR('.');
-                    ENVIA_CHAR(decena+0x30);
-                    ENVIA_CHAR(unidad+0x30);
-                    break;
-                case 3:
-                    ENVIA_CHAR(millar+0x30);
-                    ENVIA_CHAR('.');
-                    ENVIA_CHAR(centena+0x30);
-                    ENVIA_CHAR(decena+0x30);
-                    ENVIA_CHAR(unidad+0x30);
-                    break;
-            }
-            break;
-        case 5:
-            switch(punto){
-                case 0:
-                    ENVIA_CHAR(d_millar+0x30);
-                    ENVIA_CHAR(millar+0x30);
-                    ENVIA_CHAR(centena+0x30);
-                    ENVIA_CHAR(decena+0x30);
-                    ENVIA_CHAR(unidad+0x30);
-                    break;
-                case 1:
-                    ENVIA_CHAR(d_millar+0x30);
-                    ENVIA_CHAR(millar+0x30);
-                    ENVIA_CHAR(centena+0x30);
-                    ENVIA_CHAR(decena+0x30);
-                    ENVIA_CHAR('.');
-                    ENVIA_CHAR(unidad+0x30);
-                    break;
-                case 2:
-                    ENVIA_CHAR(d_millar+0x30);
-                    ENVIA_CHAR(millar+0x30);
-                    ENVIA_CHAR(centena+0x30);
-                    ENVIA_CHAR('.');
-                    ENVIA_CHAR(decena+0x30);
-                    ENVIA_CHAR(unidad+0x30);
-                    break;
-                case 3:
-                    ENVIA_CHAR(d_millar+0x30);
-                    ENVIA_CHAR(millar+0x30);
-                    ENVIA_CHAR('.');
-                    ENVIA_CHAR(centena+0x30);
-                    ENVIA_CHAR(decena+0x30);
-                    ENVIA_CHAR(unidad+0x30);
-                    break;
-                case 4:
-                    ENVIA_CHAR(d_millar+0x30);
-                    ENVIA_CHAR('.');
-                    ENVIA_CHAR(millar+0x30);
-                    ENVIA_CHAR(centena+0x30);
-                    ENVIA_CHAR(decena+0x30);
-                    ENVIA_CHAR(unidad+0x30);
-                    break;
-            }
-            break;
-    }
-}
-
-void LCD_CHAR_GRADO(void){
-    ENVIA_CHAR(0xDF);
-}
-
-void LCD_VARCHAR_BITS(unsigned char dato){
-    unsigned char x_var;
-    for(x_var=0;x_var<8;x_var++){
-        if (((dato >> (7 - x_var)) & 0x01) == 1){
-            ENVIA_CHAR('1');
+void DHT_Check(unsigned char modelo){
+    unsigned char temp_x;
+    if(modelo == 0){
+        temp_x = 0;
+        while((PORTAbits.RA0 == 1) && temp_x < 100){
+            temp_x++;
         }
-        else{
-            ENVIA_CHAR('0');
+        _delay((unsigned long)((80)*(32000000UL/4000000.0)));
+        temp_x = 0;
+        while((PORTAbits.RA0 == 0) && temp_x < 100){
+            temp_x++;
+        }
+        _delay((unsigned long)((80)*(32000000UL/4000000.0)));
+        temp_x = 0;
+        while((PORTAbits.RA0 == 1) && temp_x < 100){
+            temp_x++;
         }
     }
+    else if(modelo == 1){
+        temp_x = 0;
+        while((PORTAbits.RA0 == 1) && temp_x < 100){
+            temp_x++;
+        }
+        _delay((unsigned long)((80)*(32000000UL/4000000.0)));
+        temp_x = 0;
+        while((PORTAbits.RA0 == 0) && temp_x < 100){
+            temp_x++;
+        }
+        _delay((unsigned long)((80)*(32000000UL/4000000.0)));
+        temp_x = 0;
+        while((PORTAbits.RA0 == 1) && temp_x < 100){
+            temp_x++;
+        }
+    }
+}
+
+unsigned char DHT_Read(unsigned char modelo){
+    unsigned char x = 0, data = 0;
+    unsigned char temp_x;
+    if(modelo == 0){
+        for(x=0;x<8;x++){
+            temp_x = 0;
+            while((PORTAbits.RA0 == 0) && temp_x < 100){
+                temp_x++;
+            }
+            _delay((unsigned long)((35)*(32000000UL/4000000.0)));
+            if(PORTAbits.RA0){
+                data = ((data<<1) | 1);
+            }
+            else{
+                data = (data<<1);
+            }
+            temp_x = 0;
+            while((PORTAbits.RA0 == 1) && temp_x < 100){
+                temp_x++;
+            }
+        }
+    }
+    else if(modelo == 1){
+        for(x=0;x<8;x++){
+            temp_x = 0;
+            while((PORTAbits.RA0 == 0) && temp_x < 100){
+                temp_x++;
+            }
+            _delay((unsigned long)((35)*(32000000UL/4000000.0)));
+            if(PORTAbits.RA0){
+                data = ((data<<1) | 1);
+            }
+            else{
+                data = (data<<1);
+            }
+            temp_x = 0;
+            while((PORTAbits.RA0 == 1) && temp_x < 100){
+                temp_x++;
+            }
+        }
+    }
+    return data;
+}
+
+unsigned int DHT_GetTemp(unsigned char modelo){
+    unsigned char RH_Ent, RH_Dec, Temp_Ent, Temp_Dec, Chksum;
+    unsigned int valor_dht=0;
+    DHT_Start(modelo);
+    DHT_Check(modelo);
+    RH_Ent = DHT_Read(modelo);
+    RH_Dec = DHT_Read(modelo);
+    Temp_Ent = DHT_Read(modelo);
+    Temp_Dec = DHT_Read(modelo);
+    Chksum = DHT_Read(modelo);
+    if(modelo == 0){
+        return(valor_dht + Temp_Ent);
+    }
+    else if(modelo == 1){
+        valor_dht = (Temp_Ent << 8) | Temp_Dec;
+        return(valor_dht);
+    }
+}
+
+unsigned int DHT_GetHumid(unsigned char modelo){
+    unsigned char RH_Ent, RH_Dec, Temp_Ent, Temp_Dec, Chksum;
+    unsigned int valor_dht=0;
+    DHT_Start(modelo);
+    DHT_Check(modelo);
+    RH_Ent = DHT_Read(modelo);
+    RH_Dec = DHT_Read(modelo);
+    Temp_Ent = DHT_Read(modelo);
+    Temp_Dec = DHT_Read(modelo);
+    Chksum = DHT_Read(modelo);
+    if(modelo == 0){
+        return(valor_dht + RH_Ent);
+    }
+    else if(modelo == 1){
+        valor_dht = (RH_Ent << 8) | RH_Dec;
+        return(valor_dht);
+    }
+}
+
+struct DHT_Values DHT_GetBoth(unsigned char modelo){
+    static struct DHT_Values lectura;
+    unsigned char RH_Ent, RH_Dec, Temp_Ent, Temp_Dec, Chksum;
+    DHT_Start(modelo);
+    DHT_Check(modelo);
+    RH_Ent = DHT_Read(modelo);
+    RH_Dec = DHT_Read(modelo);
+    Temp_Ent = DHT_Read(modelo);
+    Temp_Dec = DHT_Read(modelo);
+    Chksum = DHT_Read(modelo);
+    if(modelo == 0){
+        lectura.DHT_Temp = Temp_Ent;
+        lectura.DHT_Humid = RH_Ent;
+    }
+    else if(modelo == 1){
+        lectura.DHT_Temp = (Temp_Ent << 8) | Temp_Dec;
+        lectura.DHT_Humid = (RH_Ent << 8) | RH_Dec;
+    }
+    return lectura;
 }

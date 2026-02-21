@@ -28,7 +28,7 @@ void DISPLAY_SHIFTLEFT(void);
 void DISPLAY_SHIFTRIGHT(void);
 void LCD_INIT(void);
 void LCD_ESCRIBE_VAR_CHAR(unsigned char numero, unsigned char n_digitos);
-void LCD_ESCRIBE_VAR_INT(unsigned int numero, unsigned char n_digitos);
+void LCD_ESCRIBE_VAR_INT(unsigned int numero, unsigned char n_digitos, unsigned char punto);
 void LCD_CHAR_GRADO(void);
 void LCD_VARCHAR_BITS(unsigned char dato);
 

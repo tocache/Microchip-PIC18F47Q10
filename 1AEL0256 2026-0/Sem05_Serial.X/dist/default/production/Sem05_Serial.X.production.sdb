@@ -87,6 +87,20 @@
 [v _LEER_LCD LEER_LCD `(v  1 e 1 0 ]
 "192
 [v _LCD_INIT LCD_INIT `(v  1 e 1 0 ]
+"226
+[v _LCD_ESCRIBE_VAR_INT LCD_ESCRIBE_VAR_INT `(v  1 e 1 0 ]
+"346
+[v _LCD_CHAR_GRADO LCD_CHAR_GRADO `(v  1 e 1 0 ]
+"3 D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LIB_DHT.c
+[v _DHT_Start DHT_Start `(v  1 e 1 0 ]
+"24
+[v _DHT_Check DHT_Check `(v  1 e 1 0 ]
+"60
+[v _DHT_Read DHT_Read `(uc  1 e 1 0 ]
+"37 D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X/LIB_DHT.h
+[s S454 DHT_Values 4 `ui 1 DHT_Temp 2 0 `ui 1 DHT_Humid 2 2 ]
+"142 D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LIB_DHT.c
+[v _DHT_GetBoth DHT_GetBoth `(S454  1 e 4 0 ]
 "23 D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LIB_UART.c
 [v _U1_INIT U1_INIT `(v  1 e 1 0 ]
 "51
@@ -95,9 +109,9 @@
 [v _U1_STRING_SEND U1_STRING_SEND `(v  1 e 1 0 ]
 "211
 [v _U1_NEWLINE U1_NEWLINE `(v  1 e 1 0 ]
-"14 D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\maincode00.c
+"18 D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\maincode01.c
 [v _configuro configuro `(v  1 e 1 0 ]
-"25
+"29
 [v _main main `(v  1 e 1 0 ]
 "11479 C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f47q10.h
 [v _TX2REG TX2REG `VEuc  1 e 1 @3733 ]
@@ -105,7 +119,7 @@
 [v _SP2BRGL SP2BRGL `VEuc  1 e 1 @3734 ]
 "11562
 [v _SP2BRGH SP2BRGH `VEuc  1 e 1 @3735 ]
-[s S281 . 1 `uc 1 RX9D 1 0 :1:0 
+[s S238 . 1 `uc 1 RX9D 1 0 :1:0 
 `uc 1 OERR 1 0 :1:1 
 `uc 1 FERR 1 0 :1:2 
 `uc 1 ADDEN 1 0 :1:3 
@@ -115,9 +129,9 @@
 `uc 1 SPEN 1 0 :1:7 
 ]
 "11622
-[u S290 . 1 `S281 1 . 1 0 ]
-[v _RC2STAbits RC2STAbits `VES290  1 e 1 @3736 ]
-[s S260 . 1 `uc 1 TX9D 1 0 :1:0 
+[u S247 . 1 `S238 1 . 1 0 ]
+[v _RC2STAbits RC2STAbits `VES247  1 e 1 @3736 ]
+[s S217 . 1 `uc 1 TX9D 1 0 :1:0 
 `uc 1 TRMT 1 0 :1:1 
 `uc 1 BRGH 1 0 :1:2 
 `uc 1 SENDB 1 0 :1:3 
@@ -127,9 +141,9 @@
 `uc 1 CSRC 1 0 :1:7 
 ]
 "11744
-[u S269 . 1 `S260 1 . 1 0 ]
-[v _TX2STAbits TX2STAbits `VES269  1 e 1 @3737 ]
-[s S194 . 1 `uc 1 ABDEN 1 0 :1:0 
+[u S226 . 1 `S217 1 . 1 0 ]
+[v _TX2STAbits TX2STAbits `VES226  1 e 1 @3737 ]
+[s S151 . 1 `uc 1 ABDEN 1 0 :1:0 
 `uc 1 WUE 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 BRG16 1 0 :1:3 
@@ -139,9 +153,9 @@
 `uc 1 ABDOVF 1 0 :1:7 
 ]
 "11870
-[u S203 . 1 `S194 1 . 1 0 ]
-[v _BAUD2CONbits BAUD2CONbits `VES203  1 e 1 @3738 ]
-[s S302 . 1 `uc 1 SSPIF 1 0 :1:0 
+[u S160 . 1 `S151 1 . 1 0 ]
+[v _BAUD2CONbits BAUD2CONbits `VES160  1 e 1 @3738 ]
+[s S259 . 1 `uc 1 SSPIF 1 0 :1:0 
 `uc 1 BCLIF 1 0 :1:1 
 `uc 1 SSP2IF 1 0 :1:2 
 `uc 1 BCL2IF 1 0 :1:3 
@@ -151,14 +165,14 @@
 `uc 1 RC2IF 1 0 :1:7 
 ]
 "15777
-[s S311 . 1 `uc 1 SSP1IF 1 0 :1:0 
+[s S268 . 1 `uc 1 SSP1IF 1 0 :1:0 
 `uc 1 BCL1IF 1 0 :1:1 
 `uc 1 . 1 0 :2:2 
 `uc 1 TX1IF 1 0 :1:4 
 `uc 1 RC1IF 1 0 :1:5 
 ]
-[u S317 . 1 `S302 1 . 1 0 `S311 1 . 1 0 ]
-[v _PIR3bits PIR3bits `VES317  1 e 1 @3784 ]
+[u S274 . 1 `S259 1 . 1 0 `S268 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES274  1 e 1 @3784 ]
 "16625
 [v _OSCCON1 OSCCON1 `VEuc  1 e 1 @3795 ]
 "16917
@@ -167,11 +181,23 @@
 [v _OSCFRQ OSCFRQ `VEuc  1 e 1 @3801 ]
 "18599
 [v _RD0PPS RD0PPS `VEuc  1 e 1 @3834 ]
+[s S389 . 1 `uc 1 ANSELA0 1 0 :1:0 
+`uc 1 ANSELA1 1 0 :1:1 
+`uc 1 ANSELA2 1 0 :1:2 
+`uc 1 ANSELA3 1 0 :1:3 
+`uc 1 ANSELA4 1 0 :1:4 
+`uc 1 ANSELA5 1 0 :1:5 
+`uc 1 ANSELA6 1 0 :1:6 
+`uc 1 ANSELA7 1 0 :1:7 
+]
+"19534
+[u S398 . 1 `S389 1 . 1 0 ]
+[v _ANSELAbits ANSELAbits `VES398  1 e 1 @3852 ]
 "20509
 [v _ANSELC ANSELC `VEuc  1 e 1 @3868 ]
 "20819
 [v _ANSELD ANSELD `VEuc  1 e 1 @3873 ]
-[s S238 . 1 `uc 1 ANSELD0 1 0 :1:0 
+[s S195 . 1 `uc 1 ANSELD0 1 0 :1:0 
 `uc 1 ANSELD1 1 0 :1:1 
 `uc 1 ANSELD2 1 0 :1:2 
 `uc 1 ANSELD3 1 0 :1:3 
@@ -181,9 +207,21 @@
 `uc 1 ANSELD7 1 0 :1:7 
 ]
 "20836
-[u S247 . 1 `S238 1 . 1 0 ]
-[v _ANSELDbits ANSELDbits `VES247  1 e 1 @3873 ]
-[s S87 . 1 `uc 1 LATC0 1 0 :1:0 
+[u S204 . 1 `S195 1 . 1 0 ]
+[v _ANSELDbits ANSELDbits `VES204  1 e 1 @3873 ]
+[s S410 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"27505
+[u S419 . 1 `S410 1 . 1 0 ]
+[v _LATAbits LATAbits `VES419  1 e 1 @3970 ]
+[s S39 . 1 `uc 1 LATC0 1 0 :1:0 
 `uc 1 LATC1 1 0 :1:1 
 `uc 1 LATC2 1 0 :1:2 
 `uc 1 LATC3 1 0 :1:3 
@@ -193,15 +231,27 @@
 `uc 1 LATC7 1 0 :1:7 
 ]
 "27629
-[u S96 . 1 `S87 1 . 1 0 ]
-[v _LATCbits LATCbits `VES96  1 e 1 @3972 ]
+[u S48 . 1 `S39 1 . 1 0 ]
+[v _LATCbits LATCbits `VES48  1 e 1 @3972 ]
 "27674
 [v _LATD LATD `VEuc  1 e 1 @3973 ]
+[s S368 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"27790
+[u S377 . 1 `S368 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES377  1 e 1 @3975 ]
 "28012
 [v _TRISC TRISC `VEuc  1 e 1 @3977 ]
 "28134
 [v _TRISD TRISD `VEuc  1 e 1 @3978 ]
-[s S217 . 1 `uc 1 TRISD0 1 0 :1:0 
+[s S174 . 1 `uc 1 TRISD0 1 0 :1:0 
 `uc 1 TRISD1 1 0 :1:1 
 `uc 1 TRISD2 1 0 :1:2 
 `uc 1 TRISD3 1 0 :1:3 
@@ -211,19 +261,34 @@
 `uc 1 TRISD7 1 0 :1:7 
 ]
 "28156
-[u S226 . 1 `S217 1 . 1 0 ]
-[v _TRISDbits TRISDbits `VES226  1 e 1 @3978 ]
+[u S183 . 1 `S174 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES183  1 e 1 @3978 ]
+[s S433 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"28335
+[u S442 . 1 `S433 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES442  1 e 1 @3980 ]
 "28504
 [v _PORTD PORTD `VEuc  1 e 1 @3983 ]
-"25 D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\maincode00.c
+"29 D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\maincode01.c
 [v _main main `(v  1 e 1 0 ]
 {
-"36
+[s S454 DHT_Values 4 `ui 1 DHT_Temp 2 0 `ui 1 DHT_Humid 2 2 ]
+"38
+[v main@actuales actuales `S454  1 a 4 23 ]
+"52
 } 0
-"14
+"18
 [v _configuro configuro `(v  1 e 1 0 ]
 {
-"23
+"27
 } 0
 "23 D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LIB_UART.c
 [v _U1_INIT U1_INIT `(v  1 e 1 0 ]
@@ -306,6 +371,48 @@
 [v ENVIA_LCD_CMD@dato dato `uc  1 p 1 1 ]
 "150
 } 1
+"226
+[v _LCD_ESCRIBE_VAR_INT LCD_ESCRIBE_VAR_INT `(v  1 e 1 0 ]
+{
+"227
+[v LCD_ESCRIBE_VAR_INT@unidad unidad `uc  1 a 1 20 ]
+[v LCD_ESCRIBE_VAR_INT@decena decena `uc  1 a 1 19 ]
+[v LCD_ESCRIBE_VAR_INT@centena centena `uc  1 a 1 18 ]
+[v LCD_ESCRIBE_VAR_INT@millar millar `uc  1 a 1 17 ]
+[v LCD_ESCRIBE_VAR_INT@d_millar d_millar `uc  1 a 1 16 ]
+"226
+[v LCD_ESCRIBE_VAR_INT@numero numero `ui  1 p 2 12 ]
+[v LCD_ESCRIBE_VAR_INT@n_digitos n_digitos `uc  1 p 1 14 ]
+[v LCD_ESCRIBE_VAR_INT@punto punto `uc  1 p 1 15 ]
+"344
+} 0
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 4 ]
+"7
+[v ___lwmod@dividend dividend `ui  1 p 2 0 ]
+[v ___lwmod@divisor divisor `ui  1 p 2 2 ]
+"25
+} 0
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 9 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 11 ]
+"7
+[v ___lwdiv@dividend dividend `ui  1 p 2 5 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 7 ]
+"30
+} 0
+"346 D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LCD.c
+[v _LCD_CHAR_GRADO LCD_CHAR_GRADO `(v  1 e 1 0 ]
+{
+"348
+} 0
 "77
 [v _ESCRIBE_MENSAJE2 ESCRIBE_MENSAJE2 `(v  1 e 1 0 ]
 {
@@ -353,4 +460,58 @@
 "128
 [v ENVIA_NIBBLE@dato dato `uc  1 p 1 0 ]
 "134
+} 1
+"37 D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X/LIB_DHT.h
+[s S454 DHT_Values 4 `ui 1 DHT_Temp 2 0 `ui 1 DHT_Humid 2 2 ]
+"142 D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem05_Serial.X\LIB_DHT.c
+[v _DHT_GetBoth DHT_GetBoth `(S454  1 e 4 0 ]
+{
+[v DHT_GetBoth@modelo modelo `uc  1 p 1 wreg ]
+"144
+[v DHT_GetBoth@Temp_Ent Temp_Ent `uc  1 a 1 13 ]
+[v DHT_GetBoth@RH_Ent RH_Ent `uc  1 a 1 12 ]
+[v DHT_GetBoth@Temp_Dec Temp_Dec `uc  1 a 1 11 ]
+[v DHT_GetBoth@RH_Dec RH_Dec `uc  1 a 1 10 ]
+"142
+[v DHT_GetBoth@modelo modelo `uc  1 p 1 wreg ]
+"143
+[v DHT_GetBoth@lectura lectura `S454  1 s 4 lectura ]
+"145
+[v DHT_GetBoth@modelo modelo `uc  1 p 1 14 ]
+"161
+} 1
+"3
+[v _DHT_Start DHT_Start `(v  1 e 1 0 ]
+{
+[v DHT_Start@modelo modelo `uc  1 p 1 wreg ]
+[v DHT_Start@modelo modelo `uc  1 p 1 wreg ]
+[v DHT_Start@modelo modelo `uc  1 p 1 1 ]
+"22
+} 1
+"60
+[v _DHT_Read DHT_Read `(uc  1 e 1 0 ]
+{
+[v DHT_Read@modelo modelo `uc  1 p 1 wreg ]
+"61
+[v DHT_Read@data data `uc  1 a 1 3 ]
+"62
+[v DHT_Read@temp_x temp_x `uc  1 a 1 2 ]
+"61
+[v DHT_Read@x x `uc  1 a 1 1 ]
+"60
+[v DHT_Read@modelo modelo `uc  1 p 1 wreg ]
+[v DHT_Read@modelo modelo `uc  1 p 1 0 ]
+"102
+} 1
+"24
+[v _DHT_Check DHT_Check `(v  1 e 1 0 ]
+{
+[v DHT_Check@modelo modelo `uc  1 p 1 wreg ]
+"25
+[v DHT_Check@temp_x temp_x `uc  1 a 1 1 ]
+"24
+[v DHT_Check@modelo modelo `uc  1 p 1 wreg ]
+"26
+[v DHT_Check@modelo modelo `uc  1 p 1 0 ]
+"58
 } 1

@@ -1,52 +1,52 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"19 ./LCD.h
-[; ;./LCD.h: 19: void ENVIA_LCD_CMD(unsigned char dato);
-[v _ENVIA_LCD_CMD `(v ~T0 @X0 0 ef1`uc ]
-"15
-[; ;./LCD.h: 15: void ENVIA_CHAR(unsigned char dato);
-[v _ENVIA_CHAR `(v ~T0 @X0 0 ef1`uc ]
-"54 C:\Program Files\Microchip\xc8\v3.10\pic\include\c99/string.h
-[; ;C:\Program Files\Microchip\xc8\v3.10\pic\include\c99/string.h: 54: size_t strlen (const char *);
-[v _strlen `(ui ~T0 @X0 0 ef1`*Cuc ]
-"27618 C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f47q10.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f47q10.h: 27618:     struct {
-[s S1203 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1203 . LATC0 LATC1 LATC2 LATC3 LATC4 LATC5 LATC6 LATC7 ]
-"27617
-[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f47q10.h: 27617: typedef union {
-[u S1202 `S1203 1 ]
-[n S1202 . . ]
-"27629
-[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f47q10.h: 27629: extern volatile LATCbits_t LATCbits __attribute__((address(0xF84)));
-[v _LATCbits `VS1202 ~T0 @X0 0 e@3972 ]
-"20 ./LCD.h
-[; ;./LCD.h: 20: void LEER_LCD(void);
-[v _LEER_LCD `(v ~T0 @X0 0 ef ]
-"28134 C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f47q10.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f47q10.h: 28134: extern volatile unsigned char TRISD __attribute__((address(0xF8A)));
-[v _TRISD `Vuc ~T0 @X0 0 e@3978 ]
+"16625 C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f47q10.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f47q10.h: 16625: extern volatile unsigned char OSCCON1 __attribute__((address(0xED3)));
+[v _OSCCON1 `Vuc ~T0 @X0 0 e@3795 ]
+"17026
+[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f47q10.h: 17026: extern volatile unsigned char OSCFRQ __attribute__((address(0xED9)));
+[v _OSCFRQ `Vuc ~T0 @X0 0 e@3801 ]
+"16917
+[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f47q10.h: 16917: extern volatile unsigned char OSCEN __attribute__((address(0xED7)));
+[v _OSCEN `Vuc ~T0 @X0 0 e@3799 ]
+"29 ./LCD.h
+[; ;./LCD.h: 29: void LCD_INIT(void);
+[v _LCD_INIT `(v ~T0 @X0 0 ef ]
+"35 ./LIB_UART.h
+[; ;./LIB_UART.h: 35: void U1_INIT(unsigned int velocidad);
+[v _U1_INIT `(v ~T0 @X0 0 ef1`ui ]
+[p mainexit ]
+"11 ./LCD.h
+[; ;./LCD.h: 11: void POS_CURSOR(unsigned char fila,unsigned char columna);
+[v _POS_CURSOR `(v ~T0 @X0 0 ef2`uc`uc ]
+"24
+[; ;./LCD.h: 24: void ESCRIBE_MENSAJE2(const char *cadena);
+[v _ESCRIBE_MENSAJE2 `(v ~T0 @X0 0 ef1`*Cuc ]
 [v F205 `(v ~T0 @X0 1 tf1`ul ]
 "20 C:\Program Files\Microchip\xc8\v3.10\pic\include/builtins.h
 [v __delay `JF205 ~T0 @X0 0 e ]
 [p i __delay ]
-"18 ./LCD.h
-[; ;./LCD.h: 18: void ENVIA_NIBBLE(unsigned char dato);
-[v _ENVIA_NIBBLE `(v ~T0 @X0 0 ef1`uc ]
-"27674 C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f47q10.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f47q10.h: 27674: extern volatile unsigned char LATD __attribute__((address(0xF85)));
-[v _LATD `Vuc ~T0 @X0 0 e@3973 ]
-"28504
-[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f47q10.h: 28504: extern volatile unsigned char PORTD __attribute__((address(0xF8F)));
-[v _PORTD `Vuc ~T0 @X0 0 e@3983 ]
-"20819
-[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f47q10.h: 20819: extern volatile unsigned char ANSELD __attribute__((address(0xF21)));
-[v _ANSELD `Vuc ~T0 @X0 0 e@3873 ]
-"28012
-[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f47q10.h: 28012: extern volatile unsigned char TRISC __attribute__((address(0xF89)));
-[v _TRISC `Vuc ~T0 @X0 0 e@3977 ]
-"20509
-[; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f47q10.h: 20509: extern volatile unsigned char ANSELC __attribute__((address(0xF1C)));
-[v _ANSELC `Vuc ~T0 @X0 0 e@3868 ]
+"16 ./LCD.h
+[; ;./LCD.h: 16: void BORRAR_LCD(void);
+[v _BORRAR_LCD `(v ~T0 @X0 0 ef ]
+"37 ./LIB_DHT.h
+[; ;./LIB_DHT.h: 37: struct DHT_Values{
+[s S1796 `ui 1 `ui 1 ]
+[n S1796 DHT_Values DHT_Temp DHT_Humid ]
+"42
+[; ;./LIB_DHT.h: 42: struct DHT_Values DHT_GetBoth(unsigned char modelo);
+[v _DHT_GetBoth `(S1796 ~T0 @X0 0 ef1`uc ]
+"31 ./LCD.h
+[; ;./LCD.h: 31: void LCD_ESCRIBE_VAR_INT(unsigned int numero, unsigned char n_digitos, unsigned char punto);
+[v _LCD_ESCRIBE_VAR_INT `(v ~T0 @X0 0 ef3`ui`uc`uc ]
+"32
+[; ;./LCD.h: 32: void LCD_CHAR_GRADO(void);
+[v _LCD_CHAR_GRADO `(v ~T0 @X0 0 ef ]
+"41 ./LIB_UART.h
+[; ;./LIB_UART.h: 41: void U1_STRING_SEND(const char *cadena);
+[v _U1_STRING_SEND `(v ~T0 @X0 0 ef1`*Cuc ]
+"50
+[; ;./LIB_UART.h: 50: void U1_NEWLINE(void);
+[v _U1_NEWLINE `(v ~T0 @X0 0 ef ]
 "52 C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f47q10.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f47q10.h: 52: __asm("CLCIN0PPS equ 0E1Fh");
 [; <" CLCIN0PPS equ 0E1Fh ;# ">
@@ -1751,1262 +1751,205 @@ Version 4.0 HI-TECH Software Intermediate Code
 "38649
 [; ;C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f47q10.h: 38649: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-"5 LCD.c
-[; ;LCD.c: 5: void POS_CURSOR(unsigned char fila,unsigned char columna)
-[v _POS_CURSOR `(v ~T0 @X0 1 ef2`uc`uc ]
-"6
-[; ;LCD.c: 6: {
-{
-[e :U _POS_CURSOR ]
-"5
-[; ;LCD.c: 5: void POS_CURSOR(unsigned char fila,unsigned char columna)
-[v _fila `uc ~T0 @X0 1 r1 ]
-[v _columna `uc ~T0 @X0 1 r2 ]
-"6
-[; ;LCD.c: 6: {
-[f ]
-"7
-[; ;LCD.c: 7:  if(fila == 1)
-[e $ ! == -> _fila `i -> 1 `i 1798  ]
+"7 ./cabecera.h
+[p x FEXTOSC  =  OFF     ]
 "8
-[; ;LCD.c: 8:  {
-{
-"9
-[; ;LCD.c: 9:   ENVIA_LCD_CMD(0x80+columna);
-[e ( _ENVIA_LCD_CMD (1 -> + -> 128 `i -> _columna `i `uc ]
-"10
-[; ;LCD.c: 10:  }
-}
-[e $U 1799  ]
+[p x RSTOSC  =  HFINTOSC_1MHZ ]
 "11
-[; ;LCD.c: 11:  else if(fila == 2)
-[e :U 1798 ]
-[e $ ! == -> _fila `i -> 2 `i 1800  ]
+[p x CLKOUTEN  =  OFF    ]
 "12
-[; ;LCD.c: 12:  {
-{
+[p x CSWEN  =  ON        ]
 "13
-[; ;LCD.c: 13:   ENVIA_LCD_CMD(0xC0+columna);
-[e ( _ENVIA_LCD_CMD (1 -> + -> 192 `i -> _columna `i `uc ]
-"14
-[; ;LCD.c: 14:  }
-}
-[e $U 1801  ]
-"15
-[; ;LCD.c: 15:  else if(fila == 3)
-[e :U 1800 ]
-[e $ ! == -> _fila `i -> 3 `i 1802  ]
+[p x FCMEN  =  ON        ]
 "16
-[; ;LCD.c: 16:  {
-{
+[p x MCLRE  =  EXTMCLR   ]
 "17
-[; ;LCD.c: 17:   ENVIA_LCD_CMD(0x94+columna);
-[e ( _ENVIA_LCD_CMD (1 -> + -> 148 `i -> _columna `i `uc ]
+[p x PWRTE  =  ON        ]
 "18
-[; ;LCD.c: 18:  }
-}
-[e $U 1803  ]
+[p x LPBOREN  =  OFF     ]
 "19
-[; ;LCD.c: 19:  else if(fila == 4)
-[e :U 1802 ]
-[e $ ! == -> _fila `i -> 4 `i 1804  ]
-"20
-[; ;LCD.c: 20:  {
-{
-"21
-[; ;LCD.c: 21:   ENVIA_LCD_CMD(0xD4+columna);
-[e ( _ENVIA_LCD_CMD (1 -> + -> 212 `i -> _columna `i `uc ]
+[p x BOREN  =  OFF       ]
 "22
-[; ;LCD.c: 22:  }
-}
-[e :U 1804 ]
-[e :U 1803 ]
-[e :U 1801 ]
-[e :U 1799 ]
+[p x BORV  =  VBOR_190   ]
 "23
-[; ;LCD.c: 23: }
+[p x ZCD  =  OFF         ]
+"24
+[p x PPS1WAY  =  ON      ]
+"25
+[p x STVREN  =  ON       ]
+"26
+[p x XINST  =  OFF       ]
+"29
+[p x WDTCPS  =  WDTCPS_31 ]
+"30
+[p x WDTE  =  OFF        ]
+"33
+[p x WDTCWS  =  WDTCWS_7 ]
+"34
+[p x WDTCCS  =  SC       ]
+"37
+[p x WRT0  =  OFF        ]
+"38
+[p x WRT1  =  OFF        ]
+"39
+[p x WRT2  =  OFF        ]
+"40
+[p x WRT3  =  OFF        ]
+"41
+[p x WRT4  =  OFF        ]
+"42
+[p x WRT5  =  OFF        ]
+"43
+[p x WRT6  =  OFF        ]
+"44
+[p x WRT7  =  OFF        ]
+"47
+[p x WRTC  =  OFF        ]
+"48
+[p x WRTB  =  OFF        ]
+"49
+[p x WRTD  =  OFF        ]
+"50
+[p x SCANE  =  ON        ]
+"51
+[p x LVP  =  OFF         ]
+"54
+[p x CP  =  OFF          ]
+"55
+[p x CPD  =  OFF         ]
+"60
+[p x EBTR0  =  OFF       ]
+"61
+[p x EBTR1  =  OFF       ]
+"62
+[p x EBTR2  =  OFF       ]
+"63
+[p x EBTR3  =  OFF       ]
+"64
+[p x EBTR4  =  OFF       ]
+"65
+[p x EBTR5  =  OFF       ]
+"66
+[p x EBTR6  =  OFF       ]
+"67
+[p x EBTR7  =  OFF       ]
+"70
+[p x EBTRB  =  OFF       ]
+"15 maincode01.c
+[; ;maincode01.c: 15: unsigned int Temperatura, Humedad;
+[v _Temperatura `ui ~T0 @X0 1 e ]
+[v _Humedad `ui ~T0 @X0 1 e ]
+"18
+[; ;maincode01.c: 18: void configuro(void){
+[v _configuro `(v ~T0 @X0 1 ef ]
+{
+[e :U _configuro ]
+[f ]
+"20
+[; ;maincode01.c: 20:     OSCCON1 = 0x60;
+[e = _OSCCON1 -> -> 96 `i `uc ]
+"21
+[; ;maincode01.c: 21:     OSCFRQ = 0x06;
+[e = _OSCFRQ -> -> 6 `i `uc ]
+"22
+[; ;maincode01.c: 22:     OSCEN = 0x40;
+[e = _OSCEN -> -> 64 `i `uc ]
+"24
+[; ;maincode01.c: 24:     LCD_INIT();
+[e ( _LCD_INIT ..  ]
+"26
+[; ;maincode01.c: 26:     U1_INIT(207);
+[e ( _U1_INIT (1 -> -> 207 `i `ui ]
+"27
+[; ;maincode01.c: 27: }
 [e :UE 1797 ]
 }
-"25
-[; ;LCD.c: 25: void BLINK_CURSOR(unsigned char val)
-[v _BLINK_CURSOR `(v ~T0 @X0 1 ef1`uc ]
-"26
-[; ;LCD.c: 26: {
-{
-[e :U _BLINK_CURSOR ]
-"25
-[; ;LCD.c: 25: void BLINK_CURSOR(unsigned char val)
-[v _val `uc ~T0 @X0 1 r1 ]
-"26
-[; ;LCD.c: 26: {
-[f ]
-"27
-[; ;LCD.c: 27:  if(val == 1) ENVIA_LCD_CMD(0x0E);
-[e $ ! == -> _val `i -> 1 `i 1806  ]
-[e ( _ENVIA_LCD_CMD (1 -> -> 14 `i `uc ]
-[e :U 1806 ]
-"28
-[; ;LCD.c: 28:  if(val == 0 ) ENVIA_LCD_CMD(0x0F);
-[e $ ! == -> _val `i -> 0 `i 1807  ]
-[e ( _ENVIA_LCD_CMD (1 -> -> 15 `i `uc ]
-[e :U 1807 ]
+[v $root$_main `(v ~T0 @X0 0 e ]
 "29
-[; ;LCD.c: 29: }
-[e :UE 1805 ]
-}
-"31
-[; ;LCD.c: 31: void DISPLAY_ONOFF(unsigned char estado)
-[v _DISPLAY_ONOFF `(v ~T0 @X0 1 ef1`uc ]
-"32
-[; ;LCD.c: 32: {
+[; ;maincode01.c: 29: void main(void) {
+[v _main `(v ~T0 @X0 1 ef ]
 {
-[e :U _DISPLAY_ONOFF ]
-"31
-[; ;LCD.c: 31: void DISPLAY_ONOFF(unsigned char estado)
-[v _estado `uc ~T0 @X0 1 r1 ]
-"32
-[; ;LCD.c: 32: {
+[e :U _main ]
 [f ]
+"30
+[; ;maincode01.c: 30:     configuro();
+[e ( _configuro ..  ]
+"31
+[; ;maincode01.c: 31:     POS_CURSOR(1,0);
+[e ( _POS_CURSOR (2 , -> -> 1 `i `uc -> -> 0 `i `uc ]
+"32
+[; ;maincode01.c: 32:     ESCRIBE_MENSAJE2("Semana 5-2 20260");
+[e ( _ESCRIBE_MENSAJE2 (1 :s 1C ]
 "33
-[; ;LCD.c: 33:  if(estado == 0) ENVIA_LCD_CMD(0x0F);
-[e $ ! == -> _estado `i -> 0 `i 1809  ]
-[e ( _ENVIA_LCD_CMD (1 -> -> 15 `i `uc ]
-[e :U 1809 ]
+[; ;maincode01.c: 33:     POS_CURSOR(2,0);
+[e ( _POS_CURSOR (2 , -> -> 2 `i `uc -> -> 0 `i `uc ]
 "34
-[; ;LCD.c: 34:  if(estado == 1) ENVIA_LCD_CMD(0x08);
-[e $ ! == -> _estado `i -> 1 `i 1810  ]
-[e ( _ENVIA_LCD_CMD (1 -> -> 8 `i `uc ]
-[e :U 1810 ]
+[; ;maincode01.c: 34:     ESCRIBE_MENSAJE2("Hot Summer UPC");
+[e ( _ESCRIBE_MENSAJE2 (1 :s 2C ]
 "35
-[; ;LCD.c: 35: }
-[e :UE 1808 ]
-}
-"37
-[; ;LCD.c: 37: void CURSOR_HOME(void)
-[v _CURSOR_HOME `(v ~T0 @X0 1 ef ]
-"38
-[; ;LCD.c: 38: {
-{
-[e :U _CURSOR_HOME ]
-[f ]
-"39
-[; ;LCD.c: 39:  ENVIA_LCD_CMD(0x02);
-[e ( _ENVIA_LCD_CMD (1 -> -> 2 `i `uc ]
-"40
-[; ;LCD.c: 40: }
-[e :UE 1811 ]
-}
-"42
-[; ;LCD.c: 42: void CURSOR_SHIFTLEFT(void)
-[v _CURSOR_SHIFTLEFT `(v ~T0 @X0 1 ef ]
-"43
-[; ;LCD.c: 43: {
-{
-[e :U _CURSOR_SHIFTLEFT ]
-[f ]
-"44
-[; ;LCD.c: 44:  ENVIA_LCD_CMD(0x10);
-[e ( _ENVIA_LCD_CMD (1 -> -> 16 `i `uc ]
-"45
-[; ;LCD.c: 45: }
-[e :UE 1812 ]
-}
-"47
-[; ;LCD.c: 47: void CURSOR_SHIFTRIGHT(void)
-[v _CURSOR_SHIFTRIGHT `(v ~T0 @X0 1 ef ]
-"48
-[; ;LCD.c: 48: {
-{
-[e :U _CURSOR_SHIFTRIGHT ]
-[f ]
-"49
-[; ;LCD.c: 49:  ENVIA_LCD_CMD(0x14);
-[e ( _ENVIA_LCD_CMD (1 -> -> 20 `i `uc ]
-"50
-[; ;LCD.c: 50: }
-[e :UE 1813 ]
-}
-"52
-[; ;LCD.c: 52: void DISPLAY_SHIFTLEFT(void)
-[v _DISPLAY_SHIFTLEFT `(v ~T0 @X0 1 ef ]
-"53
-[; ;LCD.c: 53: {
-{
-[e :U _DISPLAY_SHIFTLEFT ]
-[f ]
-"54
-[; ;LCD.c: 54:  ENVIA_LCD_CMD(0x18);
-[e ( _ENVIA_LCD_CMD (1 -> -> 24 `i `uc ]
-"55
-[; ;LCD.c: 55: }
-[e :UE 1814 ]
-}
-"57
-[; ;LCD.c: 57: void DISPLAY_SHIFTRIGHT(void)
-[v _DISPLAY_SHIFTRIGHT `(v ~T0 @X0 1 ef ]
-"58
-[; ;LCD.c: 58: {
-{
-[e :U _DISPLAY_SHIFTRIGHT ]
-[f ]
-"59
-[; ;LCD.c: 59:  ENVIA_LCD_CMD(0x1C);
-[e ( _ENVIA_LCD_CMD (1 -> -> 28 `i `uc ]
-"60
-[; ;LCD.c: 60: }
-[e :UE 1815 ]
-}
-"62
-[; ;LCD.c: 62: void CURSOR_ONOFF(unsigned char estado)
-[v _CURSOR_ONOFF `(v ~T0 @X0 1 ef1`uc ]
-"63
-[; ;LCD.c: 63: {
-{
-[e :U _CURSOR_ONOFF ]
-"62
-[; ;LCD.c: 62: void CURSOR_ONOFF(unsigned char estado)
-[v _estado `uc ~T0 @X0 1 r1 ]
-"63
-[; ;LCD.c: 63: {
-[f ]
-"64
-[; ;LCD.c: 64:  if(estado == 0) ENVIA_LCD_CMD(0x0E);
-[e $ ! == -> _estado `i -> 0 `i 1817  ]
-[e ( _ENVIA_LCD_CMD (1 -> -> 14 `i `uc ]
-[e :U 1817 ]
-"65
-[; ;LCD.c: 65:  if(estado == 1) ENVIA_LCD_CMD(0x0C);
-[e $ ! == -> _estado `i -> 1 `i 1818  ]
-[e ( _ENVIA_LCD_CMD (1 -> -> 12 `i `uc ]
-[e :U 1818 ]
-"66
-[; ;LCD.c: 66: }
-[e :UE 1816 ]
-}
-"68
-[; ;LCD.c: 68: void ESCRIBE_MENSAJE(const char *cadena,unsigned char tam)
-[v _ESCRIBE_MENSAJE `(v ~T0 @X0 1 ef2`*Cuc`uc ]
-"69
-[; ;LCD.c: 69: {
-{
-[e :U _ESCRIBE_MENSAJE ]
-"68
-[; ;LCD.c: 68: void ESCRIBE_MENSAJE(const char *cadena,unsigned char tam)
-[v _cadena `*Cuc ~T0 @X0 1 r1 ]
-[v _tam `uc ~T0 @X0 1 r2 ]
-"69
-[; ;LCD.c: 69: {
-[f ]
-"70
-[; ;LCD.c: 70:  unsigned char i = 0;
-[v _i `uc ~T0 @X0 1 a ]
-[e = _i -> -> 0 `i `uc ]
-"71
-[; ;LCD.c: 71:  for(i = 0; i<tam; i++)
-{
-[e = _i -> -> 0 `i `uc ]
-[e $U 1823  ]
-[e :U 1820 ]
-"72
-[; ;LCD.c: 72:  {
-{
-"73
-[; ;LCD.c: 73:   ENVIA_CHAR(cadena[i]);
-[e ( _ENVIA_CHAR (1 -> *U + _cadena * -> _i `ux -> -> # *U _cadena `ui `ux `uc ]
-"74
-[; ;LCD.c: 74:  }
-}
-[e ++ _i -> -> 1 `i `uc ]
-[e :U 1823 ]
-[e $ < -> _i `i -> _tam `i 1820  ]
-[e :U 1821 ]
-}
-"75
-[; ;LCD.c: 75: }
-[e :UE 1819 ]
-}
-"77
-[; ;LCD.c: 77: void ESCRIBE_MENSAJE2(const char *cadena)
-[v _ESCRIBE_MENSAJE2 `(v ~T0 @X0 1 ef1`*Cuc ]
-"78
-[; ;LCD.c: 78: {
-{
-[e :U _ESCRIBE_MENSAJE2 ]
-"77
-[; ;LCD.c: 77: void ESCRIBE_MENSAJE2(const char *cadena)
-[v _cadena `*Cuc ~T0 @X0 1 r1 ]
-"78
-[; ;LCD.c: 78: {
-[f ]
-"79
-[; ;LCD.c: 79:     unsigned char tam;
-[v _tam `uc ~T0 @X0 1 a ]
-"80
-[; ;LCD.c: 80:     tam = strlen(cadena);
-[e = _tam -> ( _strlen (1 _cadena `uc ]
-"81
-[; ;LCD.c: 81:  unsigned char i = 0;
-[v _i `uc ~T0 @X0 1 a ]
-[e = _i -> -> 0 `i `uc ]
-"82
-[; ;LCD.c: 82:  for(i = 0; i<tam; i++)
-{
-[e = _i -> -> 0 `i `uc ]
-[e $U 1828  ]
-[e :U 1825 ]
-"83
-[; ;LCD.c: 83:  {
-{
-"84
-[; ;LCD.c: 84:   ENVIA_CHAR(cadena[i]);
-[e ( _ENVIA_CHAR (1 -> *U + _cadena * -> _i `ux -> -> # *U _cadena `ui `ux `uc ]
-"85
-[; ;LCD.c: 85:  }
-}
-[e ++ _i -> -> 1 `i `uc ]
-[e :U 1828 ]
-[e $ < -> _i `i -> _tam `i 1825  ]
-[e :U 1826 ]
-}
-"86
-[; ;LCD.c: 86: }
-[e :UE 1824 ]
-}
-"88
-[; ;LCD.c: 88: void ENVIA_CHAR(unsigned char dato)
-[v _ENVIA_CHAR `(v ~T0 @X0 1 ef1`uc ]
-"89
-[; ;LCD.c: 89: {
-{
-[e :U _ENVIA_CHAR ]
-"88
-[; ;LCD.c: 88: void ENVIA_CHAR(unsigned char dato)
-[v _dato `uc ~T0 @X0 1 r1 ]
-"89
-[; ;LCD.c: 89: {
-[f ]
-"90
-[; ;LCD.c: 90:  unsigned char aux;
-[v _aux `uc ~T0 @X0 1 a ]
-"91
-[; ;LCD.c: 91:  LATCbits.LATC0 = 1;
-[e = . . _LATCbits 0 0 -> -> 1 `i `uc ]
-"92
-[; ;LCD.c: 92:  LEER_LCD();
-[e ( _LEER_LCD ..  ]
-"93
-[; ;LCD.c: 93:  TRISD = 0x00;
-[e = _TRISD -> -> 0 `i `uc ]
-"94
-[; ;LCD.c: 94:     _delay((unsigned long)((100)*(32000000UL/4000000.0)));
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 32000000 `ul `d .4000000.0 `ul ]
-"95
-[; ;LCD.c: 95:  LATCbits.LATC1 = 0;
-[e = . . _LATCbits 0 1 -> -> 0 `i `uc ]
-"96
-[; ;LCD.c: 96:  LATCbits.LATC2 = 0;
-[e = . . _LATCbits 0 2 -> -> 0 `i `uc ]
-"97
-[; ;LCD.c: 97:  LATCbits.LATC0 = 1;
-[e = . . _LATCbits 0 0 -> -> 1 `i `uc ]
-"98
-[; ;LCD.c: 98:  aux = dato & 0xF0;
-[e = _aux -> & -> _dato `i -> 240 `i `uc ]
-"99
-[; ;LCD.c: 99:  ENVIA_NIBBLE(aux);
-[e ( _ENVIA_NIBBLE (1 _aux ]
-"100
-[; ;LCD.c: 100:  aux = dato << 4;
-[e = _aux -> << -> _dato `i -> 4 `i `uc ]
-"101
-[; ;LCD.c: 101:  ENVIA_NIBBLE(aux);
-[e ( _ENVIA_NIBBLE (1 _aux ]
-"102
-[; ;LCD.c: 102: }
-[e :UE 1829 ]
-}
-"104
-[; ;LCD.c: 104: void BORRAR_LCD(void)
-[v _BORRAR_LCD `(v ~T0 @X0 1 ef ]
-"105
-[; ;LCD.c: 105: {
-{
-[e :U _BORRAR_LCD ]
-[f ]
-"106
-[; ;LCD.c: 106:  ENVIA_LCD_CMD(0x01);
-[e ( _ENVIA_LCD_CMD (1 -> -> 1 `i `uc ]
-"107
-[; ;LCD.c: 107: }
-[e :UE 1830 ]
-}
-"109
-[; ;LCD.c: 109: void LCD_CONFIG(void)
-[v _LCD_CONFIG `(v ~T0 @X0 1 ef ]
-"110
-[; ;LCD.c: 110: {
-{
-[e :U _LCD_CONFIG ]
-[f ]
-"111
-[; ;LCD.c: 111:  LATCbits.LATC0 = 0;
-[e = . . _LATCbits 0 0 -> -> 0 `i `uc ]
-"112
-[; ;LCD.c: 112:  LATCbits.LATC1 = 0;
-[e = . . _LATCbits 0 1 -> -> 0 `i `uc ]
-"113
-[; ;LCD.c: 113:  ENVIA_NIBBLE(0x30);
-[e ( _ENVIA_NIBBLE (1 -> -> 48 `i `uc ]
-"114
-[; ;LCD.c: 114:     _delay((unsigned long)((2)*(32000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 32000000 `ul `d .4000.0 `ul ]
-"115
-[; ;LCD.c: 115:  ENVIA_NIBBLE(0x30);
-[e ( _ENVIA_NIBBLE (1 -> -> 48 `i `uc ]
-"116
-[; ;LCD.c: 116:     _delay((unsigned long)((100)*(32000000UL/4000000.0)));
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 32000000 `ul `d .4000000.0 `ul ]
-"117
-[; ;LCD.c: 117:     ENVIA_NIBBLE(0x30);
-[e ( _ENVIA_NIBBLE (1 -> -> 48 `i `uc ]
-"118
-[; ;LCD.c: 118:  ENVIA_NIBBLE(0x20);
-[e ( _ENVIA_NIBBLE (1 -> -> 32 `i `uc ]
-"119
-[; ;LCD.c: 119:  ENVIA_LCD_CMD(0x01);
-[e ( _ENVIA_LCD_CMD (1 -> -> 1 `i `uc ]
-"120
-[; ;LCD.c: 120:  ENVIA_LCD_CMD(0x28);
-[e ( _ENVIA_LCD_CMD (1 -> -> 40 `i `uc ]
-"121
-[; ;LCD.c: 121:  ENVIA_LCD_CMD(0x0F);
-[e ( _ENVIA_LCD_CMD (1 -> -> 15 `i `uc ]
-"122
-[; ;LCD.c: 122:  ENVIA_LCD_CMD(0x06);
-[e ( _ENVIA_LCD_CMD (1 -> -> 6 `i `uc ]
-"123
-[; ;LCD.c: 123:  ENVIA_LCD_CMD(0x01);
-[e ( _ENVIA_LCD_CMD (1 -> -> 1 `i `uc ]
-"124
-[; ;LCD.c: 124: }
-[e :UE 1831 ]
-}
-"126
-[; ;LCD.c: 126: void ENVIA_NIBBLE(unsigned char dato)
-[v _ENVIA_NIBBLE `(v ~T0 @X0 1 ef1`uc ]
-"127
-[; ;LCD.c: 127: {
-{
-[e :U _ENVIA_NIBBLE ]
-"126
-[; ;LCD.c: 126: void ENVIA_NIBBLE(unsigned char dato)
-[v _dato `uc ~T0 @X0 1 r1 ]
-"127
-[; ;LCD.c: 127: {
-[f ]
-"128
-[; ;LCD.c: 128:  LATD &= 0x0F;
-[e =& _LATD -> -> 15 `i `Vuc ]
-"129
-[; ;LCD.c: 129:  dato &= 0xF0;
-[e =& _dato -> -> 240 `i `uc ]
-"130
-[; ;LCD.c: 130:  LATD|= dato;
-[e =| _LATD -> _dato `Vuc ]
-"131
-[; ;LCD.c: 131:  LATCbits.LATC2 = 1;
-[e = . . _LATCbits 0 2 -> -> 1 `i `uc ]
-"132
-[; ;LCD.c: 132:     _delay((unsigned long)((100)*(32000000UL/4000000.0)));
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 32000000 `ul `d .4000000.0 `ul ]
-"133
-[; ;LCD.c: 133:  LATCbits.LATC2 = 0;
-[e = . . _LATCbits 0 2 -> -> 0 `i `uc ]
-"134
-[; ;LCD.c: 134: }
-[e :UE 1832 ]
-}
-"136
-[; ;LCD.c: 136: void ENVIA_LCD_CMD(unsigned char dato)
-[v _ENVIA_LCD_CMD `(v ~T0 @X0 1 ef1`uc ]
-"137
-[; ;LCD.c: 137: {
-{
-[e :U _ENVIA_LCD_CMD ]
-"136
-[; ;LCD.c: 136: void ENVIA_LCD_CMD(unsigned char dato)
-[v _dato `uc ~T0 @X0 1 r1 ]
-"137
-[; ;LCD.c: 137: {
-[f ]
-"138
-[; ;LCD.c: 138:  unsigned char aux;
-[v _aux `uc ~T0 @X0 1 a ]
-"139
-[; ;LCD.c: 139:  LATCbits.LATC0 = 0;
-[e = . . _LATCbits 0 0 -> -> 0 `i `uc ]
-"140
-[; ;LCD.c: 140:  LEER_LCD();
-[e ( _LEER_LCD ..  ]
-"141
-[; ;LCD.c: 141:  TRISD = 0b00000000;
-[e = _TRISD -> -> 0 `i `uc ]
-"142
-[; ;LCD.c: 142:     _delay((unsigned long)((100)*(32000000UL/4000000.0)));
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 32000000 `ul `d .4000000.0 `ul ]
-"143
-[; ;LCD.c: 143:     LATCbits.LATC1 = 0;
-[e = . . _LATCbits 0 1 -> -> 0 `i `uc ]
-"144
-[; ;LCD.c: 144:  LATCbits.LATC2 = 0;
-[e = . . _LATCbits 0 2 -> -> 0 `i `uc ]
-"145
-[; ;LCD.c: 145:  LATCbits.LATC0 = 0;
-[e = . . _LATCbits 0 0 -> -> 0 `i `uc ]
-"146
-[; ;LCD.c: 146:  aux = dato & 0xF0;
-[e = _aux -> & -> _dato `i -> 240 `i `uc ]
-"147
-[; ;LCD.c: 147:  ENVIA_NIBBLE(aux);
-[e ( _ENVIA_NIBBLE (1 _aux ]
-"148
-[; ;LCD.c: 148:  aux = dato<<4;
-[e = _aux -> << -> _dato `i -> 4 `i `uc ]
-"149
-[; ;LCD.c: 149:  ENVIA_NIBBLE(aux);
-[e ( _ENVIA_NIBBLE (1 _aux ]
-"150
-[; ;LCD.c: 150: }
-[e :UE 1833 ]
-}
-"152
-[; ;LCD.c: 152: void LEER_LCD(void)
-[v _LEER_LCD `(v ~T0 @X0 1 ef ]
-"153
-[; ;LCD.c: 153: {
-{
-[e :U _LEER_LCD ]
-[f ]
-"154
-[; ;LCD.c: 154:  unsigned char aux;
-[v _aux `uc ~T0 @X0 1 a ]
-"155
-[; ;LCD.c: 155:  TRISD = 0xF8;
-[e = _TRISD -> -> 248 `i `uc ]
-"156
-[; ;LCD.c: 156:  LATCbits.LATC0 = 0;
-[e = . . _LATCbits 0 0 -> -> 0 `i `uc ]
-"157
-[; ;LCD.c: 157:  LATCbits.LATC1 = 1;
-[e = . . _LATCbits 0 1 -> -> 1 `i `uc ]
-"158
-[; ;LCD.c: 158:  LATCbits.LATC2 = 1;
-[e = . . _LATCbits 0 2 -> -> 1 `i `uc ]
-"159
-[; ;LCD.c: 159:     _delay((unsigned long)((100)*(32000000UL/4000000.0)));
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 32000000 `ul `d .4000000.0 `ul ]
-"160
-[; ;LCD.c: 160:  aux = PORTD;
-[e = _aux _PORTD ]
-"161
-[; ;LCD.c: 161:  LATCbits.LATC2 = 0;
-[e = . . _LATCbits 0 2 -> -> 0 `i `uc ]
-"162
-[; ;LCD.c: 162:     _delay((unsigned long)((100)*(32000000UL/4000000.0)));
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 32000000 `ul `d .4000000.0 `ul ]
-"163
-[; ;LCD.c: 163:  LATCbits.LATC2 = 1;
-[e = . . _LATCbits 0 2 -> -> 1 `i `uc ]
-"164
-[; ;LCD.c: 164:     _delay((unsigned long)((100)*(32000000UL/4000000.0)));
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 32000000 `ul `d .4000000.0 `ul ]
-"165
-[; ;LCD.c: 165:  LATCbits.LATC2 = 0;
-[e = . . _LATCbits 0 2 -> -> 0 `i `uc ]
-"166
-[; ;LCD.c: 166:  aux = aux & 0x80;
-[e = _aux -> & -> _aux `i -> 128 `i `uc ]
-"167
-[; ;LCD.c: 167:  while(aux == 0x80)
-[e $U 1835  ]
-[e :U 1836 ]
-"168
-[; ;LCD.c: 168:         {
-{
-"169
-[; ;LCD.c: 169:             LATCbits.LATC2 = 1;
-[e = . . _LATCbits 0 2 -> -> 1 `i `uc ]
-"170
-[; ;LCD.c: 170:             _delay((unsigned long)((100)*(32000000UL/4000000.0)));
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 32000000 `ul `d .4000000.0 `ul ]
-"171
-[; ;LCD.c: 171:             aux = PORTD;
-[e = _aux _PORTD ]
-"172
-[; ;LCD.c: 172:             LATCbits.LATC2 = 0;
-[e = . . _LATCbits 0 2 -> -> 0 `i `uc ]
-"173
-[; ;LCD.c: 173:             _delay((unsigned long)((100)*(32000000UL/4000000.0)));
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 32000000 `ul `d .4000000.0 `ul ]
-"174
-[; ;LCD.c: 174:             LATCbits.LATC2 = 1;
-[e = . . _LATCbits 0 2 -> -> 1 `i `uc ]
-"175
-[; ;LCD.c: 175:             _delay((unsigned long)((100)*(32000000UL/4000000.0)));
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 32000000 `ul `d .4000000.0 `ul ]
-"176
-[; ;LCD.c: 176:             LATCbits.LATC2 = 0;
-[e = . . _LATCbits 0 2 -> -> 0 `i `uc ]
-"177
-[; ;LCD.c: 177:             aux = aux & 0x80;
-[e = _aux -> & -> _aux `i -> 128 `i `uc ]
-"178
-[; ;LCD.c: 178:  }
-}
-[e :U 1835 ]
-"167
-[; ;LCD.c: 167:  while(aux == 0x80)
-[e $ == -> _aux `i -> 128 `i 1836  ]
-[e :U 1837 ]
-"179
-[; ;LCD.c: 179: }
-[e :UE 1834 ]
-}
-"181
-[; ;LCD.c: 181: void GENERACARACTER(const unsigned char *vector,unsigned char pos)
-[v _GENERACARACTER `(v ~T0 @X0 1 ef2`*Cuc`uc ]
-"182
-[; ;LCD.c: 182: {
-{
-[e :U _GENERACARACTER ]
-"181
-[; ;LCD.c: 181: void GENERACARACTER(const unsigned char *vector,unsigned char pos)
-[v _vector `*Cuc ~T0 @X0 1 r1 ]
-[v _pos `uc ~T0 @X0 1 r2 ]
-"182
-[; ;LCD.c: 182: {
-[f ]
-"183
-[; ;LCD.c: 183:  unsigned char i;
-[v _i `uc ~T0 @X0 1 a ]
-"184
-[; ;LCD.c: 184:  ENVIA_LCD_CMD(0x40+8*pos);
-[e ( _ENVIA_LCD_CMD (1 -> + -> 64 `i * -> 8 `i -> _pos `i `uc ]
-"185
-[; ;LCD.c: 185:  for(i=0;i<8;i++)
-{
-[e = _i -> -> 0 `i `uc ]
-[e $ < -> _i `i -> 8 `i 1839  ]
-[e $U 1840  ]
-[e :U 1839 ]
-"186
-[; ;LCD.c: 186:  {
-{
-"187
-[; ;LCD.c: 187:   ENVIA_CHAR(vector[i]);
-[e ( _ENVIA_CHAR (1 *U + _vector * -> _i `ux -> -> # *U _vector `ui `ux ]
-"188
-[; ;LCD.c: 188:  }
-}
-[e ++ _i -> -> 1 `i `uc ]
-[e $ < -> _i `i -> 8 `i 1839  ]
-[e :U 1840 ]
-}
-"189
-[; ;LCD.c: 189:  ENVIA_LCD_CMD(0x80);
-[e ( _ENVIA_LCD_CMD (1 -> -> 128 `i `uc ]
-"190
-[; ;LCD.c: 190: }
-[e :UE 1838 ]
-}
-"192
-[; ;LCD.c: 192: void LCD_INIT(void){
-[v _LCD_INIT `(v ~T0 @X0 1 ef ]
-{
-[e :U _LCD_INIT ]
-[f ]
-"193
-[; ;LCD.c: 193:     TRISD = 0x00;
-[e = _TRISD -> -> 0 `i `uc ]
-"194
-[; ;LCD.c: 194:     ANSELD = 0x00;
-[e = _ANSELD -> -> 0 `i `uc ]
-"195
-[; ;LCD.c: 195:     TRISC = 0xF8;
-[e = _TRISC -> -> 248 `i `uc ]
-"196
-[; ;LCD.c: 196:     ANSELC = 0xF8;
-[e = _ANSELC -> -> 248 `i `uc ]
-"197
-[; ;LCD.c: 197:     _delay((unsigned long)((15)*(32000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 15 `i `d / -> -> 32000000 `ul `d .4000.0 `ul ]
-"198
-[; ;LCD.c: 198:     LCD_CONFIG();
-[e ( _LCD_CONFIG ..  ]
-"199
-[; ;LCD.c: 199:     _delay((unsigned long)((15)*(32000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 15 `i `d / -> -> 32000000 `ul `d .4000.0 `ul ]
-"200
-[; ;LCD.c: 200:     BORRAR_LCD();
+[; ;maincode01.c: 35:     _delay((unsigned long)((3000)*(32000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 3000 `i `d / -> -> 32000000 `ul `d .4000.0 `ul ]
+"36
+[; ;maincode01.c: 36:     BORRAR_LCD();
 [e ( _BORRAR_LCD ..  ]
-"201
-[; ;LCD.c: 201:     CURSOR_HOME();
-[e ( _CURSOR_HOME ..  ]
-"202
-[; ;LCD.c: 202:     CURSOR_ONOFF(1);
-[e ( _CURSOR_ONOFF (1 -> -> 1 `i `uc ]
-"203
-[; ;LCD.c: 203: }
-[e :UE 1842 ]
-}
-"205
-[; ;LCD.c: 205: void LCD_ESCRIBE_VAR_CHAR(unsigned char numero, unsigned char n_digitos){
-[v _LCD_ESCRIBE_VAR_CHAR `(v ~T0 @X0 1 ef2`uc`uc ]
+"37
+[; ;maincode01.c: 37:     while(1){
+[e :U 1800 ]
 {
-[e :U _LCD_ESCRIBE_VAR_CHAR ]
-[v _numero `uc ~T0 @X0 1 r1 ]
-[v _n_digitos `uc ~T0 @X0 1 r2 ]
-[f ]
-"206
-[; ;LCD.c: 206:     unsigned char centena, decena, unidad;
-[v _centena `uc ~T0 @X0 1 a ]
-[v _decena `uc ~T0 @X0 1 a ]
-[v _unidad `uc ~T0 @X0 1 a ]
-"207
-[; ;LCD.c: 207:     centena = (numero % 1000) / 100;
-[e = _centena -> / % -> _numero `i -> 1000 `i -> 100 `i `uc ]
-"208
-[; ;LCD.c: 208:     decena = (numero % 100) / 10;
-[e = _decena -> / % -> _numero `i -> 100 `i -> 10 `i `uc ]
-"209
-[; ;LCD.c: 209:     unidad = numero % 10;
-[e = _unidad -> % -> _numero `i -> 10 `i `uc ]
-"210
-[; ;LCD.c: 210:     switch(n_digitos){
-[e $U 1845  ]
-{
-"211
-[; ;LCD.c: 211:         case 1:
-[e :U 1846 ]
-"212
-[; ;LCD.c: 212:             ENVIA_CHAR(unidad+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _unidad `i -> 48 `i `uc ]
-"213
-[; ;LCD.c: 213:             break;
-[e $U 1844  ]
-"214
-[; ;LCD.c: 214:         case 2:
-[e :U 1847 ]
-"215
-[; ;LCD.c: 215:             ENVIA_CHAR(decena+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _decena `i -> 48 `i `uc ]
-"216
-[; ;LCD.c: 216:             ENVIA_CHAR(unidad+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _unidad `i -> 48 `i `uc ]
-"217
-[; ;LCD.c: 217:             break;
-[e $U 1844  ]
-"218
-[; ;LCD.c: 218:         case 3:
-[e :U 1848 ]
-"219
-[; ;LCD.c: 219:             ENVIA_CHAR(centena+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _centena `i -> 48 `i `uc ]
-"220
-[; ;LCD.c: 220:             ENVIA_CHAR(decena+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _decena `i -> 48 `i `uc ]
-"221
-[; ;LCD.c: 221:             ENVIA_CHAR(unidad+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _unidad `i -> 48 `i `uc ]
-"222
-[; ;LCD.c: 222:             break;
-[e $U 1844  ]
-"223
-[; ;LCD.c: 223:     }
+"38
+[; ;maincode01.c: 38:         struct DHT_Values actuales = DHT_GetBoth(1);
+[v _actuales `S1796 ~T0 @X0 1 a ]
+[e = _actuales ( _DHT_GetBoth (1 -> -> 1 `i `uc ]
+"39
+[; ;maincode01.c: 39:         POS_CURSOR(1,0);
+[e ( _POS_CURSOR (2 , -> -> 1 `i `uc -> -> 0 `i `uc ]
+"40
+[; ;maincode01.c: 40:         ESCRIBE_MENSAJE2("Temp:");
+[e ( _ESCRIBE_MENSAJE2 (1 :s 3C ]
+"41
+[; ;maincode01.c: 41:         LCD_ESCRIBE_VAR_INT(actuales.DHT_Temp, 3, 1);
+[e ( _LCD_ESCRIBE_VAR_INT (3 , , . _actuales 0 -> -> 3 `i `uc -> -> 1 `i `uc ]
+"42
+[; ;maincode01.c: 42:         LCD_CHAR_GRADO();
+[e ( _LCD_CHAR_GRADO ..  ]
+"43
+[; ;maincode01.c: 43:         ESCRIBE_MENSAJE2("C");
+[e ( _ESCRIBE_MENSAJE2 (1 :s 4C ]
+"44
+[; ;maincode01.c: 44:         POS_CURSOR(2,0);
+[e ( _POS_CURSOR (2 , -> -> 2 `i `uc -> -> 0 `i `uc ]
+"45
+[; ;maincode01.c: 45:         ESCRIBE_MENSAJE2("Humed:");
+[e ( _ESCRIBE_MENSAJE2 (1 :s 5C ]
+"46
+[; ;maincode01.c: 46:         LCD_ESCRIBE_VAR_INT(actuales.DHT_Humid, 3, 1);
+[e ( _LCD_ESCRIBE_VAR_INT (3 , , . _actuales 1 -> -> 3 `i `uc -> -> 1 `i `uc ]
+"47
+[; ;maincode01.c: 47:         ESCRIBE_MENSAJE2("%RH");
+[e ( _ESCRIBE_MENSAJE2 (1 :s 6C ]
+"48
+[; ;maincode01.c: 48:         U1_STRING_SEND("HOLA UPCINO");
+[e ( _U1_STRING_SEND (1 :s 7C ]
+"49
+[; ;maincode01.c: 49:         U1_NEWLINE();
+[e ( _U1_NEWLINE ..  ]
+"50
+[; ;maincode01.c: 50:         _delay((unsigned long)((1000)*(32000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 32000000 `ul `d .4000.0 `ul ]
+"51
+[; ;maincode01.c: 51:     }
 }
-[e $U 1844  ]
-[e :U 1845 ]
-[e [\ _n_digitos , $ -> 1 `i 1846
- , $ -> 2 `i 1847
- , $ -> 3 `i 1848
- 1844 ]
-[e :U 1844 ]
-"224
-[; ;LCD.c: 224: }
-[e :UE 1843 ]
+[e :U 1799 ]
+[e $U 1800  ]
+[e :U 1801 ]
+"52
+[; ;maincode01.c: 52: }
+[e :UE 1798 ]
 }
-"226
-[; ;LCD.c: 226: void LCD_ESCRIBE_VAR_INT(unsigned int numero, unsigned char n_digitos, unsigned char punto){
-[v _LCD_ESCRIBE_VAR_INT `(v ~T0 @X0 1 ef3`ui`uc`uc ]
-{
-[e :U _LCD_ESCRIBE_VAR_INT ]
-[v _numero `ui ~T0 @X0 1 r1 ]
-[v _n_digitos `uc ~T0 @X0 1 r2 ]
-[v _punto `uc ~T0 @X0 1 r3 ]
-[f ]
-"227
-[; ;LCD.c: 227:     unsigned char d_millar, millar, centena, decena, unidad;
-[v _d_millar `uc ~T0 @X0 1 a ]
-[v _millar `uc ~T0 @X0 1 a ]
-[v _centena `uc ~T0 @X0 1 a ]
-[v _decena `uc ~T0 @X0 1 a ]
-[v _unidad `uc ~T0 @X0 1 a ]
-"228
-[; ;LCD.c: 228:     d_millar = numero / 10000;
-[e = _d_millar -> / _numero -> -> 10000 `i `ui `uc ]
-"229
-[; ;LCD.c: 229:     millar = (numero % 10000) / 1000;
-[e = _millar -> / % _numero -> -> 10000 `i `ui -> -> 1000 `i `ui `uc ]
-"230
-[; ;LCD.c: 230:     centena = (numero % 1000) / 100;
-[e = _centena -> / % _numero -> -> 1000 `i `ui -> -> 100 `i `ui `uc ]
-"231
-[; ;LCD.c: 231:     decena = (numero % 100) / 10;
-[e = _decena -> / % _numero -> -> 100 `i `ui -> -> 10 `i `ui `uc ]
-"232
-[; ;LCD.c: 232:     unidad = numero % 10;
-[e = _unidad -> % _numero -> -> 10 `i `ui `uc ]
-"233
-[; ;LCD.c: 233:     switch(n_digitos){
-[e $U 1851  ]
-{
-"234
-[; ;LCD.c: 234:         case 1:
-[e :U 1852 ]
-"235
-[; ;LCD.c: 235:             ENVIA_CHAR(unidad+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _unidad `i -> 48 `i `uc ]
-"236
-[; ;LCD.c: 236:             break;
-[e $U 1850  ]
-"237
-[; ;LCD.c: 237:         case 2:
-[e :U 1853 ]
-"238
-[; ;LCD.c: 238:             if(punto == 0){
-[e $ ! == -> _punto `i -> 0 `i 1854  ]
-{
-"239
-[; ;LCD.c: 239:                 ENVIA_CHAR(decena+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _decena `i -> 48 `i `uc ]
-"240
-[; ;LCD.c: 240:                 ENVIA_CHAR(unidad+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _unidad `i -> 48 `i `uc ]
-"241
-[; ;LCD.c: 241:             }
-}
-[e $U 1855  ]
-"242
-[; ;LCD.c: 242:             else if(punto == 1){
-[e :U 1854 ]
-[e $ ! == -> _punto `i -> 1 `i 1856  ]
-{
-"243
-[; ;LCD.c: 243:                 ENVIA_CHAR(decena+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _decena `i -> 48 `i `uc ]
-"244
-[; ;LCD.c: 244:                 ENVIA_CHAR('.');
-[e ( _ENVIA_CHAR (1 -> -> 46 `ui `uc ]
-"245
-[; ;LCD.c: 245:                 ENVIA_CHAR(unidad+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _unidad `i -> 48 `i `uc ]
-"246
-[; ;LCD.c: 246:             }
-}
-[e :U 1856 ]
-[e :U 1855 ]
-"247
-[; ;LCD.c: 247:             break;
-[e $U 1850  ]
-"248
-[; ;LCD.c: 248:         case 3:
-[e :U 1857 ]
-"249
-[; ;LCD.c: 249:             switch(punto){
-[e $U 1859  ]
-{
-"250
-[; ;LCD.c: 250:                 case 0:
-[e :U 1860 ]
-"251
-[; ;LCD.c: 251:                     ENVIA_CHAR(centena+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _centena `i -> 48 `i `uc ]
-"252
-[; ;LCD.c: 252:                     ENVIA_CHAR(decena+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _decena `i -> 48 `i `uc ]
-"253
-[; ;LCD.c: 253:                     ENVIA_CHAR(unidad+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _unidad `i -> 48 `i `uc ]
-"254
-[; ;LCD.c: 254:                     break;
-[e $U 1858  ]
-"255
-[; ;LCD.c: 255:                 case 1:
-[e :U 1861 ]
-"256
-[; ;LCD.c: 256:                     ENVIA_CHAR(centena+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _centena `i -> 48 `i `uc ]
-"257
-[; ;LCD.c: 257:                     ENVIA_CHAR(decena+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _decena `i -> 48 `i `uc ]
-"258
-[; ;LCD.c: 258:                     ENVIA_CHAR('.');
-[e ( _ENVIA_CHAR (1 -> -> 46 `ui `uc ]
-"259
-[; ;LCD.c: 259:                     ENVIA_CHAR(unidad+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _unidad `i -> 48 `i `uc ]
-"260
-[; ;LCD.c: 260:                     break;
-[e $U 1858  ]
-"261
-[; ;LCD.c: 261:                 case 2:
-[e :U 1862 ]
-"262
-[; ;LCD.c: 262:                     ENVIA_CHAR(centena+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _centena `i -> 48 `i `uc ]
-"263
-[; ;LCD.c: 263:                     ENVIA_CHAR('.');
-[e ( _ENVIA_CHAR (1 -> -> 46 `ui `uc ]
-"264
-[; ;LCD.c: 264:                     ENVIA_CHAR(decena+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _decena `i -> 48 `i `uc ]
-"265
-[; ;LCD.c: 265:                     ENVIA_CHAR(unidad+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _unidad `i -> 48 `i `uc ]
-"266
-[; ;LCD.c: 266:                     break;
-[e $U 1858  ]
-"267
-[; ;LCD.c: 267:             }
-}
-[e $U 1858  ]
-[e :U 1859 ]
-[e [\ _punto , $ -> 0 `i 1860
- , $ -> 1 `i 1861
- , $ -> 2 `i 1862
- 1858 ]
-[e :U 1858 ]
-"268
-[; ;LCD.c: 268:             break;
-[e $U 1850  ]
-"269
-[; ;LCD.c: 269:         case 4:
-[e :U 1863 ]
-"270
-[; ;LCD.c: 270:             switch(punto){
-[e $U 1865  ]
-{
-"271
-[; ;LCD.c: 271:                 case 0:
-[e :U 1866 ]
-"272
-[; ;LCD.c: 272:                     ENVIA_CHAR(millar+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _millar `i -> 48 `i `uc ]
-"273
-[; ;LCD.c: 273:                     ENVIA_CHAR(centena+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _centena `i -> 48 `i `uc ]
-"274
-[; ;LCD.c: 274:                     ENVIA_CHAR(decena+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _decena `i -> 48 `i `uc ]
-"275
-[; ;LCD.c: 275:                     ENVIA_CHAR(unidad+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _unidad `i -> 48 `i `uc ]
-"276
-[; ;LCD.c: 276:                     break;
-[e $U 1864  ]
-"277
-[; ;LCD.c: 277:                 case 1:
-[e :U 1867 ]
-"278
-[; ;LCD.c: 278:                     ENVIA_CHAR(millar+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _millar `i -> 48 `i `uc ]
-"279
-[; ;LCD.c: 279:                     ENVIA_CHAR(centena+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _centena `i -> 48 `i `uc ]
-"280
-[; ;LCD.c: 280:                     ENVIA_CHAR(decena+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _decena `i -> 48 `i `uc ]
-"281
-[; ;LCD.c: 281:                     ENVIA_CHAR('.');
-[e ( _ENVIA_CHAR (1 -> -> 46 `ui `uc ]
-"282
-[; ;LCD.c: 282:                     ENVIA_CHAR(unidad+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _unidad `i -> 48 `i `uc ]
-"283
-[; ;LCD.c: 283:                     break;
-[e $U 1864  ]
-"284
-[; ;LCD.c: 284:                 case 2:
-[e :U 1868 ]
-"285
-[; ;LCD.c: 285:                     ENVIA_CHAR(millar+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _millar `i -> 48 `i `uc ]
-"286
-[; ;LCD.c: 286:                     ENVIA_CHAR(centena+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _centena `i -> 48 `i `uc ]
-"287
-[; ;LCD.c: 287:                     ENVIA_CHAR('.');
-[e ( _ENVIA_CHAR (1 -> -> 46 `ui `uc ]
-"288
-[; ;LCD.c: 288:                     ENVIA_CHAR(decena+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _decena `i -> 48 `i `uc ]
-"289
-[; ;LCD.c: 289:                     ENVIA_CHAR(unidad+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _unidad `i -> 48 `i `uc ]
-"290
-[; ;LCD.c: 290:                     break;
-[e $U 1864  ]
-"291
-[; ;LCD.c: 291:                 case 3:
-[e :U 1869 ]
-"292
-[; ;LCD.c: 292:                     ENVIA_CHAR(millar+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _millar `i -> 48 `i `uc ]
-"293
-[; ;LCD.c: 293:                     ENVIA_CHAR('.');
-[e ( _ENVIA_CHAR (1 -> -> 46 `ui `uc ]
-"294
-[; ;LCD.c: 294:                     ENVIA_CHAR(centena+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _centena `i -> 48 `i `uc ]
-"295
-[; ;LCD.c: 295:                     ENVIA_CHAR(decena+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _decena `i -> 48 `i `uc ]
-"296
-[; ;LCD.c: 296:                     ENVIA_CHAR(unidad+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _unidad `i -> 48 `i `uc ]
-"297
-[; ;LCD.c: 297:                     break;
-[e $U 1864  ]
-"298
-[; ;LCD.c: 298:             }
-}
-[e $U 1864  ]
-[e :U 1865 ]
-[e [\ _punto , $ -> 0 `i 1866
- , $ -> 1 `i 1867
- , $ -> 2 `i 1868
- , $ -> 3 `i 1869
- 1864 ]
-[e :U 1864 ]
-"299
-[; ;LCD.c: 299:             break;
-[e $U 1850  ]
-"300
-[; ;LCD.c: 300:         case 5:
-[e :U 1870 ]
-"301
-[; ;LCD.c: 301:             switch(punto){
-[e $U 1872  ]
-{
-"302
-[; ;LCD.c: 302:                 case 0:
-[e :U 1873 ]
-"303
-[; ;LCD.c: 303:                     ENVIA_CHAR(d_millar+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _d_millar `i -> 48 `i `uc ]
-"304
-[; ;LCD.c: 304:                     ENVIA_CHAR(millar+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _millar `i -> 48 `i `uc ]
-"305
-[; ;LCD.c: 305:                     ENVIA_CHAR(centena+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _centena `i -> 48 `i `uc ]
-"306
-[; ;LCD.c: 306:                     ENVIA_CHAR(decena+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _decena `i -> 48 `i `uc ]
-"307
-[; ;LCD.c: 307:                     ENVIA_CHAR(unidad+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _unidad `i -> 48 `i `uc ]
-"308
-[; ;LCD.c: 308:                     break;
-[e $U 1871  ]
-"309
-[; ;LCD.c: 309:                 case 1:
-[e :U 1874 ]
-"310
-[; ;LCD.c: 310:                     ENVIA_CHAR(d_millar+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _d_millar `i -> 48 `i `uc ]
-"311
-[; ;LCD.c: 311:                     ENVIA_CHAR(millar+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _millar `i -> 48 `i `uc ]
-"312
-[; ;LCD.c: 312:                     ENVIA_CHAR(centena+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _centena `i -> 48 `i `uc ]
-"313
-[; ;LCD.c: 313:                     ENVIA_CHAR(decena+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _decena `i -> 48 `i `uc ]
-"314
-[; ;LCD.c: 314:                     ENVIA_CHAR('.');
-[e ( _ENVIA_CHAR (1 -> -> 46 `ui `uc ]
-"315
-[; ;LCD.c: 315:                     ENVIA_CHAR(unidad+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _unidad `i -> 48 `i `uc ]
-"316
-[; ;LCD.c: 316:                     break;
-[e $U 1871  ]
-"317
-[; ;LCD.c: 317:                 case 2:
-[e :U 1875 ]
-"318
-[; ;LCD.c: 318:                     ENVIA_CHAR(d_millar+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _d_millar `i -> 48 `i `uc ]
-"319
-[; ;LCD.c: 319:                     ENVIA_CHAR(millar+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _millar `i -> 48 `i `uc ]
-"320
-[; ;LCD.c: 320:                     ENVIA_CHAR(centena+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _centena `i -> 48 `i `uc ]
-"321
-[; ;LCD.c: 321:                     ENVIA_CHAR('.');
-[e ( _ENVIA_CHAR (1 -> -> 46 `ui `uc ]
-"322
-[; ;LCD.c: 322:                     ENVIA_CHAR(decena+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _decena `i -> 48 `i `uc ]
-"323
-[; ;LCD.c: 323:                     ENVIA_CHAR(unidad+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _unidad `i -> 48 `i `uc ]
-"324
-[; ;LCD.c: 324:                     break;
-[e $U 1871  ]
-"325
-[; ;LCD.c: 325:                 case 3:
-[e :U 1876 ]
-"326
-[; ;LCD.c: 326:                     ENVIA_CHAR(d_millar+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _d_millar `i -> 48 `i `uc ]
-"327
-[; ;LCD.c: 327:                     ENVIA_CHAR(millar+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _millar `i -> 48 `i `uc ]
-"328
-[; ;LCD.c: 328:                     ENVIA_CHAR('.');
-[e ( _ENVIA_CHAR (1 -> -> 46 `ui `uc ]
-"329
-[; ;LCD.c: 329:                     ENVIA_CHAR(centena+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _centena `i -> 48 `i `uc ]
-"330
-[; ;LCD.c: 330:                     ENVIA_CHAR(decena+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _decena `i -> 48 `i `uc ]
-"331
-[; ;LCD.c: 331:                     ENVIA_CHAR(unidad+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _unidad `i -> 48 `i `uc ]
-"332
-[; ;LCD.c: 332:                     break;
-[e $U 1871  ]
-"333
-[; ;LCD.c: 333:                 case 4:
-[e :U 1877 ]
-"334
-[; ;LCD.c: 334:                     ENVIA_CHAR(d_millar+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _d_millar `i -> 48 `i `uc ]
-"335
-[; ;LCD.c: 335:                     ENVIA_CHAR('.');
-[e ( _ENVIA_CHAR (1 -> -> 46 `ui `uc ]
-"336
-[; ;LCD.c: 336:                     ENVIA_CHAR(millar+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _millar `i -> 48 `i `uc ]
-"337
-[; ;LCD.c: 337:                     ENVIA_CHAR(centena+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _centena `i -> 48 `i `uc ]
-"338
-[; ;LCD.c: 338:                     ENVIA_CHAR(decena+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _decena `i -> 48 `i `uc ]
-"339
-[; ;LCD.c: 339:                     ENVIA_CHAR(unidad+0x30);
-[e ( _ENVIA_CHAR (1 -> + -> _unidad `i -> 48 `i `uc ]
-"340
-[; ;LCD.c: 340:                     break;
-[e $U 1871  ]
-"341
-[; ;LCD.c: 341:             }
-}
-[e $U 1871  ]
-[e :U 1872 ]
-[e [\ _punto , $ -> 0 `i 1873
- , $ -> 1 `i 1874
- , $ -> 2 `i 1875
- , $ -> 3 `i 1876
- , $ -> 4 `i 1877
- 1871 ]
-[e :U 1871 ]
-"342
-[; ;LCD.c: 342:             break;
-[e $U 1850  ]
-"343
-[; ;LCD.c: 343:     }
-}
-[e $U 1850  ]
-[e :U 1851 ]
-[e [\ _n_digitos , $ -> 1 `i 1852
- , $ -> 2 `i 1853
- , $ -> 3 `i 1857
- , $ -> 4 `i 1863
- , $ -> 5 `i 1870
- 1850 ]
-[e :U 1850 ]
-"344
-[; ;LCD.c: 344: }
-[e :UE 1849 ]
-}
-"346
-[; ;LCD.c: 346: void LCD_CHAR_GRADO(void){
-[v _LCD_CHAR_GRADO `(v ~T0 @X0 1 ef ]
-{
-[e :U _LCD_CHAR_GRADO ]
-[f ]
-"347
-[; ;LCD.c: 347:     ENVIA_CHAR(0xDF);
-[e ( _ENVIA_CHAR (1 -> -> 223 `i `uc ]
-"348
-[; ;LCD.c: 348: }
-[e :UE 1878 ]
-}
-"350
-[; ;LCD.c: 350: void LCD_VARCHAR_BITS(unsigned char dato){
-[v _LCD_VARCHAR_BITS `(v ~T0 @X0 1 ef1`uc ]
-{
-[e :U _LCD_VARCHAR_BITS ]
-[v _dato `uc ~T0 @X0 1 r1 ]
-[f ]
-"351
-[; ;LCD.c: 351:     unsigned char x_var;
-[v _x_var `uc ~T0 @X0 1 a ]
-"352
-[; ;LCD.c: 352:     for(x_var=0;x_var<8;x_var++){
-{
-[e = _x_var -> -> 0 `i `uc ]
-[e $ < -> _x_var `i -> 8 `i 1880  ]
-[e $U 1881  ]
-[e :U 1880 ]
-{
-"353
-[; ;LCD.c: 353:         if (((dato >> (7 - x_var)) & 0x01) == 1){
-[e $ ! == & >> -> _dato `i - -> 7 `i -> _x_var `i -> 1 `i -> 1 `i 1883  ]
-{
-"354
-[; ;LCD.c: 354:             ENVIA_CHAR('1');
-[e ( _ENVIA_CHAR (1 -> -> 49 `ui `uc ]
-"355
-[; ;LCD.c: 355:         }
-}
-[e $U 1884  ]
-"356
-[; ;LCD.c: 356:         else{
-[e :U 1883 ]
-{
-"357
-[; ;LCD.c: 357:             ENVIA_CHAR('0');
-[e ( _ENVIA_CHAR (1 -> -> 48 `ui `uc ]
-"358
-[; ;LCD.c: 358:         }
-}
-[e :U 1884 ]
-"359
-[; ;LCD.c: 359:     }
-}
-[e ++ _x_var -> -> 1 `i `uc ]
-[e $ < -> _x_var `i -> 8 `i 1880  ]
-[e :U 1881 ]
-}
-"360
-[; ;LCD.c: 360: }
-[e :UE 1879 ]
-}
+[a 7C 72 79 76 65 32 85 80 67 73 78 79 0 ]
+[a 6C 37 82 72 0 ]
+[a 2C 72 111 116 32 83 117 109 109 101 114 32 85 80 67 0 ]
+[a 4C 67 0 ]
+[a 3C 84 101 109 112 58 0 ]
+[a 5C 72 117 109 101 100 58 0 ]
+[a 1C 83 101 109 97 110 97 32 53 45 50 32 50 48 50 54 48 0 ]

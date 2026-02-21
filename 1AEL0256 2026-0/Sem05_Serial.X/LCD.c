@@ -223,7 +223,7 @@ void LCD_ESCRIBE_VAR_CHAR(unsigned char numero, unsigned char n_digitos){
     }
 }
 
-void LCD_ESCRIBE_VAR_INT(unsigned int numero, unsigned char n_digitos){
+void LCD_ESCRIBE_VAR_INT(unsigned int numero, unsigned char n_digitos, unsigned char punto){
     unsigned char d_millar, millar, centena, decena, unidad;  //variables de funcion convierte
     d_millar = numero / 10000;
     millar = (numero % 10000) / 1000;
@@ -235,26 +235,110 @@ void LCD_ESCRIBE_VAR_INT(unsigned int numero, unsigned char n_digitos){
             ENVIA_CHAR(unidad+0x30);
             break;
         case 2:
-            ENVIA_CHAR(decena+0x30);
-            ENVIA_CHAR(unidad+0x30);
+            if(punto == 0){
+                ENVIA_CHAR(decena+0x30);
+                ENVIA_CHAR(unidad+0x30);
+            }
+            else if(punto == 1){
+                ENVIA_CHAR(decena+0x30);
+                ENVIA_CHAR('.');
+                ENVIA_CHAR(unidad+0x30);
+            }
             break;
         case 3:
-            ENVIA_CHAR(centena+0x30);
-            ENVIA_CHAR(decena+0x30);
-            ENVIA_CHAR(unidad+0x30);
+            switch(punto){
+                case 0:
+                    ENVIA_CHAR(centena+0x30);
+                    ENVIA_CHAR(decena+0x30);
+                    ENVIA_CHAR(unidad+0x30);
+                    break;
+                case 1:
+                    ENVIA_CHAR(centena+0x30);
+                    ENVIA_CHAR(decena+0x30);
+                    ENVIA_CHAR('.');
+                    ENVIA_CHAR(unidad+0x30);
+                    break;
+                case 2:
+                    ENVIA_CHAR(centena+0x30);
+                    ENVIA_CHAR('.');
+                    ENVIA_CHAR(decena+0x30);
+                    ENVIA_CHAR(unidad+0x30);
+                    break;
+            }
             break;
         case 4:
-            ENVIA_CHAR(millar+0x30);
-            ENVIA_CHAR(centena+0x30);
-            ENVIA_CHAR(decena+0x30);
-            ENVIA_CHAR(unidad+0x30);
+            switch(punto){
+                case 0:
+                    ENVIA_CHAR(millar+0x30);
+                    ENVIA_CHAR(centena+0x30);
+                    ENVIA_CHAR(decena+0x30);
+                    ENVIA_CHAR(unidad+0x30);
+                    break;
+                case 1:
+                    ENVIA_CHAR(millar+0x30);
+                    ENVIA_CHAR(centena+0x30);
+                    ENVIA_CHAR(decena+0x30);
+                    ENVIA_CHAR('.');
+                    ENVIA_CHAR(unidad+0x30);
+                    break;
+                case 2:
+                    ENVIA_CHAR(millar+0x30);
+                    ENVIA_CHAR(centena+0x30);
+                    ENVIA_CHAR('.');
+                    ENVIA_CHAR(decena+0x30);
+                    ENVIA_CHAR(unidad+0x30);
+                    break;
+                case 3:
+                    ENVIA_CHAR(millar+0x30);
+                    ENVIA_CHAR('.');
+                    ENVIA_CHAR(centena+0x30);
+                    ENVIA_CHAR(decena+0x30);
+                    ENVIA_CHAR(unidad+0x30);
+                    break;
+            }
             break;
         case 5:
-            ENVIA_CHAR(d_millar+0x30);
-            ENVIA_CHAR(millar+0x30);
-            ENVIA_CHAR(centena+0x30);
-            ENVIA_CHAR(decena+0x30);
-            ENVIA_CHAR(unidad+0x30);
+            switch(punto){
+                case 0:
+                    ENVIA_CHAR(d_millar+0x30);
+                    ENVIA_CHAR(millar+0x30);
+                    ENVIA_CHAR(centena+0x30);
+                    ENVIA_CHAR(decena+0x30);
+                    ENVIA_CHAR(unidad+0x30);
+                    break;
+                case 1:
+                    ENVIA_CHAR(d_millar+0x30);
+                    ENVIA_CHAR(millar+0x30);
+                    ENVIA_CHAR(centena+0x30);
+                    ENVIA_CHAR(decena+0x30);
+                    ENVIA_CHAR('.');
+                    ENVIA_CHAR(unidad+0x30);
+                    break;
+                case 2:
+                    ENVIA_CHAR(d_millar+0x30);
+                    ENVIA_CHAR(millar+0x30);
+                    ENVIA_CHAR(centena+0x30);
+                    ENVIA_CHAR('.');
+                    ENVIA_CHAR(decena+0x30);
+                    ENVIA_CHAR(unidad+0x30);
+                    break;
+                case 3:
+                    ENVIA_CHAR(d_millar+0x30);
+                    ENVIA_CHAR(millar+0x30);
+                    ENVIA_CHAR('.');
+                    ENVIA_CHAR(centena+0x30);
+                    ENVIA_CHAR(decena+0x30);
+                    ENVIA_CHAR(unidad+0x30);
+                    break;
+                case 4:
+                    ENVIA_CHAR(d_millar+0x30);
+                    ENVIA_CHAR('.');
+                    ENVIA_CHAR(millar+0x30);
+                    ENVIA_CHAR(centena+0x30);
+                    ENVIA_CHAR(decena+0x30);
+                    ENVIA_CHAR(unidad+0x30);
+                    break;
+            }
             break;
     }
 }
