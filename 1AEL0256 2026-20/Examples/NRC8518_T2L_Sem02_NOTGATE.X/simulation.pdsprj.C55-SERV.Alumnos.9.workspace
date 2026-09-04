@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<WORKSPACE>
+ <FRAME activeWindow="1">
+  <PLACEMENT>01d9d0cb00030000fffffffffffffff8000006400000035400000000000000170000063f000003530000000002000000064000000000000000170000063f00000353</PLACEMENT>
+  <WINDOW index="0" module="STARTUP" type="default"/>
+  <WINDOW index="0" module="ISIS" type="default" mode="00050a00"/>
+ </FRAME>
+ <MODULE name="VSMDEBUG">
+  <PWI>
+   <POPUP flags="00000082" pid="0" y="21" iid="-1" w="800" x="10" h="200">
+    <PROPERTIES/>
+   </POPUP>
+   <POPUP flags="000000b2" pid="1" y="41" iid="-1" w="350" x="30" h="200">
+    <PROPERTIES/>
+   </POPUP>
+   <POPUP flags="000000a2" pid="2" y="61" iid="-1" w="800" x="50" h="200">
+    <PROPERTIES/>
+   </POPUP>
+   <POPUP flags="0000000a" pid="100000" y="81" iid="1" w="16" x="70" h="16">
+    <PROPERTIES/>
+   </POPUP>
+   <POPUP flags="0000000a" pid="100001" y="101" iid="1" w="16" x="90" h="16">
+    <PROPERTIES/>
+   </POPUP>
+   <POPUP flags="0000000a" pid="100003" y="121" iid="1" w="16" x="110" h="16">
+    <PROPERTIES/>
+   </POPUP>
+   <POPUP flags="0000000a" pid="100004" y="141" iid="1" w="16" x="130" h="16">
+    <PROPERTIES/>
+   </POPUP>
+   <POPUP flags="0000000a" pid="100005" y="161" iid="1" w="16" x="150" h="16">
+    <PROPERTIES/>
+   </POPUP>
+   <POPUP flags="0000000a" pid="100006" y="181" iid="1" w="16" x="170" h="16">
+    <PROPERTIES/>
+   </POPUP>
+   <POPUP flags="00000008" pid="106" y="201" iid="1" w="36" x="190" h="13">
+    <PROPERTIES/>
+   </POPUP>
+  </PWI>
+ </MODULE>
+ <MODULE name="ARES">
+  <editor snap="0" scale="10" gridminor="0" zoom="10" gridmode="2" snapidx="3" flipped="0" orgmode="0" xcursor="0" metric="0" gridmajor="0" snaprange="0">
+   <centre y="0" x="0"/>
+   <origin y="0" x="0"/>
+   <world x2="15240000" y2="12700000" y1="-12700000" x1="-15240000"/>
+  </editor>
+ </MODULE>
+ <MODULE name="ISIS">
+  <editor snap="254000" scale="219" gridminor="254000" zoom="-1" gridmode="2" snapidx="2" flipped="0" orgmode="0" xcursor="0" metric="0" gridmajor="2540000" snaprange="127000">
+   <centre y="2794000" x="5334000"/>
+   <origin y="0" x="0"/>
+   <world x2="12700000" y2="8890000" y1="-8890000" x1="-12700000"/>
+  </editor>
+ </MODULE>
+</WORKSPACE>
