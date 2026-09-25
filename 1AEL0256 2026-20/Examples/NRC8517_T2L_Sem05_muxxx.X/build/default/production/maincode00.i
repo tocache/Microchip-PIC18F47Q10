@@ -24268,7 +24268,7 @@ mecatron:
 configuro:
     ;conf el modulo de oscilador
     movlb 0EH
-    movlw 60H
+    movlw 54H
     movwf OSCCON1, 1 ;LFINTOSC y 1:512
     movlw 02H
     movwf OSCFRQ, 1 ;HFINTOSC a 4MHz

@@ -1,0 +1,228 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/maincode00.o
+mecatron CODE 0 0 0 154 1 2
+config CONFIG 4 300000 300000 C 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 60-CFF 1
+RAM E00-E1E 1
+SFR D00-DFF 1
+SFR E1F-FFF 1
+BANK0 60-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+BANK8 800-8FF 1
+BANK9 900-9FF 1
+CONST 154-1FFFF 1
+IDLOC 200000-2000FF 1
+SMALLCONST 1000-FFFF 1
+SMALLCONST 11000-1FFFF 1
+CODE 154-1FFFF 1
+BANK10 A00-AFF 1
+BANK11 B00-BFF 1
+BANK12 C00-CFF 1
+BANK14 E00-E1E 1
+BIGRAM 154-CFF 1
+BIGRAM E00-E1E 1
+BIGSFR D00-DFF 1
+BIGSFR E1F-FFF 1
+COMRAM 0-5F 1
+EEDATA 310000-3103FF 1
+MEDIUMCONST 1000-FFFF 1
+MEDIUMCONST 11000-1FFFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/maincode00.o
+0 mecatron CODE >7:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+1A mecatron CODE >12:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+1C mecatron CODE >13:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+1E mecatron CODE >14:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+20 mecatron CODE >15:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+22 mecatron CODE >16:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+24 mecatron CODE >17:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+26 mecatron CODE >18:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+28 mecatron CODE >20:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+2A mecatron CODE >21:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+2C mecatron CODE >22:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+2E mecatron CODE >23:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+30 mecatron CODE >24:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+32 mecatron CODE >25:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+34 mecatron CODE >26:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+36 mecatron CODE >27:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+38 mecatron CODE >28:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+3A mecatron CODE >29:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+3C mecatron CODE >30:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+3E mecatron CODE >31:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+40 mecatron CODE >32:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+42 mecatron CODE >33:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+44 mecatron CODE >34:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+46 mecatron CODE >36:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+48 mecatron CODE >37:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+4A mecatron CODE >38:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+4C mecatron CODE >39:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+4E mecatron CODE >42:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+50 mecatron CODE >43:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+52 mecatron CODE >44:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+54 mecatron CODE >45:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+58 mecatron CODE >46:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+5A mecatron CODE >47:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+5E mecatron CODE >48:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+60 mecatron CODE >49:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+62 mecatron CODE >50:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+66 mecatron CODE >51:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+68 mecatron CODE >52:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+6C mecatron CODE >53:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+6E mecatron CODE >54:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+70 mecatron CODE >55:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+74 mecatron CODE >56:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+76 mecatron CODE >57:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+7A mecatron CODE >58:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+7C mecatron CODE >59:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+7E mecatron CODE >60:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+82 mecatron CODE >61:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+84 mecatron CODE >62:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+88 mecatron CODE >63:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+8A mecatron CODE >64:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+8C mecatron CODE >67:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+8E mecatron CODE >68:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+90 mecatron CODE >69:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+92 mecatron CODE >70:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+94 mecatron CODE >71:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+96 mecatron CODE >72:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+98 mecatron CODE >73:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+9A mecatron CODE >74:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+9C mecatron CODE >75:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+150 mecatron CODE >78:E:\Microbios\NRC8517_T2L_Sem05_muxxx.X\maincode00.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 154 0 ABS 0 - -
+__Hspace_1 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 60000C 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__Hudata_bank4 0 0 ABS 0 udata_bank4 -
+__Hudata_bank5 0 0 ABS 0 udata_bank5 -
+__Hudata_bank6 0 0 ABS 0 udata_bank6 -
+__Hudata_bank7 0 0 ABS 0 udata_bank7 -
+__Hudata_bank8 0 0 ABS 0 udata_bank8 -
+__Hudata_bank9 0 0 ABS 0 udata_bank9 -
+__L__absolute__ 0 0 ABS 0 __absolute__ -
+__Hudata_bank10 0 0 ABS 0 udata_bank10 -
+__Hudata_bank11 0 0 ABS 0 udata_bank11 -
+__Hudata_bank12 0 0 ABS 0 udata_bank12 -
+__Hudata_bank14 0 0 ABS 0 udata_bank14 -
+isa$xinst 0 0 ABS 0 - build/default/production/maincode00.o
+__Lmecatron 0 0 ABS 0 mecatron -
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 30000C 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 0 0 ABS 0 - -
+__S1 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Ludata_bank10 0 0 ABS 0 udata_bank10 -
+__Ludata_bank11 0 0 ABS 0 udata_bank11 -
+__Ludata_bank12 0 0 ABS 0 udata_bank12 -
+__Ludata_bank14 0 0 ABS 0 udata_bank14 -
+__Hmecatron 0 0 ABS 0 mecatron -
+__Lconfig 0 0 CONFIG 4 config -
+isa$std 1 0 ABS 0 - build/default/production/maincode00.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__Ludata_bank4 0 0 ABS 0 udata_bank4 -
+__Ludata_bank5 0 0 ABS 0 udata_bank5 -
+__Ludata_bank6 0 0 ABS 0 udata_bank6 -
+__Ludata_bank7 0 0 ABS 0 udata_bank7 -
+__Ludata_bank8 0 0 ABS 0 udata_bank8 -
+__Ludata_bank9 0 0 ABS 0 udata_bank9 -
+__H__absolute__ 0 0 ABS 0 __absolute__ -
+__Hudata_acs 0 0 ABS 0 udata_acs -
+__Ludata_acs 0 0 ABS 0 udata_acs -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
