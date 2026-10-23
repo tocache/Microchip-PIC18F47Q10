@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/default/debug\NRC8517_T2L_Sem09_bepbep.X.debug.hex">
+    <memory name="program">
+      <units>bytes</units>
+      <length>131072</length>
+      <used>607</used>
+      <free>130465</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>3359</length>
+      <used>34</used>
+      <free>3325</free>
+    </memory>
+  </executable>
+</project>
