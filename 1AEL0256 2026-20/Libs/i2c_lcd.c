@@ -11,7 +11,12 @@ static void I2C_Master_Init(void) {
     // Configurar pines SCL (RC3) y SDA (RC4) como entradas (requerido por MSSP)
     TRISCbits.TRISC3 = 1;
     TRISCbits.TRISC4 = 1;
-    
+    ANSELCbits.ANSELC3 = 0;
+    ANSELCbits.ANSELC4 = 0;
+    SSP1CLKPPS = 0x13;
+    SSP1DATPPS = 0x14;
+    RC3PPS = 0x0F;
+    RC4PPS = 0x10;
     SSP1CON1 = 0x28; // Habilita MSSP en modo I2C Master, reloj = FOSC / (4 * (SSP1ADD + 1))
     SSP1CON2 = 0x00;
     SSP1STAT = 0x80; // Slew rate desactivado para 100kHz

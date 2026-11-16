@@ -14,7 +14,7 @@
 #define _XTAL_FREQ 4000000UL
 
 // Dirección I2C por defecto del módulo PCF8574 (puede ser 0x27 o 0x3F según los jumpers A0, A1, A2)
-#define LCD_I2C_ADDR 0x27
+#define LCD_I2C_ADDR 0x3F
 
 // Definición de pines del PCF8574 conectados al LCD
 #define LCD_RS     0x01 // P0
