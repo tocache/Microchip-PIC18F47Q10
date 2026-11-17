@@ -2,6 +2,9 @@
  * Archivo: i2c_lcd.h
  * Controlador: PIC18F47Q10 (Fosc = 4 MHz)
  * Descripción: Librería para LCD 16x2 / 20x4 vía I2C con PCF8574
+ * Autor: Kalun Lau con ayuda de Gemini IA
+ * Fecha: 17/11/2026
+ * Versión: 1.00
  */
 
 #ifndef I2C_LCD_H
@@ -34,7 +37,8 @@ void LCD_Clear(void);
 void LCD_SetCursor(uint8_t row, uint8_t col);
 void LCD_PrintChar(char c);
 void LCD_PrintString(const char *str);
-void LCD_PrintInt(int val);
+//void LCD_PrintInt(int val);
+void LCD_PrintInt(int val, uint8_t digits);
 void LCD_CreateChar(uint8_t location, uint8_t *charmap);
 void LCD_Backlight(uint8_t state);
 

@@ -131,9 +131,23 @@ void LCD_PrintString(const char *str) {
 }
 
 // Escribir un número entero (variables)
-void LCD_PrintInt(int val) {
+/*void LCD_PrintInt(int val) {
     char buffer[16];
     sprintf(buffer, "%d", val);
+    LCD_PrintString(buffer);
+}*/
+
+// Escribir un número entero con cantidad de dígitos dinámica
+void LCD_PrintInt(int val, uint8_t digits) {
+    char buffer[16];
+    
+    // Validar un rango seguro para los dígitos (por ejemplo, entre 1 y 10)
+    if (digits == 0) digits = 1;
+    if (digits > 10) digits = 10;
+    
+    // "%0*d" usa la variable 'digits' para definir el ancho y rellena con ceros a la izquierda
+    sprintf(buffer, "%0*d", digits, val);
+    
     LCD_PrintString(buffer);
 }
 
